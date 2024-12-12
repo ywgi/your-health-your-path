@@ -1,0 +1,52 @@
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ayurveda-logo {
+    display: flex;
+    align-items: center;
+}
+
+.links {
+    align-items: end;
+    width: 40vw;
+}
+
+.user-logo {
+    
+}
+
+.ayurveda-logo img {
+    width: 150px;
+
+}
+
+#your-health-your-path {
+    width: 400px;
+}
+
+.navigation-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation-links a {
+    text-decoration: none;
+    font-family: Helvetica;
+    font-size: 20px;
+    font-weight: bold;
+    color: #315851
+}
+
+.navigation-links a:hover {
+    color: white;
+    background-color: #315851;
+}
+
+.text-content {
+    padding-bottom: 20px;
+}

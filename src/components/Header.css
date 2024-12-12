@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    padding-bottom: 50px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+
+.header:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%; /* Adjust the width for the desired length of the border */
+    height: 3px; /* Thickness of the border */
+    background: linear-gradient(to right, transparent, #c17557, transparent); /* Tapering effect */
+  }
+
+
+  .user-logo img{
+    max-height: 150px;
+  }

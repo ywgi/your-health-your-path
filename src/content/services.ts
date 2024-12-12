@@ -1,0 +1,3 @@
+export const newsletterParagraph = "Discover the ancient wisdom of Ayurveda with our exclusive newsletter, designed to help you achieve balance and harmony in your daily life."
+export const therapyParagraph = "Ayurveda therapy combines natural remedies, dietary guidance, and personalized treatments to restore balance and promote holistic healing. I can help you get on your way!"
+export const meditationParagraph = "Meditation is a practice that encourages mindfulness and self-awareness, helping to calm the mind and reduce stress."

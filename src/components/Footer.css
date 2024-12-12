@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #315851;
+    height: 300px;
+    width: 100%;
+}
+
+.footer h2 {
+    color: white;
+}
+
+
+
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-content: center;
+    width: 100%;
+}
+
+
+.footer img {
+    max-height: 200px;
+    max-width: 200px;
+}
