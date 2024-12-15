@@ -1,7 +1,38 @@
-.reviews-container {
+
+.reviews-slider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.reviews-slider h1 {
+    text-align: center;
+}
+
+.review-content {
+    border: 2px solid black;
+    padding: 2rem;
+}
+
+.button-container {
     display: flex;
     justify-content: center;
-    width: 100%;
+    gap: 2rem;
+}
 
-    border-bottom: 2px solid black;
+.button-container button {
+    background-color: transparent;
+    font-size: 1rem;
+    color: #c17557;
+    border-radius: .25rem;
+    width: 5rem;
+    height: 3rem;
+}
+
+.button-container button:hover {
+    background-color: #6f9558;
+    color: white;
+    border-color: transparent;
 }

@@ -3,15 +3,37 @@
     justify-content: center;
     align-items: center;
     background-color: #315851;
-    height: 300px;
+    height: 20rem;
     width: 100%;
 }
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    vertical-align:top;
+    width: 30%;
+    height: 100%;
+}
+
+.socials-container {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    width: 30%;
+    height: 100%;
+}
+
 
 .footer h2 {
     color: white;
 }
 
-
+.logo-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20rem;
+}
 
 .logo-container {
     display: flex;
@@ -25,8 +47,24 @@
     width: 100%;
 }
 
+.image-container {
+    display: inline-block;
+    border: transparent;
+    justify-content: center;
+    height: min-content;
+}
 
-.footer img {
-    max-height: 200px;
-    max-width: 200px;
+.image-container img { 
+    width: 10rem;
+    height: min-content;
+    object-fit: contain;
+}
+
+.text-container {
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
 }

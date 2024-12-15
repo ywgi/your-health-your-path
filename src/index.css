@@ -1,6 +1,13 @@
 :root {
   color-scheme: light;
   background-color: #e7d6c4;
+  font-size: 16px;
   padding: 0px;
   margin: 0px;
+}
+
+body {
+  height: auto;
+  margin: 0;
+  padding: 0;
 }

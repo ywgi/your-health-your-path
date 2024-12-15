@@ -5,6 +5,7 @@ import ServiceCard from "../components/ServiceCard";
 import { newsletterParagraph, therapyParagraph, meditationParagraph } from "../content/services";
 import Footer from "../components/Footer";
 import Reviews from "../components/Reviews";
+import images from '../content/images'
 
 
 const homePage = () => {
@@ -13,6 +14,31 @@ const homePage = () => {
             <Header/>
             <div className="home-container">
                 <div className="first-section">
+                    <div className='text-with-button'>
+                        <h1>
+                            You <span className="handwriting">want to</span> prioritize your health and are looking for help along your way.
+                        </h1>
+                        <p>
+                            <span className="jacky-handwriting">Hi I'm Jacklyn</span>,<br/><br/>
+                            an Ayurvedic Practitioner, who is here to help you thrive and live fully, <span className="color-handwriting"> naturally.</span> I look at your <b>individual needs</b> and <b>goals </b>
+                            and <b>create a personalized plan</b> to help you along your unique path.
+                        </p>
+                        <a href="#feel-better">
+                            I'm ready!
+                        </a>
+                    </div>
+                    <img className="jacky" 
+                        src={images.jackySection1}/>
+                </div>
+                <div className="quote-divider">
+                    <span className="quote">
+                        "The natural force within each of us is the greatest healer of all."
+                        <br/>
+                        -Hippocrates
+                    </span>
+                </div>
+                <div className="second-section" id="feel-better">
+                    <img className="cwb" src={images.coffeeWithBook} />
                     <div className="text-with-button">
                         <h1>Are you ready to feel better?</h1>
                         <h2>It's time to be empowered with your health.</h2>
@@ -35,30 +61,26 @@ const homePage = () => {
                             Take the first steps
                         </Link>
                     </div>
-                    <img className="jacky" 
-                        src="src\images\jacky\Jacklyn10b.jpg"/>
                 </div>
-                <div className="quote-divider">
-                    <span className="quote">
-                        "The natural force within each of us is that greatest healer of all."
-                        <br/>
-                        -Hippocrates
-                    </span>
-                </div>
-                <div className="second-section">
-                    <img className="jacky2" src="src\images\jacky\Jacklyn9.jpg" />
+                <div className="third-section">
                     <div className="text-with-button">
-                        <h1>I'll be your guide!</h1>
+                        <h1 className="jacky-handwriting-2">Hi, I’m Jacky!</h1>
                         <p>
-                            Life's challenges know no bounds, which is why we offer a safe and nurturing space for exploration, understanding, and healing, both in-person and online. 
-                            Our range of therapeutic services, including individual counseling, couples therapy, and mindfulness coaching, are tailored to meet your unique needs. 
+                            The American born, Netherlands living, former teacher who made the switch to ayurveda because feeling good makes enjoying life so much easier!
+                            <br/><br/>  
+                            The short version: Ayurveda helped me on my health journey feel better than I even knew was possible. Calmer in my mind, and more connected to my body.
+                            <br/><br/>
+                            Enthusiasm and curiosity fueled me: <i>How did this work?</i>
+                            <br/><br/>
+                            Before I knew it, I was back in school. Studying ayurveda for 4 years only increased my passion. Now, I get to enthusiastically share it with others as they travel their path... 
                         </p>
                         <Link to="/" className="link-button">
                             Meet Jacky
                         </Link>
                     </div>
+                    <img className='jacky2' src={images.JackySection3} />
                 </div>
-                <div className="services-section">
+                {/* <div className="services-section">
                     <h1>Services</h1>
                     <div className="service-cards">
                         <ServiceCard 
@@ -77,8 +99,10 @@ const homePage = () => {
                             paragraph={meditationParagraph}
                             text="Meditate"/>
                     </div>
+                </div> */}
+                <div className="review-section">
+                    <Reviews />
                 </div>
-                <Reviews />
             </div>
             <Footer/>
         </>

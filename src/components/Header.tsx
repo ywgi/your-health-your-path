@@ -1,23 +1,20 @@
 import { Link } from "react-router-dom";
 import Navbar from "./Navbar";
 import './Header.css'
+import images from "../content/images";
 
 const Header = () => {
     return (
         <header className="header">
-            <div className='ayurveda-logo'>
+            <div className='yhyp-logos'>
                 <Link to='/' aria-label='Go to homepage'>
-                    <img src='src\images\ayurveda\yhyp-nobackground-modified.png' 
+                    <img className='header-ayurveda-logo' src={images.yhypLogo}
                         alt='The company logo for Your Health Your Path'/>
                 </Link>
-                <img id='your-health-your-path' 
-                    src='src\images\ayurveda\yhyp-logo_processed.jpg'/>
+                <img className='header-text-logo' 
+                    src={images.yhypTextLogo}/>
             </div>
-            <Navbar/> 
-            <div className='user-logo'>
-                <img src="src\images\person logo light-green_processed.png" />
-            </div>
-
+            <Navbar/>
         </header>
     );
 }

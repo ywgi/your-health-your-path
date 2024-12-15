@@ -1,56 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Oooh+Baby&display=swap');
+
 
 .home-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
 }
 
 .first-section {
-    padding-top: 50px;
+    padding-top: 3rem;
     display: flex;
-    width: 100vw;
+    width: 100%;
     align-items: start;
     justify-content: center;
-    padding-bottom: 100px;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 6.25rem;
+    gap: 3rem
+}
+
+.first-section p {
+    font-size: 1.75rem;
+    font-family: "Barlow", sans-serif;
+}
+
+.handwriting {
+    font-family: "Oooh Baby", cursive;
+}
+
+.jacky-handwriting {
+    font-family: "Oooh Baby", cursive;
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.color-handwriting {
+    font-family: "Oooh Baby", cursive;
+    font-weight: 900;
+    color: #6f9558
+}
+
+.quote-divider {
+    width: 100%;
+    height: 30rem;
+    background-color: #315851;
+    position: relative;
+    border-bottom: 2px solid black;
 }
 
 .second-section {
     width: 100vw;
     display: flex;
-    align-items: center;
-    padding-bottom: 100px;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 6.25rem;
+}
+
+.third-section {
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+    border-bottom: 2px solid black;
+}
+
+.third-section p, .third-section h1 {
+    padding-left: 1rem;
+}
+
+.jacky-handwriting-2 {
+    font-family: "Oooh Baby", cursive;
+    font-weight: 900;
+    font-size: 4rem;
+}
+
+.third-section p {
+    font-size: 1.5rem;
+}
+
+
+.review-section {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
 }
 
 .jacky { 
-    height: 700px;
+    max-height: 45rem;
 }
 
 .jacky2 {
-    height: 550px;
+    max-height: 45rem;
+}
+
+.cwb {
+    max-height: 55rem;
 }
 
 .text-with-button {
     display: flex;
-    padding: 0px;
-    margin: 0px;
+    max-width: 40vw;
+    justify-content: center;
     flex-direction: column; /* Stack elements vertically */
-    align-items: center;    /* Center horizontally */
     text-align: left;     /* Center text in the container */
 }
 
-.text-with-button h1 {
-   padding: 0px;
-   margin: 0px;
-}
-
-.text-with-button p {
-    padding-left: 25px;
-    padding-right: 50px;
-}
 
 
-.link-button {
+.link-button, .first-section a {
     align-self: center;     /* Center the button within the container */
     margin-top: 20px;       /* Add space between the button and the content above */
     text-decoration: none;  /* Optional: Remove underline */
@@ -66,7 +127,7 @@
     margin: 20px
 }
 
-.link-button:hover {
+.link-button:hover, .first-section a:hover{
     background-color: #6f9558;
     color: white;
     border-color: transparent;
@@ -83,26 +144,13 @@ h2 {
 }
 
 p {
-    text-indent: 2rem;
     line-height: 1.8;
     align-content: center;
     font-family: Helvetica;
     font-size: 21px;
-    max-width: 1000px;
+    max-width: 800px;
 }
 
-.text-content {
-    justify-content: center;
-}
-
-.flower-background {
-    position: relative;
-    border-bottom: 2px solid black;
-}
-
-.flower-background img {
-    display: block;
-}
 
 .quote {
     text-align: center;
@@ -139,12 +187,4 @@ p {
 .service-cards {
     display: flex;
     gap: 50px;
-}
-
-.quote-divider {
-    width: 100vw;
-    height: 500px;
-    background-color: #315851;
-    position: relative;
-    border-bottom: 2px solid black;
 }
