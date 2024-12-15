@@ -57,6 +57,11 @@
     padding-bottom: 6.25rem;
 }
 
+.second-section p {
+    font-family: "Niramit", sans-serif;
+    font-size: 1.5rem;
+}
+
 .third-section {
     padding: 2rem;
     display: flex;
@@ -77,6 +82,7 @@
 }
 
 .third-section p {
+    font-family: "Noto sans", sans-serif;
     font-size: 1.5rem;
 }
 
@@ -94,7 +100,7 @@
 }
 
 .jacky2 {
-    max-height: 45rem;
+    max-height: 50rem;
 }
 
 .cwb {
