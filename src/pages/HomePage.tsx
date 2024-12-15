@@ -1,8 +1,6 @@
 import { Link } from "react-router-dom";
 import './HomePage.css'
 import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
-import { newsletterParagraph, therapyParagraph, meditationParagraph } from "../content/services";
 import Footer from "../components/Footer";
 import Reviews from "../components/Reviews";
 import images from '../content/images'
