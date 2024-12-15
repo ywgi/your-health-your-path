@@ -17,12 +17,12 @@ const homePage = () => {
                             You <span className="handwriting">want to</span> prioritize your health and are looking for help along your way.
                         </h1>
                         <p>
-                            <span className="jacky-handwriting">Hi I'm Jacklyn</span>,<br/><br/>
+                            <span className="jacky-handwriting">Hi I'm Jacklyn</span>,<br/>
                             an Ayurvedic Practitioner, who is here to help you thrive and live fully, <span className="color-handwriting"> naturally.</span> I look at your <b>individual needs</b> and <b>goals </b>
                             and <b>create a personalized plan</b> to help you along your unique path.
                         </p>
                         <a href="#feel-better">
-                            I'm ready!
+                            Learn more
                         </a>
                     </div>
                     <img className="jacky" 

@@ -25,7 +25,10 @@ nav {
 }
 
 .navigation-links a:hover {
+    padding: 8px 12px; /* Add some padding to look like a button */
+    border-radius: 12px; /* Semi-rounded corners */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+    background-color: #6f9558;
     color: white;
-    background-color: #315851;
 }
 
