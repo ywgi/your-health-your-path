@@ -78,26 +78,6 @@ const homePage = () => {
                     </div>
                     <img className='jacky2' src={images.JackySection3} />
                 </div>
-                {/* <div className="services-section">
-                    <h1>Services</h1>
-                    <div className="service-cards">
-                        <ServiceCard 
-                            title="Newsletter" 
-                            img="src\images\coffee-with-book.jpg"
-                            paragraph={newsletterParagraph}
-                            text="Sign up!"/>
-                        <ServiceCard
-                            title="In-House Therapy" 
-                            img="src\images\jacky\Jacklyn7.jpg"
-                            paragraph={therapyParagraph}
-                            text="Request a consultation"/>
-                        <ServiceCard 
-                            title="Guided Meditation" 
-                            img="src\images\meditate.jpg"
-                            paragraph={meditationParagraph}
-                            text="Meditate"/>
-                    </div>
-                </div> */}
                 <div className="review-section">
                     <Reviews />
                 </div>
