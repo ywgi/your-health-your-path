@@ -14,12 +14,12 @@ const HomePage = () => {
                 <div className="flex flex-col lg:flex-row w-full items-center lg:items-start justify-center lg:px-12 pt-6 lg:pt-12 lg:pb-24 gap-6 lg:gap-12">
                     {/* Text container */}
                     <div className="flex w-full lg:max-w-3xl justify-center flex-col text-left px-4 lg:px-0">
-                        <h1 className="text-2xl lg:text-3xl tracking-wide mb-4">
-                            You... 
+                        <h1 className="text-2xl lg:text-5xl tracking-wide mb-4">
+                            Maybe You... 
                         </h1>
-                        <ul className="space-y-4 pl-4 lg:pl-8 lg:text-2xl">
+                        <ul className="pl-4 lg:pl-8 lg:text-2xl">
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom mt-1">•</span>
+                                <span className="text-green-custom mt-1 gap-3 lg:">•</span>
                                 <span className="leading-relaxed">(are ready to) prioritize your health...</span>
                             </li>
                             <li className="flex items-start gap-3">
@@ -35,7 +35,8 @@ const HomePage = () => {
                                 <span className="leading-relaxed">want to be in touch with your body's natural rhythms…</span>
                             </li>
                         </ul>
-                        <p className="text-lg sm:text-xl lg:text-3xl mt-4 space-y-4 leading-relaxed">
+                        <p className="text-lg sm:text-xl lg:text-3xl mt-4 space-y-4 leading-snug">
+                            <br/>
                             <span className="font-handwriting2 font-black text-3xl lg:text-6xl block mb-4">
                                 Hi there, I'm Jacklyn.
                             </span>
@@ -87,34 +88,34 @@ const HomePage = () => {
                         <img className=""
                             src={images.holistic}/>
                     </div> */}
-<div className="w-full lg:w-[40%] relative p-4 h-[280px] lg:h-[1000px]">
-    {/* Background image - top left */}
-    <img 
-        className="w-[65%] lg:w-[75%] object-cover relative z-0 border-8 border-coral-custom" 
-        src={images.massageTools} 
-        alt="Massage Tools" 
-    />
-    {/* Front image - bottom right */}
-    <img
-        className="w-[65%] lg:w-[80%] absolute top-[10rem] md:top-[20rem] lg:top-[22rem] left-14 md:left-24 lg:left-48 z-10 border-4 lg:border-8 border-coral-custom"  
-        src={images.holistic}
-        alt="Holistic"
-    />
-    <img
-        className="w-[25%] lg:w-[25%] absolute top-0 left-[70%] lg:left-[80%] z-20"
-        src={images.yhypLogoNoBackground}
-        alt="Third Image"
-    />
-</div>
-                    <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 pt-10 lg:px-0">
+                <div className="w-full lg:w-[40%] relative p-4 pt-32 h-[280px] lg:h-[1200px]">
+                    {/* Background image - top left */}
+                    <img 
+                        className="w-[65%] lg:w-[75%] object-cover relative z-0 border-8 border-coral-custom" 
+                        src={images.massageTools} 
+                        alt="Massage Tools" 
+                    />
+                    {/* Front image - bottom right */}
+                    <img
+                        className="w-[65%] lg:w-[60%] absolute top-[10rem] md:top-[20rem] lg:top-[40rem] left-14 md:left-24 lg:left-80 z-10 border-4 lg:border-8 border-coral-custom"  
+                        src={images.holistic}
+                        alt="Holistic"
+                    />
+                    <img
+                        className="w-[25%] lg:w-[25%] absolute top-[3rem] left-[70%] lg:left-[80%] z-20"
+                        src={images.yhypLogoNoBackground}
+                        alt="Third Image"
+                    />
+                </div>
+                    <div className="flex w-full lg:max-w-[40vw] flex-col mt-32 text-left px-4 lg:px-0">
                         <h1 className="text-3xl lg:text-5xl justify-center mb-4 pb-2">Are you ready to feel better?</h1>
                         <h2 className="text-2xl lg:text-4xl justify-center mb-4 pb-2">It's time to be empowered with your health.</h2>
-                        <p className="text-lg lg:text-[1.5rem] leading-relaxed max-w-[800px]">
+                        <p className="text-lg lg:text-[1.5rem] leading-tight max-w-[800px]">
                             Clients who come to me know that they have a powerful ability to positively influence how they feel.
                             For them - just getting by isn't enough; they want to be full of energy and vibrant. 
                             <b> Health is holistic </b> - the body's systems are interconnected and just like a spider's web,
                             when you pull on one thread, everything is affected. Better sleep, less stress, good digestion,
-                            and a tailored diet are some of the ways I can help you strengthen your interconnected health.<br/>
+                            and a tailored diet are some of the ways I can help you strengthen your interconnected health.<br/><br/>
                             Clients want to stop playing a symptom chasing Whac-A-Mole and instead get to the root of the problem.
                             Using the scientific wisdom of <b>Ayurveda</b> - a system of medicine <b>recognized by the World Health Organization</b> -
                             I help cut through all the conflicting health noise and by following your unique history, a plan is created specifically
@@ -132,13 +133,13 @@ const HomePage = () => {
                 <div className="flex flex-col lg:flex-row justify-center w-full gap-6 lg:gap-8 pb-12">
                     {/* Text container - add order-2 for mobile */}
                     <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 lg:px-0 order-2 lg:order-1">
-                        <h1 className="font-handwriting font-black text-3xl lg:text-[4rem] pl-0 lg:pl-4">Hi, I'm Jacky!</h1>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-[1.5rem] leading-relaxed mt-4">
+                        <h1 className="font-handwriting2 font-black text-3xl lg:text-[4rem] pl-0 lg:pl-4">Hi, I'm Jacklyn!</h1>
+                        <p className="pl-0 lg:pl-4 text-lg lg:text-[1.5rem] leading-tight mt-4">
                             The American born, Netherlands living, former teacher who made the switch to ayurveda because feeling good makes enjoying life so much easier!
                             <br/>
                             The short version: Ayurveda helped me on my health journey feel better than I even knew was possible. Calmer in my mind, and more connected to my body.
                             <br/>
-                            Enthusiasm and curiosity fueled me: <i>How did this work?</i>
+                            Enthusiasm and curiosity fueled me: <br/><span className="font-handwriting text-3xl font-bold"><i>How did this work?</i></span>
                             <br/>
                             Before I knew it, I was back in school. Studying ayurveda for 4 years only increased my passion. Now, I get to enthusiastically share it with others as they travel their path... 
                         </p>
