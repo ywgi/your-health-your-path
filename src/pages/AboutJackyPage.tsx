@@ -50,7 +50,7 @@ const AboutJackyPage = () => {
                     <div className="flex w-full lg:max-w-3xl justify-center flex-col text-left px-4 lg:px-0 space-y-2 text-xl ">
                         <h1 className="text-2xl font-bold">2015</h1>
                         <p>
-                            My love for Ayurveda, like so many of the other loves in my life (including meeting my husband!) started when I dared to follow my curiosity - after all, <b><i className="font-handwriting text-2xl">why not?</i></b>
+                            My love for Ayurveda, like so many of the other loves in my life (including meeting my husband!) started when I dared to follow my curiosity - after all, <b><i className="font-handwriting text-5xl">why not?</i></b>
                         </p>
                         <p>
                             In May of 2015, unsatisfied and even shocked by the doctor's advice - I picked up my first book about Ayurveda. The book had been given by a
@@ -61,7 +61,7 @@ const AboutJackyPage = () => {
                              developed over a matter of weeks, was taken care of with the soft and natural approach of ayurveda instead of the strong hormonal creams that had been recommended with the explanation: if used sooner than later they <i>just might work</i>.
                         </p>
                         <p>
-                            And, as it turns out, this was <span className="font-handwriting font-bold text-2xl">just the beginning...</span>
+                            And, as it turns out, this was <span className="font-handwriting font-bold text-5xl">just the beginning...</span>
                         </p>
                     </div>
                     <div>
@@ -85,7 +85,7 @@ const AboutJackyPage = () => {
                         <h1 className="text-2xl font-bold">Niel's story in a nutshell:</h1>
                         <h2 className="text-2nxl">More than 10 years of suffering to relief in <i>months</i>!</h2>
                         <p>
-                           At that very first Ayurvedic Doctor's appointment, I looked at my <span className="text-red-700">future/now</span> husband, Niels and said, "Maybe this is something that would help you?"
+                           At that very first Ayurvedic Doctor's appointment, I looked at my husband Niels and said, "Maybe this is something that would help you?"
                         </p>
                         <p>
                             For more than 10 years, he'd struggled with intestinal complaints. <b>He went to doctors and specialists, but his symptoms persisted.</b>
@@ -117,7 +117,7 @@ const AboutJackyPage = () => {
                         <p>
                             This dramatic transformation got my attention - Ayurveda was really helping us. 
                         </p>
-                        <p className="font-handwriting font-bold text-4xl pb-2">
+                        <p className="font-handwriting font-bold text-5xl pb-2">
                             So, we both kept going...
                         </p>
                     </div>

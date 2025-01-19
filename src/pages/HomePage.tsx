@@ -49,14 +49,14 @@ const HomePage = () => {
                             </span>
                         </p>
                         <a href="#feel-better" 
-                            className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-5 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
+                            className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
                             Learn more
                         </a>
                     </div>
                     {/* Image container for mobile full-width */}
                     <div className="relative w-full lg:w-auto">
                         {/* Background decorative block */}
-                        <div className="absolute top-0 right-0 w-full h-full bg-amber-700/90 -z-10 hidden lg:block origin-top-right scale-90" />
+                        <div className="absolute top-0 right-0 w-full h-full bg-teal-custom -z-10 hidden lg:block origin-top-right scale-90" />
 
                         {/* Main image container */}
                         <div className="w-full lg:w-auto relative lg:mt-8 lg:mr-8">
@@ -90,13 +90,13 @@ const HomePage = () => {
 <div className="w-full lg:w-[40%] relative p-4 h-[280px] lg:h-[1000px]">
     {/* Background image - top left */}
     <img 
-        className="w-[65%] lg:w-[75%] object-cover relative z-0 border-4 border-8 border-coral-custom" 
+        className="w-[65%] lg:w-[75%] object-cover relative z-0 border-8 border-coral-custom" 
         src={images.massageTools} 
         alt="Massage Tools" 
     />
     {/* Front image - bottom right */}
     <img
-        className="w-[65%] lg:w-[80%] absolute top-[10rem] md:top-[20rem] lg:top-[28rem] left-14 md:left-24 lg:left-48 z-10 border-4 lg:border-8 border-coral-custom"  
+        className="w-[65%] lg:w-[80%] absolute top-[10rem] md:top-[20rem] lg:top-[22rem] left-14 md:left-24 lg:left-48 z-10 border-4 lg:border-8 border-coral-custom"  
         src={images.holistic}
         alt="Holistic"
     />
@@ -122,7 +122,7 @@ const HomePage = () => {
                             a whole lot easier.
                         </p>
                         <Link to="/" 
-                              className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-5 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
+                              className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
                             Take the first steps
                         </Link>
                     </div>
@@ -143,7 +143,7 @@ const HomePage = () => {
                             Before I knew it, I was back in school. Studying ayurveda for 4 years only increased my passion. Now, I get to enthusiastically share it with others as they travel their path... 
                         </p>
                         <Link to="/" 
-                            className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-5 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
+                            className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
                             A little about me...
                         </Link>
                     </div>

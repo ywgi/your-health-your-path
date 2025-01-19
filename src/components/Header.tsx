@@ -32,7 +32,7 @@ const Header = () => {
                         {/* Desktop menu */}
                         <div className="hidden md:flex items-center space-x-8">
                             <a href="/about-jacky" className="font-bold text-3xl px-2 pt-2 pb-2 rounded-lg text-teal-custom hover:text-white hover:bg-green-custom ">
-                            About Jacky
+                            About Jacklyn
                             </a>
                             <a href="/about-ayurveda" className="font-bold text-3xl px-2 pt-2 pb-2 rounded-lg text-teal-custom hover:text-white hover:bg-green-custom">
                             Ayurveda
