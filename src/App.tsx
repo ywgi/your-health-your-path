@@ -1,19 +1,19 @@
-import './App.css'
-import HomePage3 from './pages/HomePage3';
-// import HomePage from './pages/HomePage'
+import './App.css';
+import { Routes, Route, Link } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import AboutAyurvedaPage from './pages/AboutAyurvedaPage';
+import AboutJackyPage from './pages/AboutJackyPage';
+import ServicesPage from './pages/ServicesPage';
 
 function App() {
-
-
     return (
-      <HomePage3/>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/about-Jacky" element={<AboutJackyPage />} />
+          <Route path="/about-Ayurveda" element={<AboutAyurvedaPage />} />
+          <Route path="/services" element={<ServicesPage />} />
+        </Routes>
     );
-
-  // return (
-  //   <>
-  //     <HomePage/>
-  //   </>
-  // )
 }
 
 export default App

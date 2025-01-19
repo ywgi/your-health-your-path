@@ -11,17 +11,17 @@ const Header = () => {
     };
 
     return (
-        <header className="flex flex-col lg:flex-row items-center w-full p-4 lg:p-5 pb-8 lg:pb-12 relative text-center min-w-full lg:min-w-[60rem] max-h-none lg:max-h-[205px] whitespace-normal lg:whitespace-nowrap gap-4 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-full before:h-[0.2rem] before:bg-gradient-to-r before:from-transparent before:via-[#c17557] before:to-transparent">
+        <header className="flex flex-col lg:flex-row items-center w-full p-4 lg:p-5 lg:pb-12 relative text-center min-w-full lg:min-w-[60rem] lg:h-[185px] whitespace-normal lg:whitespace-nowrap gap-4 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-full before:h-[0.2rem] before:bg-gradient-to-r before:from-transparent before:via-[#c17557] before:to-transparent">
             <div className="flex flex-row w-full lg:w-[40vw] min-w-0 lg:min-w-[35rem] items-center justify-center gap-2 lg:gap-0">
                 <Link to='/' aria-label='Go to homepage'>
                     <img 
-                        className="w-24 lg:w-40"
+                        className="h-24 lg:h-40 object-contain"
                         src={images.yhypLogo}
                         alt='The company logo for Your Health Your Path'
                     />
                 </Link>
                 <img 
-                    className="w-48 lg:w-[30rem]"
+                    className="h-20 lg:h-40 object-contain"
                     src={images.yhypTextLogo}
                     alt="Your Health Your Path text logo"
                 />
@@ -35,7 +35,7 @@ const Header = () => {
                             About Jacky
                             </a>
                             <a href="/about-ayurveda" className="font-bold text-3xl px-2 pt-2 pb-2 rounded-lg text-teal-custom hover:text-white hover:bg-green-custom">
-                            About Ayurveda
+                            Ayurveda
                             </a>
                             <a href="/services" className="font-bold text-3xl px-2 pt-2 pb-2 rounded-lg text-teal-custom  hover:text-white hover:bg-green-custom">
                             Services
@@ -90,7 +90,7 @@ const Header = () => {
                         href="/about-ayurveda"
                         className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
                     >
-                        About Ayurveda
+                        Ayurveda
                     </a>
                     <a
                         href="/services"
