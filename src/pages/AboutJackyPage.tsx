@@ -11,7 +11,7 @@ const AboutJackyPage = () => {
                 <div className="block md:hidden">
                     <div className="relative h-full flex items-center justify-center p-4">
                             <div className="md:p-8 w-full max-w-5xl">
-                                <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">My Qualifications at a glance:</h1>
+                                <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">My Qualifications at a glance</h1>
                                 <p className="mb-4 text-xl md:text-base">As an Ayurvedic Practitioner I have:</p>
                                 <ul className="list-disc pl-6 md:pl-8 space-y-2 text-xl md:text-base">
                                     <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA: European Institute of Scientific Research on Ayurveda (Dutch: HBO Level)</li>
@@ -19,9 +19,6 @@ const AboutJackyPage = () => {
                                     <li>Completed the <b>Medical foundations</b> (Dutch: Medische Basis Kennis-MBK)</li>
                                     <li>Plus, I have a bachelor's degree in Education (Dutch: PABO)</li>
                                 </ul>
-                                <p className="mt-4 text-xl md:text-base">
-                                    But more importantly - I've walked with ayurveda along my <b>own health path</b>. Experiencing what it can do in a <i>very</i> personal way.
-                                </p>
                             </div>
                         </div>
                     <img src={images.purpleFlowers}/>
@@ -32,7 +29,7 @@ const AboutJackyPage = () => {
                     }}>
                     <div className="relative h-full flex items-center justify-center p-4">
                         <div className="bg-white/70 backdrop-blur-md p-4 md:p-8 shadow-lg w-full max-w-5xl">
-                            <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">My Qualifications at a glance:</h1>
+                            <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">My Qualifications at a glance</h1>
                             <p className="mb-4 text-sm md:text-base">As an Ayurvedic Practitioner I have:</p>
                             <ul className="list-disc pl-6 md:pl-8 space-y-2 text-sm md:text-base">
                                 <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA: European Institute of Scientific Research on Ayurveda (Dutch: HBO Level)</li>
@@ -40,11 +37,13 @@ const AboutJackyPage = () => {
                                 <li>Completed the <b>Medical foundations</b> (Dutch: Medische Basis Kennis-MBK)</li>
                                 <li>Plus, I have a bachelor's degree in Education (Dutch: PABO)</li>
                             </ul>
-                            <p className="mt-4 text-sm md:text-base">
-                                But more importantly - I've walked with ayurveda along my <b>own health path</b>. Experiencing what it can do in a <i>very</i> personal way.
-                            </p>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <p className="mt-4 text-xl md:text-base">
+                        But more importantly - I've walked with ayurveda along my <b>own health path</b>. Experiencing what it can do in a <i>very</i> personal way.
+                    </p>
                 </div>
                 <div className="flex flex-col lg:flex-row w-full items-center lg:items-start justify-center lg:px-12 pt-6 lg:pt-12 pb-4 gap-6 lg:gap-12">
                     <div className="flex w-full lg:max-w-3xl justify-center flex-col text-left px-4 lg:px-0 space-y-2 text-xl ">
@@ -77,7 +76,7 @@ const AboutJackyPage = () => {
                     <div className="order-last lg:order-first">
                         <img 
                             className="w-full lg:w-auto lg:max-h-[50rem] object-cover shadow-lg"
-                            src={images.jackyWithDog}
+                            src={images.nielsOllie}
                             alt="Jacky sitting cross-legged in a chair in her office" 
                         />
                     </div>
@@ -125,7 +124,7 @@ const AboutJackyPage = () => {
                 {/*green divider with text */}
                 <div className="relative w-full min-h-[10rem] lg:min-h-[12rem] bg-green-custom  py-8 lg:py-12">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl">
-                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-lexend text-lg lg:whitespace-nowrap sm:text-2xl lg:text-4xl xl:text-[2.5rem] text-white">
+                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-quote text-lg lg:whitespace-nowrap sm:text-2xl lg:text-4xl text-white">
                             It's hard to have energy if your body isn't digesting properly.
                         </span>
                     </div>
@@ -197,116 +196,68 @@ const AboutJackyPage = () => {
                         </ul>
                     </div>
                 </div>
-                <div className="relative w-full min-h-[10rem] lg:min-h-[12rem] bg-teal-custom py-8 lg:py-12">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl">
-                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-lexend text-lg lg:whitespace-nowrap sm:text-2xl lg:text-4xl xl:text-[2.5rem] text-white">
-                            I began to heal myself from the <i>inside</i> out.
-                        </span>
-                    </div>
-                </div>
-                {/* <div>
-                    <p>Just for fun...</p>
-                    <div>
-                        <div>
-                            <h1>Best Summer Job Ever...</h1>
-                            <p>I worked as a Park Ranger at Congaree National Park as part of a program for teachers!</p>
-                        </div>
-                        <div>
-                            <img src={images.jackyParkRanger}/>
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h1>Great gift to my future self...</h1>
-                            <p>Learning to swim in my 20's - where I could go under water without plugging my nose :) and swim longer distances - was a great gift. </p>
-                            <p>Just recently I joined a Dutch swim club and have been working on the breastroke!</p>
-                            <p>A great quote from the trainer... "Now you can do what four-year-olds here do!"</p>
-                        </div>
-                        <div>
-                            <img src={images.pool} />
-                        </div>
-                    </div>
-                    <div>
-                        <div>
-                            <h1>The Worst dancers, but the Best laughers!</h1>
-                            <p>A couple of years ago, my husband Niels and I took salsa lessons. We were by far the <b>Worst in the class</b>, but we also were the ones who <b>laughed the most</b>!</p>
-                        </div>
-                        <div>
-                            <img src={images.dancing}/>
-                        </div>
-                    </div>
-                </div> */}
-                <div className="max-w-4xl mx-auto p-8">
-                    <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
+                <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
                     Just for fun...
-                    </h1>
-
+                </h1>
+                <div className="max-w-[80%] mx-auto p-8 bg-[url('/images/animated-pathway-no-background.png')] bg-center bg-no-repeat bg-contain">
                     {/* Park Ranger Experience */}
-                    <div className="mb-16 bg-green-50 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <div className="flex flex-col md:flex-row items-center gap-8">
-                            <div className="md:w-1/2 space-y-4">
-                            <h2 className="text-3xl font-bold text-green-700 mb-4">
+                    <div className="flex flex-col md:flex-row items-center gap-4 mb-16 justify-start">
+                        <img 
+                            src={images.jackyParkRanger} 
+                            alt="Park Ranger Experience"
+                            className="max-h-96 border-coral-custom border-8"
+                        />
+                        <div className="max-w-[30%] flex flex-col items-center justify-center self-center p-4 bg-white">
+                            <h2 className="text-3xl font-bold mb-4 text-center">
                                 Best Summer Job Ever... 🌲
                             </h2>
-                            <p className="text-lg text-green-600">
+                            <p className="text-lg text-center">
                                 I worked as a Park Ranger at Congaree National Park as part of a program for teachers!
                             </p>
-                            </div>
-                            <div className="md:w-1/2">
-                            <img 
-                                src={images.jackyParkRanger} 
-                                alt="Park Ranger Experience"
-                                className="rounded-xl shadow-md w-full h-64 object-cover"
-                            />
-                            </div>
                         </div>
                     </div>
 
                     {/* Swimming Experience */}
-                    <div className="mb-16 bg-blue-50 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <div className="flex flex-col md:flex-row-reverse items-center gap-8">
-                            <div className="md:w-1/2 space-y-4">
-                            <h2 className="text-3xl font-bold text-blue-700 mb-4">
+                    <div className="flex flex-col md:flex-row items-center gap-4 mb-16 justify-end">
+                        <div className="max-w-[40%]  p-4 bg-white">
+                            <h2 className="text-3xl font-bold mb-4">
                                 Great gift to my future self... 🏊‍♀️
                             </h2>
-                            <p className="text-lg text-blue-600">
+                            <p className="text-lg">
                                 Learning to swim in my 20's - where I could go under water without plugging my nose :) and swim longer distances - was a great gift.
                             </p>
-                            <p className="text-lg text-blue-600">
+                            <p className="text-lg">
                                 Just recently I joined a Dutch swim club and have been working on the breastroke!
                             </p>
-                            <p className="text-lg italic text-blue-500">
-                                "Now you can do what four-year-olds here do!" - The Trainer
+                            <br/>
+                            <p className="text-lg">
+                                "Now you can do what four-year-olds here do!" - My Trainer
                             </p>
-                            </div>
-                            <div className="md:w-1/2">
+                        </div>
+                        <div className="text-right">
                             <img 
                                 src={images.pool} 
                                 alt="Swimming Experience"
-                                className="rounded-xl shadow-md w-full h-64 object-cover"
+                                className="max-h-96 ml-auto border-coral-custom border-8"
                             />
-                            </div>
                         </div>
                     </div>
 
                     {/* Dancing Experience */}
-                    <div className="bg-pink-50 rounded-2xl p-6 shadow-lg transform hover:scale-105 transition-transform duration-300">
-                        <div className="flex flex-col md:flex-row items-center gap-8">
-                            <div className="md:w-1/2 space-y-4">
-                            <h2 className="text-3xl font-bold text-pink-700 mb-4">
+
+                    <div className="flex flex-col md:flex-row items-center gap-4 mb-16 justify-start">
+                        <img 
+                            src={images.dancing} 
+                            alt="Park Ranger Experience"
+                            className="max-h-96 border-coral-custom border-8"
+                        />
+                        <div className="max-w-[50%] flex flex-col items-center justify-center self-center p-4 bg-white">
+                            <h2 className="text-3xl font-bold mb-4 text-center">
                                 The Worst dancers, but the Best laughers! 💃🕺
                             </h2>
-                            <p className="text-lg text-pink-600">
+                            <p className="text-lg text-center">
                                 A couple of years ago, my husband Niels and I took salsa lessons. We were by far the <span className="font-bold">Worst in the class</span>, but we also were the ones who <span className="font-bold">laughed the most</span>!
                             </p>
-                            </div>
-                            <div className="md:w-1/2">
-                            <img 
-                                src={images.dancing} 
-                                alt="Dancing Experience"
-                                className="rounded-xl shadow-md w-full h-64 object-cover"
-                            />
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -317,5 +268,4 @@ const AboutJackyPage = () => {
 }
 
 export default AboutJackyPage;
-
 

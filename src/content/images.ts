@@ -6,7 +6,8 @@ const images = {
     jackyWithDog: "/images/jacky/Jacklyn1.jpg",
     jackyAcne: "/images/jacky/jacky-acne.jpg",
     jackyAcneHealed: "/images/jacky/jacky-acne-healed.jpg",
-    jackyParkRanger: "/images/jacky/jacky-park-ranger.JPG",
+    jackyParkRanger: "/images/jacky/jacky-park-ranger-blur.jpg",
+    nielsOllie: "/images/jacky/niels-ollie.jpg",
 
     yhypLogo: "/images/ayurveda/yhyp-nobackground-modified.png",
     yhypTextLogo: "/images/ayurveda/yhyp-logo_processed.jpg",
@@ -24,7 +25,19 @@ const images = {
     purpleFlowers: "/images/purple-flowers.jpg",
     massageTools: "/images/massage-tools.png",
     pageBreak: "/images/decorative-separator.png",
-    dancing: "images/dancing.jpg"
+    dancing: "images/dancing.jpg",
+    flowers: "images/flowers.jpg",
+    spices: '/images/spices.jpg',
+
+    //ayurveda page pictures
+    marketSpices: '/images/market-spices.jpg',
+    asana: '/images/ayurveda/asana.jpg',
+    air: '/images/ayurveda/air.jpg',
+    fire: '/images/ayurveda/fire.jpg',
+    earth: '/images/ayurveda/earth.jpg',
+    water: '/images/ayurveda/water.jpg',
+    gmaD: '/images/ayurveda/gmad.jpg',
+    gmaM: '/images/ayurveda/gmam.jpg'
 }
 
 export default images;

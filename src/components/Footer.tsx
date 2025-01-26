@@ -25,8 +25,8 @@ const Footer = () => {
                     <div className="text-center lg:text-left">
                         <h2 className="text-gold-custom font-bold text-xl mb-4">Navigation</h2>
                         <div className="flex flex-col gap-2">
-                            <p className="text-white hover:text-gray-200 cursor-pointer">About Jacky</p>
-                            <p className="text-white hover:text-gray-200 cursor-pointer">About Ayurveda</p>
+                            <p className="text-white hover:text-gray-200 cursor-pointer">About Jacklyn</p>
+                            <p className="text-white hover:text-gray-200 cursor-pointer">Ayurveda</p>
                             <p className="text-white hover:text-gray-200 cursor-pointer">Services</p>
                             <p className="text-white hover:text-gray-200 cursor-pointer">Contact</p>
                         </div>

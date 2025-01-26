@@ -1,14 +1,9 @@
 import { useState } from 'react';
 
-interface Testimonial {
-  text: string;
-  clientName: string;
-}
-
 const TestimonialsSlider = () => {
-  const testimonials: Testimonial[] = [
+  const testimonials = [
     {
-      text: "Your health, Your path, gives me a very personal and loving support in getting to know my body better and my ayurvedic type  so I can grow as I travel my life’s path. With extensive Ayurvedic knowledge Jacky is enabled to guide the way purposefully. It is amazing how this knowledge allows me to offer my body the possibilities to become better balanced and clean up (as it is naturally meant to be). I was able to discover this with the help of the fine consultations and wonderful marma massages of Jacky. In one word fantastic. Thank you Jacky.",
+      text: "Your health, Your path, gives me a very personal and loving support in getting to know my body better and my ayurvedic type  so I can grow as I travel my life's path. With extensive Ayurvedic knowledge Jacky is enabled to guide the way purposefully. It is amazing how this knowledge allows me to offer my body the possibilities to become better balanced and clean up (as it is naturally meant to be). I was able to discover this with the help of the fine consultations and wonderful marma massages of Jacky. In one word fantastic. Thank you Jacky.",
       clientName: "Lucienne Klein"
     },
     {
@@ -37,13 +32,11 @@ const TestimonialsSlider = () => {
 
   return (
     <div className="w-full bg-green-custom py-16">
-      <div className="relative max-w-4xl mx-auto px-4 sm:px-8"> {/* Moved relative here and adjusted padding */}
-        <h2 className="text-4xl font-semibold text-white text-center mb-12">
+      <div className="relative max-w-5xl mx-auto px-4 sm:px-8">
+        <h2 className="text-3xl lg:text-4xl font-semibold text-white text-center mb-12">
           Kind words from clients
         </h2>
-        
-        <div className="flex items-center justify-between"> {/* Changed to flex container */}
-          {/* Navigation Buttons */}
+        <div className="flex items-center justify-between">
           <button 
             onClick={handlePrevious}
             className="text-gold-custom hover:text-gray-200 transition-colors text-4xl sm:text-5xl font-light p-2"
@@ -52,11 +45,13 @@ const TestimonialsSlider = () => {
             ‹
           </button>
           
-          {/* Testimonial Content */}
+          {/* Fixed height container with overflow handling */}
           <div className="flex-1 text-center px-4">
-            <p className="text-white text-lg mb-8 min-h-[100px]">
-              "{testimonials[currentIndex].text}"
-            </p>
+            <div className="relative h-80 mb-8 flex items-center justify-center">
+              <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg">
+                "{testimonials[currentIndex].text}"
+              </p>
+            </div>
             <p className="text-white uppercase tracking-wider">
               - {testimonials[currentIndex].clientName}
             </p>
@@ -64,7 +59,7 @@ const TestimonialsSlider = () => {
           
           <button 
             onClick={handleNext}
-            className="text-gold-custom lg:text-gold-custom hover:text-gray-200 transition-colors text-4xl sm:text-5xl font-light p-2"
+            className="text-gold-custom hover:text-gray-200 transition-colors text-4xl sm:text-5xl font-light p-2"
             aria-label="Next testimonial"
           >
             ›
