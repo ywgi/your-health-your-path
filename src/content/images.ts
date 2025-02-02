@@ -28,8 +28,10 @@ const images = {
     pageBreak: "/images/decorative-separator.png",
     dancing: "images/dancing.jpg",
     flowers: "images/flowers.jpg",
+    orangeFlowers: "/images/orange-flowers.jpg",
     spices: '/images/spices.jpg',
     mountainLake: "/images/mountain-lake.jpg",
+    mountainColorful: "/images/mountain-colors.jpg",
 
     //ayurveda page pictures
     marketSpices: '/images/market-spices.jpg',

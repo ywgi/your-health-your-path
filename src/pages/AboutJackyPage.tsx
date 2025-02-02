@@ -185,7 +185,7 @@ const AboutJackyPage = () => {
                                 <img 
                                     src={images.jackyAcne} 
                                     alt="Before"
-                                    className="w-80 h-80 object-cover border-8 border-coral-custom"
+                                    className="w-80 h-80 object-cover border-8 border-white"
                                 />
                             </div>
                             <div className="flex flex-col items-center">
@@ -193,7 +193,7 @@ const AboutJackyPage = () => {
                                 <img 
                                     src={images.jackyAcneHealed} 
                                     alt="After"
-                                    className="w-80 h-80 object-cover border-8 border-coral-custom"
+                                    className="w-80 h-80 object-cover border-8 border-white"
                                 />
                             </div>
                         </div>
@@ -211,26 +211,187 @@ const AboutJackyPage = () => {
                             <ul className="pl-4 lg:pl-8 text-xl">
                                 <li className="flex items-start gap-2 lg:gap-3">
                                     <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-relaxed">Better sleep</span>
+                                    <span className="leading-tight">Better sleep</span>
                                 </li>
                                 <li className="flex items-start gap-2 lg:gap-3">
                                     <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-relaxed">Warm hands and feet - instead of the ice cold feet that I used to have all winter long</span>
+                                    <span className="leading-tight">Warm hands and feet - instead of the ice cold feet that I used to have all winter long</span>
                                 </li>
                                 <li className="flex items-start gap-2 lg:gap-3">
                                     <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-relaxed">Improved digestion</span>
+                                    <span className="leading-tight">Improved digestion</span>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div className="w-full bg-white">
-                    <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
+                <div className="w-full bg-white h-[150px]">
+                    {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
                         Just for fun...
-                    </h1>
+                    </h1> */}
                 </div>
+                {/* Third Section */}
+                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
+                    style={{
+                        backgroundImage: `url(${images.orangeFlowers})`
+                    }}>
+                    <div className="w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
+                        {/* Text content div */}
+                        <div className="w-full max-w-3xl mb-2">                    
+                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Fast Forward to 2019-2020:</h1>
+                            <br/>
+                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">My story continued...</h2>
+                            <br/>
+                            <p className="mb-2 text-xl">
+                                Niels and I had continued to follow basic ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
+                            </p>
+                            <p className="mb-2 text-xl">
+                                <b>How i was feeling on the inside started to manifest on the outside</b>.
+                            </p>
+                            <p className="mb-2 text-xl">
+                                I developed a severe case of adult acne. My self-esteem plummeted, and I just wanted to hide my face - which didn't help my already stressed system!
+                            </p>
+                            <p className="mb-2 text-xl">
+                                Again, I turned to ayurveda. This time, working on deeper levels. And again it helped me...
+                            </p>
+                            <p className="mb-2 text-xl">
+                                I began to heal myself from the inside out.
+                            </p>
+                        </div>
+                        
+                        {/* Images div */}
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-4xl mb-4">
+                            <div className="flex flex-col items-center">
+                                <h3 className="text-xl font-bold mb-2">2020</h3>
+                                <img 
+                                    src={images.jackyAcne} 
+                                    alt="Before"
+                                    className="w-80 h-80 object-cover border-8 border-white"
+                                />
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <h3 className="text-xl font-bold mb-2">2021</h3>
+                                <img 
+                                    src={images.jackyAcneHealed} 
+                                    alt="After"
+                                    className="w-80 h-80 object-cover border-8 border-white"
+                                />
+                            </div>
+                        </div>
 
+                        {/* Results section */}
+                        <div className="w-full max-w-3xl">
+                            <h1 className="text-2xl mb-2"><b>The results:</b> clearer skin, but really... So. Much. More.</h1>
+                            <p className="mb-2 text-xl">
+                                I'm calmer and more self-aware.
+                            </p>
+                            <p className="mb-2 text-xl">
+                                Growing up and functioning in the world with a notoriously active brain - I now have <b>a mental calm that i didn't know was possible</b>.
+                            </p>
+                            <p className="font-bold mb-2 text-xl">Other helpful improvements:</p>
+                            <ul className="pl-4 lg:pl-8 text-xl">
+                                <li className="flex items-start gap-2 lg:gap-3">
+                                    <span className="text-green-custom lg:mt-0.5">•</span>
+                                    <span className="leading-tight">Better sleep</span>
+                                </li>
+                                <li className="flex items-start gap-2 lg:gap-3">
+                                    <span className="text-green-custom lg:mt-0.5">•</span>
+                                    <span className="leading-tight">Warm hands and feet - instead of the ice cold feet that I used to have all winter long</span>
+                                </li>
+                                <li className="flex items-start gap-2 lg:gap-3">
+                                    <span className="text-green-custom lg:mt-0.5">•</span>
+                                    <span className="leading-tight">Improved digestion</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full bg-white h-[150px]">
+                    {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
+                        Just for fun...
+                    </h1> */}
+                </div>
+                {/* Third Section */}
+                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
+                    style={{
+                        backgroundImage: `url(${images.mountainColorful})`
+                    }}>
+                    <div className="w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
+                        {/* Text content div */}
+                        <div className="w-full max-w-3xl mb-2">                    
+                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Fast Forward to 2019-2020:</h1>
+                            <br/>
+                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">My story continued...</h2>
+                            <br/>
+                            <p className="mb-2 text-xl">
+                                Niels and I had continued to follow basic ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
+                            </p>
+                            <p className="mb-2 text-xl">
+                                <b>How i was feeling on the inside started to manifest on the outside</b>.
+                            </p>
+                            <p className="mb-2 text-xl">
+                                I developed a severe case of adult acne. My self-esteem plummeted, and I just wanted to hide my face - which didn't help my already stressed system!
+                            </p>
+                            <p className="mb-2 text-xl">
+                                Again, I turned to ayurveda. This time, working on deeper levels. And again it helped me...
+                            </p>
+                            <p className="mb-2 text-xl">
+                                I began to heal myself from the inside out.
+                            </p>
+                        </div>
+                        
+                        {/* Images div */}
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-4xl mb-4">
+                            <div className="flex flex-col items-center">
+                                <h3 className="text-xl font-bold mb-2">2020</h3>
+                                <img 
+                                    src={images.jackyAcne} 
+                                    alt="Before"
+                                    className="w-80 h-80 object-cover border-8 border-white"
+                                />
+                            </div>
+                            <div className="flex flex-col items-center">
+                                <h3 className="text-xl font-bold mb-2">2021</h3>
+                                <img 
+                                    src={images.jackyAcneHealed} 
+                                    alt="After"
+                                    className="w-80 h-80 object-cover border-8 border-white"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Results section */}
+                        <div className="w-full max-w-3xl">
+                            <h1 className="text-2xl mb-2"><b>The results:</b> clearer skin, but really... So. Much. More.</h1>
+                            <p className="mb-2 text-xl">
+                                I'm calmer and more self-aware.
+                            </p>
+                            <p className="mb-2 text-xl">
+                                Growing up and functioning in the world with a notoriously active brain - I now have <b>a mental calm that i didn't know was possible</b>.
+                            </p>
+                            <p className="font-bold mb-2 text-xl">Other helpful improvements:</p>
+                            <ul className="pl-4 lg:pl-8 text-xl">
+                                <li className="flex items-start gap-2 lg:gap-3">
+                                    <span className="text-green-custom lg:mt-0.5">•</span>
+                                    <span className="leading-tight">Better sleep</span>
+                                </li>
+                                <li className="flex items-start gap-2 lg:gap-3">
+                                    <span className="text-green-custom lg:mt-0.5">•</span>
+                                    <span className="leading-tight">Warm hands and feet - instead of the ice cold feet that I used to have all winter long</span>
+                                </li>
+                                <li className="flex items-start gap-2 lg:gap-3">
+                                    <span className="text-green-custom lg:mt-0.5">•</span>
+                                    <span className="leading-tight">Improved digestion</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full bg-white h-[150px]">
+                    {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
+                        Just for fun...
+                    </h1> */}
+                </div>
             </div>
             <Footer/>
         </>
