@@ -177,11 +177,11 @@ const HomePage = () => {
                     <div className="relative h-full flex items-center justify-center">
                         <div className="bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-2xl mx-4">
                             <p className="text-center text-xl mb-6">
-                                Ready to start your journey towards better health?
+                                Ready to see what ayurveda can do for you?
                             </p>
                             <Link to='/contact'>
                                 <button className="px-10 py-4 bg-green-custom text-white text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg w-full">
-                                    Schedule a Consult
+                                    Schedule a free 20-minute Consult
                                 </button>
                             </Link>
                         </div>
