@@ -11,40 +11,40 @@ const HomePage = () => {
             <Header />
             <div className="flex flex-col items-center w-full">
                 {/* First Section */}
-                <div className="flex flex-col lg:flex-row w-full items-center lg:items-start justify-center lg:px-12 pt-6 lg:pt-12 lg:pb-24 gap-6 lg:gap-12">
+                <div className="flex flex-col w-full justify-center items-center md:flex-row md:items-center md:px-8 md:pb-12 lg:flex-row lg:items-center lg:px-12 pt-6 lg:pt-12 lg:pb-24 gap-6 lg:gap-12">
                     {/* Text container */}
-                    <div className="flex w-full lg:max-w-3xl justify-center flex-col text-left px-4 lg:px-0">
-                        <h1 className="text-2xl lg:text-5xl tracking-wide mb-4">
+                    <div className="flex w-full lg:max-w-xl justify-center flex-col text-left px-4 lg:px-0">
+                        <h1 className="text-2xl lg:text-4xl tracking-wide mb-4">
                             Maybe You... 
                         </h1>
-                        <ul className="pl-4 lg:pl-16 lg:text-2xl">
+                        <ul className="pl-4 lg:pl-16 lg:text-xl">
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom mt-1 gap-3 lg:">•</span>
-                                <span className="leading-relaxed">(are ready to) prioritize your health...</span>
+                                <span className="text-green-custom gap-3">•</span>
+                                <span className="leading-snug">(are ready to) prioritize your health...</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom mt-1">•</span>
-                                <span className="leading-relaxed">recognize that you could feel better...</span>
+                                <span className="text-green-custom">•</span>
+                                <span className="leading-snug">recognize that you could feel better...</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom mt-1">•</span>
-                                <span className="leading-relaxed">are curious how ayurveda could enrich your life…</span>
+                                <span className="text-green-custom">•</span>
+                                <span className="leading-snug">are curious how ayurveda could enrich your life…</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom mt-1">•</span>
-                                <span className="leading-relaxed">want to be in touch with your body's natural rhythms…</span>
+                                <span className="text-green-custom">•</span>
+                                <span className="leading-snug">want to be in touch with your body's natural rhythms…</span>
                             </li>
                         </ul>
-                        <p className="text-lg sm:text-xl lg:text-3xl space-y-4 leading-snug">
-                            <br/>
-                            <span className="font-handwriting2 font-black text-3xl lg:text-6xl block mb-4">
+                        <br />
+                        <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl space-y-4 leading-snug pt-4">
+                            <span className="font-handwriting2 font-black text-3xl md:text-4xl lg:text-5xl block mb-4">
                                 Hi there, I'm Jacklyn.
                             </span>
-                            <span className="block">
+                            <span className="block md:text-xl lg:text-xl">
                                 An Ayurvedic Practitioner, who is here to help you thrive and live fully, 
                                 <span className="font-handwriting font-black text-green-custom lg:text-4xl"> naturally.</span>
                             </span>
-                            <span className="block">
+                            <span className="block md:text-xl lg:text-xl">
                                 I look at your <b>individual needs</b> and <b>goals</b> and <b>create a personalized plan</b> to help you along your unique path.
                             </span>
                         </p>
@@ -54,12 +54,12 @@ const HomePage = () => {
                         </a>
                     </div>
                     {/* Image container for mobile full-width */}
-                    <div className="relative w-full lg:w-auto">
+                    <div className="relative w-full lg:w-auto self-center">
                         {/* Background decorative block */}
-                        <div className="absolute top-0 right-0 w-full h-full bg-teal-custom -z-10 hidden lg:block origin-top-right scale-90" />
+                        <div className="absolute top-0 right-0 w-full h-full bg-teal-custom -z-10 md:block origin-top-right scale-90" />
 
                         {/* Main image container */}
-                        <div className="w-full lg:w-auto relative lg:mt-8 lg:mr-8">
+                        <div className="w-full md:w-auto lg:w-auto relative md:mt-4 md:mr-4 lg:mt-8 lg:mr-8">
                             <img 
                                 className="w-full lg:w-auto lg:max-h-[50rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.jackySection1}
@@ -69,9 +69,9 @@ const HomePage = () => {
                     </div>
                 </div>
 
-                <div className="relative w-full min-h-[12rem] lg:min-h-[20rem] bg-teal-custom  py-8 lg:py-12">
+                <div className="relative w-full min-h-[12rem] lg:min-h-[20rem] bg-teal-custom  py-8 lg:py-8">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%]">
-                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-lexend text-lg sm:text-2xl lg:text-4xl xl:text-[2.5rem] text-white">
+                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-quote text-lg sm:text-2xl lg:text-4xl xl:text-[2.5rem] text-white">
                             "The natural force within each of us is the greatest healer of all."
                             <span className="block mt-4 lg:mt-8 text-base sm:text-xl lg:text-2xl xl:text-3xl">-Hippocrates</span>
                         </span>
@@ -79,30 +79,43 @@ const HomePage = () => {
                 </div>
 
                 {/* Second Section */}
-                <div id="feel-better" className="flex flex-col lg:flex-row justify-center w-full gap-6 lg:gap-20 pt-10 pb-12 lg:pb-20">
-                    <div className="relative w-[90%] lg:w-[40%] mx-auto lg:mx-0 lg:mb-32">
-                        <div className="aspect-[4/3]">
+                <div id="feel-better" className="flex flex-col md:flex-row lg:flex-row items-center justify-center w-full gap-6 lg:gap-20 pb-12 lg:pb-20">
+                    <div className="w-full max-w-2xl mx-auto md:mx-0 px-4 mb-8 md:mb-16 lg:mb-0">
+                        <div className="relative aspect-[4/3] w-full">
+                            {/* Main image */}
+                            <div className="relative w-4/5 sm:w-3/4 z-10">
                             <img 
-                                className="w-[75%] border-8 border-coral-custom" 
+                                className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover" 
                                 src={images.massageTools} 
                                 alt="Massage Tools" 
                             />
+                            </div>
+                            
+                            {/* Overlapping image */}
+                            <div className="absolute bottom-0 right-0 w-2/3 sm:w-3/5 transform translate-y-1/4 z-20">
                             <img
-                                className="absolute w-[60%] bottom-[-15%] right-[5%] border-8 border-coral-custom"  
+                                className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover"  
                                 src={images.holistic}
                                 alt="Holistic"
                             />
-                            <img
-                                className="absolute w-[20%] top-[10%] right-0"
-                                src={images.yhypLogoNoBackground}
-                                alt="Logo"
-                            />
+                            </div>
+                            
+                            {/* Logo */}
+                            <div className="absolute top-0 right-0 w-1/5 z-30">
+                                <img
+                                    className="w-full object-contain"
+                                    src={images.yhypLogoNoBackground}
+                                    alt="Logo"
+                                />
+                            </div>
                         </div>
                     </div>
-                    <div className="flex w-full lg:max-w-[40vw] flex-col mt-16 lg:mt-16 text-left px-4 lg:px-0">
-                            <h1 className="text-3xl text-purple-custom lg:text-5xl justify-center mb-4 pb-2">Are you ready to feel better?</h1>
-                            <h2 className="text-2xl lg:text-4xl justify-center mb-4 pb-2">It's time to be empowered with your health.</h2>
-                            <p className="text-lg lg:text-[1.5rem] leading-tight max-w-[800px]">
+                    <div className="flex w-full lg:max-w-[40vw] flex-col mt-16 md:mt-4 lg:mt-4 text-left px-4 lg:px-0">
+                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Are you ready to feel better?</h1>
+                            <br/>
+                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">It's time to be empowered with your health.</h2>
+                            <br/>
+                            <p className="text-lg lg:text-xl leading-tight max-w-[800px]">
                                 Clients who come to me know that they have a powerful ability to positively influence how they feel.
                                 For them - just getting by isn't enough; they want to be full of energy and vibrant. 
                                 <b> Health is holistic </b> - the body's systems are interconnected and just like a spider's web,
@@ -122,23 +135,23 @@ const HomePage = () => {
                 </div>
 
                 {/* Third Section */}
-                <div className="flex flex-col lg:flex-row justify-center w-full gap-6 lg:gap-8 pb-12">
+                <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center w-full gap-6 lg:gap-8 bg-white">
                     {/* Text container - add order-2 for mobile */}
-                    <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 lg:px-0 order-2 lg:order-1">
-                        <h1 className="font-handwriting2 font-black text-3xl lg:text-[4rem] pl-0 lg:pl-4">Hi, I'm Jacklyn!</h1>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-[1.5rem] leading-tight mt-4">
+                    <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 lg:px-0 order-2 md:order-1 lg:order-1">
+                        <h1 className="font-handwriting2 font-black text-3xl md:text-4xl lg:text-5xl pl-0 lg:pl-4">Hi, I'm Jacklyn!</h1>
+                        <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
                             The American born, Netherlands living, former teacher who made the switch to ayurveda because feeling good makes enjoying life so much easier! 
                         </p>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-[1.5rem] leading-tight mt-4">
+                        <p className="pl-0 lg:pl-4 text-lg md:xl lg:text-xl leading-tight mt-4">
                             The short version: Ayurveda helped me on my health journey feel better than I even knew was possible. Calmer in my mind, and more connected to my body.
                         </p>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-[1.5rem] leading-tight mt-4">
+                        <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
                             Enthusiasm and curiosity fueled me:
                         </p>
                         <p className="font-handwriting text-3xl lg:text-5xl font-bold text-center mt-4">
                             <i>How did this work?</i>
                         </p>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-[1.5rem] leading-tight mt-4">
+                        <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
                             Before I knew it, I was back in school. Studying ayurveda for 4 years only increased my passion. Now, I get to enthusiastically share it with others as they travel their path... 
                         </p>
                         <Link to="/" 
@@ -157,7 +170,7 @@ const HomePage = () => {
                     <TestimonialsSlider />
                 </div>
                 {/* Section with fixed background */}
-                <div className="w-full relative h-[50vh] bg-fixed bg-center bg-cover bg-no-repeat"
+                <div className="w-full relative md:h-[60vh] h-[50vh] bg-fixed bg-center bg-cover bg-no-repeat"
                     style={{
                         backgroundImage: `url(${images.walkYourPath})`
                     }}>
@@ -166,9 +179,11 @@ const HomePage = () => {
                             <p className="text-center text-xl mb-6">
                                 Ready to start your journey towards better health?
                             </p>
-                            <button className="px-10 py-4 bg-green-custom text-white text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg w-full">
-                                Schedule a Consult
-                            </button>
+                            <Link to='/contact'>
+                                <button className="px-10 py-4 bg-green-custom text-white text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg w-full">
+                                    Schedule a Consult
+                                </button>
+                            </Link>
                         </div>
                     </div>
                 </div>

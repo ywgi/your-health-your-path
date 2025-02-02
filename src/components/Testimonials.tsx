@@ -47,7 +47,7 @@ const TestimonialsSlider = () => {
           
           {/* Fixed height container with overflow handling */}
           <div className="flex-1 text-center px-4">
-            <div className="relative h-80 mb-8 flex items-center justify-center">
+            <div className="relative md:h-72 lg:h-80 mb-8 flex items-center justify-center">
               <p className="text-white text-xs sm:text-sm md:text-base lg:text-lg">
                 "{testimonials[currentIndex].text}"
               </p>
