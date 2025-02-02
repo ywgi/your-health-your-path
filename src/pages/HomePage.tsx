@@ -175,12 +175,12 @@ const HomePage = () => {
                         backgroundImage: `url(${images.walkYourPath})`
                     }}>
                     <div className="relative h-full flex items-center justify-center">
-                        <div className="bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-4xl mx-4">
+                        <div className="flex flex-col items-center bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-4xl mx-4">
                             <p className="text-center text-3xl mb-6">
                                 Ready to see what ayurveda can do for you?
                             </p>
                             <Link to='/contact'>
-                                <button className="px-10 py-4 bg-green-custom text-white text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg w-full">
+                                <button className="px-4 py-4 bg-green-custom text-white text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg">
                                     Schedule a free 20-minute consult
                                 </button>
                             </Link>
