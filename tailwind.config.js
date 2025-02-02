@@ -10,15 +10,19 @@ export default {
         lexend: ['Lexend', 'sans-serif'],
         handwriting: ['Oooh Baby', 'cursive'],
         handwriting2: ['Montez', 'serif'],
-        quote: ['Sour Gummy', 'serif']
+        quote: ['Original Surfer', 'serif'],
+        heading: ['Quattrocento', 'serif']
       },
       colors: {
         'green-custom': '#6f9558',
         'teal-custom': '#315851',
         'coral-custom': '#c17557',
+        'dark-coral-custom': '#a45c3d',
         'gold-custom': '#e6a501',
         'light-pink-custom': '#f2e8e6',
-        'purple-custom': '#805994'
+        'purple-custom': '#805994',
+        'navy-custom': '#1d2854',
+        'light-teal-custom': '#256a64'
       },
       keyframes: {
         'fade-in': {
