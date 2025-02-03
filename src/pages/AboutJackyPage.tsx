@@ -46,7 +46,7 @@ const AboutJackyPage = () => {
                     </div>
                 </div>
                 <div>
-                    <p className="mt-4 font-heading lg:text-2xl">
+                    <p className="mt-4 font-handwriting font-bold lg:text-3xl">
                         But more importantly - I've walked with ayurveda along my <b className="font-handwriting lg:text-3xl text-green-custom">own health path</b>. Experiencing what it can do in a <i>very</i> personal way.
                     </p>
                 </div>
