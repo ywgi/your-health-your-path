@@ -29,25 +29,25 @@ const AboutJackyPage = () => {
                     }}>
                     <div className="relative w-full py-16 flex items-center justify-center px-4">
                         <div className="bg-white/70 backdrop-blur-md p-4 md:p-8 shadow-lg w-full max-w-5xl rounded-lg">
-                        <h1 className="text-4xl text-center font-bold font-heading tracking-wide text-light-teal-custom">
-                            My Qualifications at a glance
-                        </h1>
-                        <br/>
-                        <p className="mb-4 text-sm md:text-base">
-                            As an Ayurvedic Practitioner I have:
-                        </p>
-                        <ul className="list-disc pl-6 md:pl-8 space-y-2 text-sm md:text-base">
-                            <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA (Dutch: HBO Level)</li>
-                            <li>Completed <strong>two ayurvedic internships</strong> in India</li>
-                            <li>Completed the <strong>Medical foundations</strong> (Dutch: Medische Basis Kennis-MBK)</li>
-                            <li>Plus, I have a bachelor's degree in Education (Dutch: PABO)</li>
-                        </ul>
+                            <h1 className="text-4xl text-center font-bold font-heading tracking-wide text-light-teal-custom">
+                                My Qualifications at a glance
+                            </h1>
+                            <br/>
+                            <p className="mb-4 text-sm md:text-base">
+                                As an Ayurvedic Practitioner I have:
+                            </p>
+                            <ul className="list-disc pl-6 md:pl-8 space-y-2 text-sm md:text-base">
+                                <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA (Dutch: HBO Level)</li>
+                                <li>Completed <strong>two ayurvedic internships</strong> in India</li>
+                                <li>Completed the <strong>Medical foundations</strong> (Dutch: Medische Basis Kennis-MBK)</li>
+                                <li>Plus, I have a bachelor's degree in Education (Dutch: PABO)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <p className="mt-4 font-handwriting font-bold lg:text-3xl">
-                        But more importantly - I've walked with ayurveda along my <b className="font-handwriting lg:text-3xl text-green-custom">own health path</b>. Experiencing what it can do in a <i>very</i> personal way.
+                    <p className="mt-4 text-center font-handwriting font-bold lg:text-5xl">
+                        But more importantly - I've walked with ayurveda along my <b className="font-handwriting lg:text-5xl text-green-custom">own health path</b>. Experiencing what it can do in a <i className="font-handwriting lg:text-5xl text-green-custom">very</i> personal way.
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row w-full items-center lg:items-center justify-center lg:px-12 pt-6 lg:pt-12 pb-4 gap-6 lg:gap-12">
@@ -150,9 +150,9 @@ const AboutJackyPage = () => {
                     </div>
                 </div>
                 {/* Third Section */}
-                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
+                <div className="flex flex-col w-full items-center justify-center bg-fixed bg-center bg-cover bg-no-repeat"                    
                     style={{
-                        backgroundImage: `url(${images.mountainLake})`
+                        backgroundImage: `url(${images.mountainColorful})`
                     }}>
                     <div className="w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
                         {/* Text content div */}
@@ -225,88 +225,7 @@ const AboutJackyPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full bg-white h-[150px]">
-                    {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
-                        Just for fun...
-                    </h1> */}
-                </div>
-                {/* Third Section */}
-                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
-                    style={{
-                        backgroundImage: `url(${images.orangeFlowers})`
-                    }}>
-                    <div className="w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
-                        {/* Text content div */}
-                        <div className="w-full max-w-3xl mb-2">                    
-                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Fast Forward to 2019-2020:</h1>
-                            <br/>
-                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">My story continued...</h2>
-                            <br/>
-                            <p className="mb-2 text-xl">
-                                Niels and I had continued to follow basic ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
-                            </p>
-                            <p className="mb-2 text-xl">
-                                <b>How i was feeling on the inside started to manifest on the outside</b>.
-                            </p>
-                            <p className="mb-2 text-xl">
-                                I developed a severe case of adult acne. My self-esteem plummeted, and I just wanted to hide my face - which didn't help my already stressed system!
-                            </p>
-                            <p className="mb-2 text-xl">
-                                Again, I turned to ayurveda. This time, working on deeper levels. And again it helped me...
-                            </p>
-                            <p className="mb-2 text-xl">
-                                I began to heal myself from the inside out.
-                            </p>
-                        </div>
-                        
-                        {/* Images div */}
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-4xl mb-4">
-                            <div className="flex flex-col items-center">
-                                <h3 className="text-xl font-bold mb-2">2020</h3>
-                                <img 
-                                    src={images.jackyAcne} 
-                                    alt="Before"
-                                    className="w-80 h-80 object-cover border-8 border-white"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <h3 className="text-xl font-bold mb-2">2021</h3>
-                                <img 
-                                    src={images.jackyAcneHealed} 
-                                    alt="After"
-                                    className="w-80 h-80 object-cover border-8 border-white"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Results section */}
-                        <div className="w-full max-w-3xl">
-                            <h1 className="text-2xl mb-2"><b>The results:</b> clearer skin, but really... So. Much. More.</h1>
-                            <p className="mb-2 text-xl">
-                                I'm calmer and more self-aware.
-                            </p>
-                            <p className="mb-2 text-xl">
-                                Growing up and functioning in the world with a notoriously active brain - I now have <b>a mental calm that i didn't know was possible</b>.
-                            </p>
-                            <p className="font-bold mb-2 text-xl">Other helpful improvements:</p>
-                            <ul className="pl-4 lg:pl-8 text-xl">
-                                <li className="flex items-start gap-2 lg:gap-3">
-                                    <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Better sleep</span>
-                                </li>
-                                <li className="flex items-start gap-2 lg:gap-3">
-                                    <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Warm hands and feet - instead of the ice cold feet that I used to have all winter long</span>
-                                </li>
-                                <li className="flex items-start gap-2 lg:gap-3">
-                                    <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Improved digestion</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div className="w-full bg-white h-[150px]">
+                <div className="w-full bg-green-custom h-[150px]">
                     {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
                         Just for fun...
                     </h1> */}
@@ -386,11 +305,6 @@ const AboutJackyPage = () => {
                             </ul>
                         </div>
                     </div>
-                </div>
-                <div className="w-full bg-white h-[150px]">
-                    {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
-                        Just for fun...
-                    </h1> */}
                 </div>
             </div>
             <Footer/>
