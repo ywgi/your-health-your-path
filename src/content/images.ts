@@ -9,6 +9,7 @@ const images = {
     jackyParkRanger: "/images/jacky/jacky-park-ranger-blur.jpg",
     nielsOllie: "/images/jacky/niels-ollie.jpg",
     jackyNielsBeach: "/images/jacky/Jacklyn-Niels-tenerife-wedding.jpg",
+    jackyWithNotepad: "/images/jacky/Jacklyn2.jpg",
 
     yhypLogo: "/images/ayurveda/yhyp-nobackground-modified.png",
     yhypTextLogo: "/images/ayurveda/yhyp-logo_processed.jpg",
@@ -32,6 +33,9 @@ const images = {
     spices: '/images/spices.jpg',
     mountainLake: "/images/mountain-lake.jpg",
     mountainColorful: "/images/mountain-colors.jpg",
+    meditate: "/images/meditate.jpg",
+    whatsApp: "/images/whatsapp.png",
+
 
     //ayurveda page pictures
     marketSpices: '/images/market-spices.jpg',

@@ -28,7 +28,7 @@ const AboutJackyPage = () => {
                         backgroundImage: `url(${images.purpleFlowers})`
                     }}>
                     <div className="relative w-full py-16 flex items-center justify-center px-4">
-                        <div className="bg-white/70 backdrop-blur-md p-4 md:p-8 shadow-lg w-full max-w-5xl rounded-lg">
+                        <div className="bg-white/70 backdrop-blur-md p-4 md:p-8 shadow-lg w-full max-w-3xl rounded-lg">
                             <h1 className="text-4xl text-center font-bold font-heading tracking-wide text-light-teal-custom">
                                 My Qualifications at a glance
                             </h1>
@@ -36,7 +36,7 @@ const AboutJackyPage = () => {
                             <p className="mb-4 text-sm md:text-base">
                                 As an Ayurvedic Practitioner I have:
                             </p>
-                            <ul className="list-disc pl-6 md:pl-8 space-y-2 text-sm md:text-base">
+                            <ul className="list-disc pl-6 md:pl-8 space-y-1 text-sm md:text-base">
                                 <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA (Dutch: HBO Level)</li>
                                 <li>Completed <strong>two ayurvedic internships</strong> in India</li>
                                 <li>Completed the <strong>Medical foundations</strong> (Dutch: Medische Basis Kennis-MBK)</li>
@@ -47,11 +47,11 @@ const AboutJackyPage = () => {
                 </div>
                 <div className="bg-white w-full py-5">
                     <p className="mt-4 text-center font-handwriting font-bold lg:text-5xl">
-                        But more importantly - I've walked with ayurveda along my <b className="font-handwriting lg:text-5xl text-green-custom">own health path</b>. Experiencing what it can do in a <i className="font-handwriting lg:text-5xl text-green-custom">very</i> personal way.
+                        But more importantly - I've walked with ayurveda along my <b className="font-handwriting lg:text-5xl text-green-custom">own health path</b>. Experiencing what it can do in a <i>very</i> <span className="font-handwriting lg:text-5xl text-green-custom">personal</span> way.
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row w-full items-center lg:items-center justify-center lg:px-12 pt-6 lg:pt-12 pb-4 gap-6 lg:gap-12">
-                    <div className="flex w-full lg:max-w-3xl justify-center flex-col text-left px-4 lg:px-0 space-y-2 text-xl ">
+                    <div className="flex w-full lg:max-w-2xl justify-center flex-col text-left px-4 lg:px-0 space-y-3 text-xl ">
                         <h1 className="text-4xl font-bold font-heading tracking-wide text-light-teal-custom">2015</h1>
                         <br/>
                         <p>
@@ -76,7 +76,7 @@ const AboutJackyPage = () => {
                         {/* Main image container */}
                         <div className="w-full md:w-auto lg:w-auto relative md:mt-4 md:mr-4 lg:mt-8 lg:mr-8">
                             <img 
-                                className="w-full lg:w-auto lg:max-h-[50rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.AboutJacky1}
                                 alt="Jacky sitting cross-legged in a chair in her office" 
                             />
@@ -92,13 +92,13 @@ const AboutJackyPage = () => {
                         {/* Main image container */}
                         <div className="w-full md:w-auto lg:w-auto relative md:mb-4 md:ml-4 lg:mb-8 lg:ml-8">
                             <img 
-                                className="w-full lg:w-auto lg:max-h-[1000px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                className="w-full lg:w-auto lg:max-h-[800px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.jackyNielsBeach}
                                 alt="Jacklyn and husband walking on beach after wedding tenerife" 
                             />
                         </div>
                     </div>
-                    <div className="order-first lg:order-last flex w-full lg:max-w-3xl justify-center flex-col text-left px-4 lg:px-0 text-xl">
+                    <div className="order-first lg:order-last flex w-full lg:max-w-2xl justify-center flex-col text-left px-4 lg:px-0 text-xl">
                         <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Niel's story in a nutshell:</h1>
                         <br/>
                         <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">10 years of suffering to relief in <i>months</i>!</h2>
@@ -114,20 +114,20 @@ const AboutJackyPage = () => {
                         </p>
                         <ul className="pl-4 lg:pl-8 lg:text-xl">
                             <li className="flex items-start gap-2 lg:gap-3">
-                                <span className="text-green-custom lg:mt-1">•</span>
-                                <span className="leading-relaxed">fluctuating amounts of gas</span>
+                                <span className="text-green-custom">•</span>
+                                <span className="leading-snug">fluctuating amounts of gas</span>
                             </li>
                             <li className="flex items-start gap-2 lg:gap-3">
-                                <span className="text-green-custom lg:mt-1">•</span>
-                                <span className="leading-relaxed">bloating</span>
+                                <span className="text-green-custom">•</span>
+                                <span className="leading-snug">bloating</span>
                             </li>
                             <li className="flex items-start gap-2 lg:gap-3">
-                                <span className="text-green-custom lg:mt-1">•</span>
-                                <span className="leading-relaxed">abdominal cramps</span>
+                                <span className="text-green-custom">•</span>
+                                <span className="leading-snug">abdominal cramps</span>
                             </li>
                             <li className="flex items-start gap-2 lg:gap-3">
-                                <span className="text-green-custom lg:mt-1">•</span>
-                                <span className="leading-relaxed">fluctuations between loose bowels and mild constipation</span>
+                                <span className="text-green-custom">•</span>
+                                <span className="leading-snug">fluctuations between loose bowels and mild constipation</span>
                             </li>
                         </ul>
                         <p>
@@ -150,7 +150,7 @@ const AboutJackyPage = () => {
                     </div>
                 </div>
                 {/* Third Section */}
-                <div className="flex flex-col w-full items-center justify-center bg-fixed bg-center bg-cover bg-no-repeat"                    
+                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
                     style={{
                         backgroundImage: `url(${images.mountainColorful})`
                     }}>
@@ -229,82 +229,6 @@ const AboutJackyPage = () => {
                     {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
                         Just for fun...
                     </h1> */}
-                </div>
-                {/* Third Section */}
-                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
-                    style={{
-                        backgroundImage: `url(${images.mountainColorful})`
-                    }}>
-                    <div className="w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
-                        {/* Text content div */}
-                        <div className="w-full max-w-3xl mb-2">                    
-                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Fast Forward to 2019-2020:</h1>
-                            <br/>
-                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">My story continued...</h2>
-                            <br/>
-                            <p className="mb-2 text-xl">
-                                Niels and I had continued to follow basic ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
-                            </p>
-                            <p className="mb-2 text-xl">
-                                <b>How i was feeling on the inside started to manifest on the outside</b>.
-                            </p>
-                            <p className="mb-2 text-xl">
-                                I developed a severe case of adult acne. My self-esteem plummeted, and I just wanted to hide my face - which didn't help my already stressed system!
-                            </p>
-                            <p className="mb-2 text-xl">
-                                Again, I turned to ayurveda. This time, working on deeper levels. And again it helped me...
-                            </p>
-                            <p className="mb-2 text-xl">
-                                I began to heal myself from the inside out.
-                            </p>
-                        </div>
-                        
-                        {/* Images div */}
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center w-full max-w-4xl mb-4">
-                            <div className="flex flex-col items-center">
-                                <h3 className="text-xl font-bold mb-2">2020</h3>
-                                <img 
-                                    src={images.jackyAcne} 
-                                    alt="Before"
-                                    className="w-80 h-80 object-cover border-8 border-white"
-                                />
-                            </div>
-                            <div className="flex flex-col items-center">
-                                <h3 className="text-xl font-bold mb-2">2021</h3>
-                                <img 
-                                    src={images.jackyAcneHealed} 
-                                    alt="After"
-                                    className="w-80 h-80 object-cover border-8 border-white"
-                                />
-                            </div>
-                        </div>
-
-                        {/* Results section */}
-                        <div className="w-full max-w-3xl">
-                            <h1 className="text-2xl mb-2"><b>The results:</b> clearer skin, but really... So. Much. More.</h1>
-                            <p className="mb-2 text-xl">
-                                I'm calmer and more self-aware.
-                            </p>
-                            <p className="mb-2 text-xl">
-                                Growing up and functioning in the world with a notoriously active brain - I now have <b>a mental calm that i didn't know was possible</b>.
-                            </p>
-                            <p className="font-bold mb-2 text-xl">Other helpful improvements:</p>
-                            <ul className="pl-4 lg:pl-8 text-xl">
-                                <li className="flex items-start gap-2 lg:gap-3">
-                                    <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Better sleep</span>
-                                </li>
-                                <li className="flex items-start gap-2 lg:gap-3">
-                                    <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Warm hands and feet - instead of the ice cold feet that I used to have all winter long</span>
-                                </li>
-                                <li className="flex items-start gap-2 lg:gap-3">
-                                    <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Improved digestion</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
             <Footer/>

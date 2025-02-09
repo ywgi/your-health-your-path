@@ -31,11 +31,6 @@ const ContactForm: React.FC = () => {
                 placeholder="Phone Number"
                 className="w-full p-2 border border-gray-300 focus:border-orange-500 focus:outline-none text-sm sm:text-base"
                 />
-                <input
-                type="text"
-                placeholder="Where did you find us?"
-                className="w-full p-2 border border-gray-300 focus:border-orange-500 focus:outline-none text-sm sm:text-base"
-                />
                 <textarea
                 placeholder="Your Message"
                 rows={6}

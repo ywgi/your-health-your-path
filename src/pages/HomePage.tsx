@@ -19,19 +19,19 @@ const HomePage = () => {
                         </h1>
                         <ul className="pl-4 lg:pl-16 lg:text-xl">
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom gap-3">•</span>
+                                {/* <span className="text-green-custom gap-3">•</span> */}
                                 <span className="leading-snug">(are ready to) prioritize your health...</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom">•</span>
+                                {/* <span className="text-green-custom">•</span> */}
                                 <span className="leading-snug">recognize that you could feel better...</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom">•</span>
+                                {/* <span className="text-green-custom">•</span> */}
                                 <span className="leading-snug">are curious how ayurveda could enrich your life…</span>
                             </li>
                             <li className="flex items-start gap-3">
-                                <span className="text-green-custom">•</span>
+                                {/* <span className="text-green-custom">•</span> */}
                                 <span className="leading-snug">want to be in touch with your body's natural rhythms…</span>
                             </li>
                         </ul>
