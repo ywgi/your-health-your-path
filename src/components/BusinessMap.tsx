@@ -1,5 +1,3 @@
-import React from 'react';
-
 const BusinessMap = () => {
   // Business details - replace with your information
   const businessInfo = {
