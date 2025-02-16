@@ -1,3 +1,4 @@
+import BusinessMap from "../components/BusinessMap";
 import ContactForm from "../components/ContactForm";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -11,7 +12,7 @@ const ContactPage = () => {
                 <div 
                     className="hidden md:block w-full relative h-[45vh] bg-fixed bg-center bg-cover bg-no-repeat"
                     style={{
-                        backgroundImage: `url(${images.orangeFlowers})`
+                        backgroundImage: `url(${images.plants})`
                     }}
                 />
                 <div className="max-w-[80%] mx-auto h-auto bg-gradient-to-b from-white from-25% to-light-pink-custom -mt-[22.5vh] relative z-10 pb-12">
@@ -46,14 +47,22 @@ const ContactPage = () => {
                             </div>
                         </div>
                         <ContactForm />
-                        <div className="px-8">
-                            <img 
-                                src={images.whatsApp} 
-                                className="max-h-[50px]"    
-                            />
+                        <div className="px-8 flex gap-2">
+                            <a href="https://wa.me/31681983487">
+                                <img 
+                                    src={images.whatsApp} 
+                                    className="max-h-[50px]"    
+                                />
+                            </a>
+                            <a href="signal://+1234567890">
+                                <img
+                                    src={images.signalLogo}
+                                    className="max-h-[50px]" />
+                            </a>
                         </div>
                     </div>
                 </div>
+                <BusinessMap/>
             </div>
             <Footer/>
         </>

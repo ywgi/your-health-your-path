@@ -47,7 +47,7 @@ const AboutJackyPage = () => {
                 </div>
                 <div className="bg-white w-full py-5">
                     <p className="mt-4 text-center font-handwriting font-bold lg:text-5xl">
-                        But more importantly - I've walked with ayurveda along my <b className="font-handwriting lg:text-5xl text-green-custom">own health path</b>. Experiencing what it can do in a <i>very</i> <span className="font-handwriting lg:text-5xl text-green-custom">personal</span> way.
+                        But more importantly - I've walked with Ayurveda along my <b className="font-handwriting lg:text-5xl text-green-custom">own health path</b>. Experiencing what it can do in a <i>very</i> <span className="font-handwriting lg:text-5xl text-green-custom">personal</span> way.
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row w-full items-center lg:items-center justify-center lg:px-12 pt-6 lg:pt-12 pb-4 gap-6 lg:gap-12">
@@ -63,7 +63,7 @@ const AboutJackyPage = () => {
                         </p>
                         <p>The feeling of <span className="font-handwriting font-bold">YESSSS! </span> filled me. Ayurveda made sense. It explained my experiences.</p>
                         <p>Immediately, I began making adjustments to my diet and scheduled an appointment with an ayurvedic doctor. My ailment - a half-dollar sized bald spot on the back of my head that had
-                             developed over a matter of weeks, was taken care of with the soft and natural approach of ayurveda instead of the strong hormonal creams that had been recommended with the explanation: if used sooner than later they <i>just might work</i>.
+                             developed over a matter of weeks, was taken care of with the soft and natural approach of Ayurveda instead of the strong hormonal creams that had been recommended with the explanation: if used sooner than later they <i>just might work</i>.
                         </p>
                         <p>
                             And, as it turns out, this was <span className="font-handwriting font-bold text-5xl">just the beginning...</span>
@@ -131,7 +131,7 @@ const AboutJackyPage = () => {
                             </li>
                         </ul>
                         <p>
-                            Niels too gave ayurveda a try. After that first appointment, he began taking herbal supplements perscribed by the ayurvedic doctor and made alterations to his diet. Within a couple of months, he was free of all intestinal complaints, and they haven't returned!
+                            Niels too gave Ayurveda a try. After that first appointment, he began taking herbal supplements perscribed by the ayurvedic doctor and made alterations to his diet. Within a couple of months, he was free of all intestinal complaints, and they haven't returned!
                         </p>
                         <p>
                             This dramatic transformation got my attention - Ayurveda was really helping us. 
@@ -165,13 +165,13 @@ const AboutJackyPage = () => {
                                 Niels and I had continued to follow basic ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
                             </p>
                             <p className="mb-2 text-xl">
-                                <b>How i was feeling on the inside started to manifest on the outside</b>.
+                                <b>How I was feeling on the inside started to manifest on the outside</b>.
                             </p>
                             <p className="mb-2 text-xl">
                                 I developed a severe case of adult acne. My self-esteem plummeted, and I just wanted to hide my face - which didn't help my already stressed system!
                             </p>
                             <p className="mb-2 text-xl">
-                                Again, I turned to ayurveda. This time, working on deeper levels. And again it helped me...
+                                Again, I turned to Ayurveda. This time, working on deeper levels. And again it helped me...
                             </p>
                             <p className="mb-2 text-xl">
                                 I began to heal myself from the inside out.

@@ -137,7 +137,7 @@ const HomePage = () => {
                 {/* Third Section */}
                 <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center w-full gap-6 lg:gap-8 bg-white">
                     {/* Text container - add order-2 for mobile */}
-                    <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 lg:px-0 order-2 md:order-1 lg:order-1">
+                    <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 lg:p-4 order-2 md:order-1 lg:order-1">
                         <h1 className="font-handwriting2 font-black text-3xl md:text-4xl lg:text-5xl pl-0 lg:pl-4">Hi, I'm Jacklyn!</h1>
                         <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
                             The American born, Netherlands living, former teacher who made the switch to ayurveda because feeling good makes enjoying life so much easier! 

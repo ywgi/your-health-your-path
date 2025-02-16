@@ -15,6 +15,8 @@ const images = {
     yhypTextLogo: "/images/ayurveda/yhyp-logo_processed.jpg",
     yhypLogoOutline: "/images/ayurveda/yhyp-green_processed.jpg",
     yhypLogoNoBackground: "/images/ayurveda/yhyp-nobackground-coral.png",
+    yhypGreenNoBackground: "/images/ayurveda/yhyp-green-nobackground.png",
+    yhypWhiteNoBackground: "/images/ayurveda/yhyp-white-nobackground.png",
     coffeeWithBook: "/images/cwb.jpg",
     walkYourPath: "/images/walk-your-path.jpg",
     womanOnLaptop: "/images/woman-on-laptop.jpg",
@@ -35,6 +37,10 @@ const images = {
     mountainColorful: "/images/mountain-colors.jpg",
     meditate: "/images/meditate.jpg",
     whatsApp: "/images/whatsapp.png",
+    signalLogo: "/images/signalLogo.png",
+    plants: "/images/plants.jpg",
+    pathway: "/images/pathway.jpg",
+    
 
 
     //ayurveda page pictures

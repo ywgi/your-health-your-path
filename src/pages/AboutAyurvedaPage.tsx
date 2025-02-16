@@ -26,7 +26,7 @@ const AboutAyurvedaPage = () => {
                       <p className="text-gray-600 italic">The word ayurveda translated from Sanskrit means: the knowledge or science of life. (ayur-life; veda-knowledge/science)</p>
                     </div>
                     <div>
-                      <ul className="space-y-4 list-none pl-8 text-xl">
+                      <ul className="space-y-1 list-none pl-8 text-xl">
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom">•</span>
                           <span>A <b>traditional and natural form of medicine recognized by the World Health Organization.</b> (5000+ years old, originating in India)</span>
@@ -97,12 +97,14 @@ const AboutAyurvedaPage = () => {
                 </div>
               </div>
               {/*Quote divider*/}
-              <div className="flex items-center justify-center w-full h-[20vh] text-4xl bg-green-custom">
-                  <p className="font-quote text-white text-center">Another quote from Jacklyn!</p>
+              <div className="flex flex-col items-center justify-center w-full h-[20vh] text-4xl bg-green-custom">
+                  <p className="font-quote text-white text-center">“Health is not just the absence of disease; it is the presence of vitality.”</p>
+                  <br/>
+                  <p className="font-quote text-white text-center">- Charaka Samhita</p>
               </div>
               {/*Section 2 Dosha Intro*/}
-              <div className="flex items-center bg-white w-full">
-                <div className="max-w-xl px-8">
+              <div className="flex items-center justify-center bg-white w-full">
+                <div className="max-w-xl px-8 text-2xl">
                   <p>
                     Ayurveda is a traditional form of practicing health. It is a <b>holistic system of medicine</b>
                     meaning the entire individual is seen - their mind, body, and emotions are equally considered when considring the course of action.
@@ -116,14 +118,14 @@ const AboutAyurvedaPage = () => {
               </div>
               {/*Section 3 Doshas */}
               <div className="flex flex-col items-center">
-                <div className="flex flex-col py-8">
+                <div className="flex flex-col py-8 max-w-[75vw]">
                   <h1 className="text-4xl font-heading text-light-teal-custom font-bold">About the Doshas (Ayurvedic types):</h1>
                   <br/>
                   <p className="text-2xl font-heading text-dark-coral-custom tracking-wide uppercase">
                     What dosha type am I? Let's talk about the body types.
                   </p>
                   <br/>
-                  <p>
+                  <p className="text-2xl">
                     First and foremost - <b>Everyone is comprised of ALL 3 doshas</b>. Ayurveda observes that most people have a dominance of one or two dosha qualities.
                   </p>
                 </div>
@@ -138,7 +140,7 @@ const AboutAyurvedaPage = () => {
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="bg-light-pink-custom text-black p-4 rounded">
-                          <p className="text-l tracking-wide">V A T A</p>
+                          <p className="text-l font-bold tracking-wide">V A T A</p>
                         </div>
                       </div>
                     </div>
@@ -160,7 +162,7 @@ const AboutAyurvedaPage = () => {
                           <li>the stream of thought that is almost always on the move</li>
                         </ul>
                         <br/>
-                        <p className="">
+                        <p>
                           All that space makes movement easier, and often fast. There is a lightness to the Vata dosha. 
                           People with a high Vata dosha tend to be light and often experience dryness - for example dry 
                           skin or constipation.
@@ -255,13 +257,18 @@ const AboutAyurvedaPage = () => {
                   <p className=" text-white font-handwriting text-center">The Types in Practice</p>
               </div>
               <div className="flex flex-col items-center px-2 p-y">
-                <div className="flex max-w-[80vw] p-4 pb-12">
-                  <p className="text-xl text-center">
+                <div className="flex h-[15vh] items-center">
+                  <p className="text-2xl text-center">
                     Since day one, ayurveda has offered me clarity and a way to understand the differences I'd observed in
                     those around me. <br/>  A wonderful example is with two of my all-time favorite people, my grandmas.
                   </p>
                 </div>
-                <div className="flex md:gap-20">
+                <div className="flex md:gap-20 items-center">
+                  <div className="max-w-[15%] flex items-center justify-center">
+                    <p className="text-7xl font-handwriting transform -rotate-90 origin-center whitespace-nowrap">
+                      Work with nature.
+                    </p>
+                  </div>
                   <div className="flex flex-col items-center pb-8">
                     <h1 className="font-heading font-bold text-4xl text-dark-coral-custom">Grandma D</h1>
                     <div className="lg:h-[450px] lg:w-[330px] p-4 border-2 border-black">
@@ -292,7 +299,7 @@ const AboutAyurvedaPage = () => {
                   </div>
                   <div className="flex flex-col items-center pb-8">
                     <h1 className="font-heading font-bold text-4xl text-dark-coral-custom">Grandma M</h1>
-                    <div className="h-[450px] w-[330px] p-4 border-2 overflow-hidden border-black ">
+                    <div className="lg:h-[450px] lg:w-[330px] p-4 border-2 overflow-hidden border-black ">
                         <img
                           src={images.gmaM}
                           className="w-full h-full object-cover object-top"
@@ -315,26 +322,30 @@ const AboutAyurvedaPage = () => {
                       </p>
                     </div>
                   </div>
+                  <div className="flex items-center max-w-[15%]">
+                    <img src={images.yhypGreenNoBackground}
+                          className="max-h-[200px]"/>
+                  </div>
                 </div>
-                <div className="flex pb-10">
-                  <p className="max-w-[40vw]">
+                <div className="flex flex-col items-center justify-center pb-10">
+                  <p className="max-w-[60vw] text-xl">
                     Grandma M wouldn't even consider eating the things that Grandma D ate, but if they did eat the same diet, their bodies would react very differently.
                     My observations weren't limited to family. As a teacher, I served servaral sets of brothers and/or sisters over the years and despite having the same 
                     parents, living in the same house, eating the same diet - they were very different.
                   </p>
                 </div>
               </div>
-              <div className="w-full bg-white flex items-center h-[40vh]">
+              <div className="w-full bg-white flex items-center justify-center h-[40vh]">
                 <img src={images.meditate}  className="max-h-full"/>
                   <div className="flex flex-col px-8">
-                    <p className="text-xl font-heading font-bold text-light-teal-custom max-w-[40vw]">Taking these differences into account, that's what ayurveda does.</p>
+                    <p className="text-2xl font-heading font-bold text-light-teal-custom max-w-[30vw]">Taking these differences into account, that's what ayurveda does.</p>
                     <br/>
-                    <p className="text-lg max-w-[40vw]">
+                    <p className="text-2xl max-w-[30vw]">
                       Ayurveda doesn't give a one-size-fits-all approach. Instead, it looks at who <strong>you are </strong>
                       and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
                     </p>
                   </div>
-                </div>
+              </div>
             </div>
             <Footer />
           </>
