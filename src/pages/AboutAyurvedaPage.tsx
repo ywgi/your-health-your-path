@@ -147,6 +147,8 @@ const AboutAyurvedaPage = () => {
                     {/* Content box - set to take remaining height */}
                     <div className="h-[70%] text-sm">
                       <div className="p-4">
+                        <p>Elements: air and space</p>
+                        <br/>
                         <p>
                           <strong>Vata</strong> is related to <strong>all of the movement that happens within the body</strong>.
                         </p>
@@ -186,6 +188,8 @@ const AboutAyurvedaPage = () => {
                     {/* Content box */}
                     <div className="h-[70%] text-sm">
                       <div className="p-4">
+                        <p>Elements: fire and a little water</p>
+                        <br/>
                         <p>
                           <b>Pitta</b> is related <b>to the transformation within the body</b>.
                         </p>
@@ -213,11 +217,22 @@ const AboutAyurvedaPage = () => {
                   </div>
                   <div className="flex flex-col w-full max-w-[20vw] max-h-[700px] mx-auto bg-white">
                     {/* Image placeholder since we can't use external images */}
-                    <div className="w-full h-[30%] overflow-hidden mb-4 relative">
-                      <img 
-                        src={images.earth}
-                        className="w-full h-full object-cover object-center"
-                      />
+                    <div className="w-full h-[30%] overflow-hidden mb-4 relative flex">
+                      {/* First image - 50% width */}
+                      <div className="w-1/2">
+                        <img 
+                          src={images.earth}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      
+                      {/* Second image - 50% width */}
+                      <div className="w-1/2">
+                        <img 
+                          src={images.water}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
                       <div className="absolute inset-0 flex items-center justify-center">
                         <div className="bg-light-pink-custom text-black p-3 rounded">
                           <p className="text-xl font-bold tracking-wide">K A P H A</p>
@@ -227,6 +242,8 @@ const AboutAyurvedaPage = () => {
                     {/* Content box */}
                     <div className="h-[70%] text-sm">
                       <div className="p-4">
+                        <p>Elements: earth and water</p>
+                        <br/>
                         <p>
                           <b>Kapha</b> provides the protective structures and fluids.
                         </p>
@@ -345,6 +362,76 @@ const AboutAyurvedaPage = () => {
                       and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
                     </p>
                   </div>
+              </div>
+              <div className="flex flex-col lg:flex-row items-center py-12 gap-12">
+                <div className="flex flex-col max-w-[800px] w-[80vw] py-6 text-xl">
+                  <h1 className="text-5xl font-heading text-light-teal-custom">"It's So Logical!"</h1>
+                  <br/>
+                  <p>Several Clients have echoed this phrase that I repeated countless time during my Ayurvedic studies.</p>
+                  <br/>
+                  <p>Ayurveda works with the natural reactions of your body. In many ways many people already do this, for instance if
+                      you get a sunburn, it is common knowledge to get out of the sun and offer a cooling agent, like aloe vera gel, to
+                      sooth the red skin. Although a lot of our health complaints can be more complicated than a sunburn, this is the line
+                      of reasoning that Ayurveda follows. Remove the cause and help the body in the healing process.
+                  </p>
+                  <br/>
+                  <p>
+                    If your body is providing signs of being light and dry (Vata complaints) then it is important to consume foods that
+                    offer a grounding effect and that contain moisture- or help your body retain moisture. The art is in understanding
+                    the body’s signals and knowing what ways you can best move forward. Here is where working with a professional is
+                    immensely helpful.
+                  </p>
+                </div>
+                <div className="relative w-full lg:w-auto self-center">
+                        {/* Background decorative block */}
+                        <div className="absolute top-0 right-0 w-full h-full bg-teal-custom -z-10 md:block origin-top-right scale-90" />
+
+                        {/* Main image container */}
+                        <div className="w-full md:w-auto lg:w-auto relative md:mt-4 md:mr-4 lg:mt-8 lg:mr-8">
+                            <img 
+                                className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                src={images.womanStretching}
+                                alt=""
+                            />
+                        </div>
+                </div>
+              </div>
+              <div className="flex flex-col lg:flex-row items-center py-12 gap-12">
+                <div className="relative w-full lg:w-auto self-center order-last lg:order-first">
+                          {/* Background decorative block - positioned bottom left */}
+                          <div className="absolute bottom-0 left-0 w-full h-full bg-teal-custom -z-10 md:block origin-bottom-left scale-90" />
+                          
+                          {/* Main image container */}
+                          <div className="w-full md:w-auto lg:w-auto relative md:mb-4 md:ml-4 lg:mb-8 lg:ml-8">
+                              <img 
+                                  className="w-full lg:w-auto lg:max-h-[800px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                  src={images.soupWithSpices}
+                                  alt="Jacklyn and husband walking on beach after wedding tenerife" 
+                              />
+                          </div>
+                </div>
+                <div className="flex flex-col max-w-[800px] w-[80vw] py-6 text-xl">
+
+                  <h1 className="text-5xl font-heading text-light-teal-custom">The tools of Ayurveda</h1>
+                  <br/>
+                  <p>
+                    <b>Ayurveda uses food as Medicine</b>. This involves eating foods that help your current situation, while taking into account the climate and current seasons
+                  </p>
+                  <br/>
+                  <p>
+                    Various <b>warm oil treatments and massages</b>. The type of herb infused oil that is selected is specific to your dosha type and current (health) goals.
+                  </p>
+                  <br/>
+                  <p>
+                    <b>Herbal Supplements</b>. Supplements can help with a wide variety of conditions. The goal is to help your body
+                      get a boost of help in the direction you'd like it to go. Supplements are intended to be a temporary help, not a long-term solution.
+                  </p>
+                  <br/>
+                  <p>
+                    <b>Breath work and Yoga Asanas</b>. Working consciously with breath and body movements. There are techiniques to help you build in calmness, and there are techniques to help you build heat, or inspire movement.
+                    What you do, depends on the next right step for you along your path.
+                  </p>
+                </div>
               </div>
             </div>
             <Footer />

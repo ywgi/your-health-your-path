@@ -6,6 +6,12 @@ const Footer = () => {
     return (
     <footer className="flex justify-center items-center bg-[#315851] w-full py-8">
         <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center w-full max-w-6xl px-4 gap-8 md:gap-16 lg:gap-40">
+            <div className='flex flex-col'>
+                <p className='text-white'><span className='text-gray-300'>Telephone Number:</span> +31 6 8198 3487</p>
+                <p className='text-white'><span className='text-gray-300'>Email:</span> yourhealthyourpath@gmail.com</p>
+                <p className='text-white'><span className='text-gray-300'>KvK:</span> 91214173</p>
+            </div>
+            
             {/* Logo and Company Name */}
             <div className="flex flex-col items-center lg:items-center w-auto">
                 <div className="w-40 h-min border-transparent mb-2">

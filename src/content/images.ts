@@ -40,8 +40,11 @@ const images = {
     signalLogo: "/images/signalLogo.png",
     plants: "/images/plants.jpg",
     pathway: "/images/pathway.jpg",
-    
-
+    pinkFlowers: "images/pink-flowers.jpg",
+    forest: "/images/forest.jpg",
+    treeRooted: "/images/tree-rooted.jpg",
+    soupWithSpices: "/images/soup-with-spices.jpg",
+    womanStretching: "/images/woman-stretching.jpg",
 
     //ayurveda page pictures
     marketSpices: '/images/market-spices.jpg',

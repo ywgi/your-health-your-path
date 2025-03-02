@@ -1,8 +1,9 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import ServiceCards from "../components/ServiceCards";
+import MassageCards from "../components/MassageCards";
 import images from "../content/images";
+import ConsultCards from "../components/ConsultCards";
 
 
 
@@ -83,8 +84,73 @@ const ServicesPage = () => {
                         <img src={images.yhypWhiteNoBackground} className="max-h-[10vh]"/>
                     </div>
                 </div>
-                <div className="flex justify-center items-center py-12">
-                    <ServiceCards />
+                <div className="flex justify-center items-center w-full py-10 text-xl">
+                    <div className="max-w-[60vw] mx-auto">
+                        <h1 className="font-heading font-bold text-4xl text-light-teal-custom">My Process:</h1>
+                        <br/>
+                        <p>
+                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 1:</span> Start by Scheduling a Free 20 min. phone consult to see if working with Your
+                            Health, Your Path is right for you. This is completely open-ended, there is no obligation.
+                            This is a chat about your (health) goals, and an opportunity to gain clarity
+                            about the offerings of Your Health, Your Path.  
+                        </p>
+                        <br/>
+                        <p>
+                            You want to move forward. Great, now we get started!
+                            <br/>
+                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 2:</span> We schedule your first appointment.
+                            You will receive an in-depth questionnaire to complete and submit at least 72hrs
+                            before the first appointment.
+                        </p>
+                        <br/>
+                        <p>
+                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 3:</span> 1 st appointment (90 minutes)
+                            Included during this appointment:
+
+                            Deep dive into current health and health history.
+                            Pulse diagnosis (in person only)
+                            Tongue diagnosis
+                            We discuss Ayurveda along the way, so you begin to deepen your
+                            understanding of what it is and how it can help you along your path.
+                        </p>
+                        <br/>
+                        <p>
+                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 4:</span> 2nd Appointment (60 minutes)
+                            During this appointment, your will learn about your Ayurvedic type, and what areas, if any, you
+                            are currently out of balance.
+                            You will receive a laid out plan with advice for your specific situation. It will include diet,
+                            lifestyle- and if appropriate herbal supplement- advice. Depending on your needs there can be
+                            cooking tips, and recommendations for (self) massage , yoga asanas, and breathing techniques.
+                            The advice is tailored for you and your lifestyle. It will also be laid out according to the length
+                            of plan you have selected (1 month, 3 months or 6 months) Both the 3 and 6 month plans will
+                            be monitored and adjusted along your journey.
+                        </p>
+                        <br/>
+                        <p>
+                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 5:</span> You begin walking your path with Ayurveda. The remaining steps depend upon what
+                            best fits your needs, and what package you selected.
+                        </p>
+                    </div>
+                </div>
+                <div className="max-w-[60vw] mx-auto">
+                    <h1 className="font-heading font-bold text-4xl text-light-teal-custom">Consult Packages:</h1>
+                </div>
+                <div className="flex flex-col justify-center items-center text-xl">
+                    <ConsultCards />
+                    <p>*If supplements are advised, guidance is given for trusted sources. Your Health, Your Path does not sell supplements, thus the cost for supplements is additional.</p>
+                    <br/>
+                    <p>Health is important for Everyone. If you want to work with me, but your budget is constricted, please
+                        reach out so we can discuss payment options. <br/> Ideally we can find an options that fits your needs and
+                        helps you reach your health goals.
+                    </p>
+                    <br/>
+                </div>
+                <div className="max-w-[60vw] mx-auto">
+                    <h1 className="font-heading font-bold text-4xl text-light-teal-custom">Massage Packages:</h1>
+                    <br/>
+                </div>
+                <div className="flex flex-col justify-center items-center pb-12">
+                    <MassageCards />
                 </div>
             </div>
             <Footer />

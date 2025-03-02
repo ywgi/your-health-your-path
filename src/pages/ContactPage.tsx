@@ -42,7 +42,9 @@ const ContactPage = () => {
                                         Let's find your path!
                                     </h2>
                                     <br/>
-                                    <p>Let people know what they can expect after they contact you here. What should they do next, fill out a form or schedule a call? What happens once they take the next step, when will they hear from you next?</p>
+                                    <p>Please fill in the contact form with your questions or interests. 
+                                        If there is a best day or time to reach you please let me know. I will get back to you within 3 business days. 
+                                        Depending on your question(s) we can discuss further options such as planning a free 20 min. consult or scheduling a massage.</p>
                                 </div>
                             </div>
                         </div>

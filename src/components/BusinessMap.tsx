@@ -3,10 +3,9 @@ const BusinessMap = () => {
   const businessInfo = {
     name: "Your Health Your Path",
     address: {
-      street: "123 Business Street",
+      street: "Noordveen 1",
       city: "Beilen",
-      state: "NY",
-      zip: "10001"
+      zip: "9412AG"
     },
     // You can get these coordinates from OpenStreetMap:
     // 1. Go to https://www.openstreetmap.org/
@@ -21,7 +20,7 @@ const BusinessMap = () => {
   };
 
   const { latitude, longitude } = businessInfo.coordinates;
-  const zoom = 16; // Adjust zoom level (higher number = closer zoom)
+  const zoom = 20; // Adjust zoom level (higher number = closer zoom)
 
   return (
     <div className="w-full max-w-2xl mx-auto pb-12">
@@ -39,7 +38,7 @@ const BusinessMap = () => {
         <h3 className="text-lg font-semibold mb-2">{businessInfo.name}</h3>
         <p className="text-gray-600">
           {businessInfo.address.street}<br />
-          {businessInfo.address.city}, {businessInfo.address.state} {businessInfo.address.zip}
+          {businessInfo.address.city}, {businessInfo.address.zip}
         </p>
         
         {/* Link to full map */}
