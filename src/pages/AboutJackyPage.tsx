@@ -97,7 +97,7 @@ const AboutJackyPage = () => {
                         </div>
                     </div>
                     <div className="order-first lg:order-last flex w-full lg:max-w-2xl justify-center flex-col text-left px-4 lg:px-0 text-xl">
-                        <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Niel's story in a nutshell:</h1>
+                        <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Niels' story in a nutshell:</h1>
                         <br/>
                         <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">10 years of suffering to relief in <i>months</i>!</h2>
                         <br/>
@@ -129,7 +129,7 @@ const AboutJackyPage = () => {
                             </li>
                         </ul>
                         <p>
-                            Niels too gave Ayurveda a try. After that first appointment, he began taking herbal supplements perscribed by the yurvedic doctor and made alterations to his diet. Within a couple of months, he was free of all intestinal complaints, and they haven't returned!
+                            Niels too gave Ayurveda a try. After that first appointment, he began taking herbal supplements perscribed by the Ayurvedic doctor and made alterations to his diet. Within a couple of months, he was free of all intestinal complaints, and they haven't returned!
                         </p>
                         <p>
                             This dramatic transformation got my attention - Ayurveda was really helping us. 
@@ -199,7 +199,7 @@ const AboutJackyPage = () => {
 
                         {/* Results section */}
                         <div className="w-full max-w-3xl">
-                            <h1 className="text-2xl mb-2"><b>The results:</b> clearer skin, but really... So. Much. More.</h1>
+                            <h1 className="text-xl lg:text-2xl mb-2"><b>The results:</b> clearer skin, but really... So. Much. More.</h1>
                             <p className="mb-2 text-xl">
                                 I'm calmer and more self-aware.
                             </p>

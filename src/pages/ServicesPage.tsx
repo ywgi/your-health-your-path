@@ -21,7 +21,17 @@ const ServicesPage = () => {
                                     src={images.womanOnLaptop}
                                     alt="Consult"
                                 />
-                                <a href="#consult">
+                                <a href="#consult" 
+                                    onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                                    e.preventDefault();
+                                    const element = document.getElementById('consult');
+                                    if (element) {
+                                        element.scrollIntoView({
+                                            behavior: 'smooth',
+                                            block: 'start'
+                                        });
+                                    }
+                                }}>
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center rounded-2xl">
                                             <h3 className="text-lg tracking-widest uppercase text-gray-800">Consult</h3>
@@ -37,7 +47,17 @@ const ServicesPage = () => {
                                     src={images.massage}
                                     alt="Massage"
                                 />
-                                <a href="#massage">
+                                <a href="#massage"                             
+                                    onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                                    e.preventDefault();
+                                    const element = document.getElementById('massage');
+                                    if (element) {
+                                        element.scrollIntoView({
+                                            behavior: 'smooth',
+                                            block: 'start'
+                                        });
+                                    }
+                                }}>
                                     <div className="absolute inset-0 flex items-center justify-center">
                                         <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center rounded-2xl">
                                             <h3 className="text-lg tracking-widest uppercase text-gray-800">Massage</h3>
@@ -68,27 +88,40 @@ const ServicesPage = () => {
                 <div className="w-full bg-white h-auto md:h-[40vh]">
                     {/* For larger screens - horizontal layout with full height image */}
                     <div className="hidden md:flex items-center justify-center w-full h-full">
-                        <div className="flex flex-col px-8">
-                            <p className="text-2xl font-heading font-bold text-light-teal-custom max-w-[30vw]">
-                                Taking these differences into account, that's what ayurveda does.
+                        <div className="flex flex-col px-8 max-w-[30vw] space-y-3">
+                            <h1 className="text-3xl font-heading font-bold text-light-teal-custom">Thrive Naturally, Live Fully</h1>
+                            <p className="text-xl">Using the wisdom of Ayurveda, my goal is to see you for the unique person you are while recognizing the patterns of feedback the body provides.</p>
+                            <p className="text-xl max-w-[30vw]">
+                                <b>Who benefits from Ayurveda?</b> The short answer - everyone can benefit from
+                                becoming more connected to their body and gaining understanding on how to
+                                support it.
                             </p>
-                            <br/>
-                            <p className="text-2xl max-w-[30vw]">
-                                Ayurveda doesn't give a one-size-fits-all approach. Instead, it looks at who <strong>you are </strong>
-                                and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
+                            <p className="text-xl">Clients who best match with <span className="font-handwriting font-bold text-green-custom">Your Health, Your Path </span> are
+                                ready to take a step forward; whether it be that they finally decide to relax with a warm oil massage or are ready to take larger steps for their overall health 
+                                and well-being.
+                            </p>
+                            <p className="text-xl">
+                                I gladly Serve to assist you along your way; it is a delight to celebrate all of the progress as you travel forward.
                             </p>
                         </div>
                         <img src={images.pathway} className="h-full" alt="Ayurveda pathway" />
                     </div>
 
                     {/* For mobile screens - vertical layout */}
-                    <div className="md:hidden flex flex-col items-center pt-8">
-                        <p className="text-xl font-heading font-bold text-light-teal-custom text-center mb-4">
-                            Taking these differences into account, that's what ayurveda does.
+                    <div className="md:hidden flex flex-col items-center pt-8 space-y-4">
+                        <h1 className="text-2xl justify-start font-heading font-bold text-light-teal-custom px-4">Thrive Naturally, Live Fully</h1>
+                        <p className="text-xl px-4">Using the wisdom of Ayurveda, my goal is to see you for the unique person you are while recognizing the patterns of feedback the body provides.</p>
+                        <p className="text-xl px-4">
+                            <b>Who benefits from Ayurveda?</b> The short answer - everyone can benefit from
+                            becoming more connected to their body and gaining understanding on how to
+                            support it.
                         </p>
-                        <p className="text-lg text-center mb-6">
-                            Ayurveda doesn't give a one-size-fits-all approach. Instead, it looks at who <strong>you are </strong>
-                            and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
+                        <p className="text-xl px-4">Clients who best match with <span className="font-handwriting font-bold text-green-custom">Your Health, Your Path </span> are
+                            ready to take a step forward; whether it be that they finally decide to relax with a warm oil massage or are ready to take larger steps for their overall health 
+                            and well-being.
+                        </p>
+                        <p className="text-xl px-4">
+                            I gladly Serve to assist you along your way; it is a delight to celebrate all of the progress as you travel forward.
                         </p>
                         <img src={images.pathway} className="w-full" alt="Ayurveda pathway" />
                     </div>
@@ -113,7 +146,7 @@ const ServicesPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-center items-center w-full py-8">
+                <div className="flex justify-center items-center w-full py-8" id="consult">
                     <div className="w-full md:max-w-[70vw] mx-auto">
                         <h1 className="font-heading pl-4 font-bold text-3xl md:text-4xl text-light-teal-custom pb-4 lg:pb-8">My Process:</h1>
                         <div className="space-y-6 px-4 md:ml-16">
@@ -204,7 +237,7 @@ const ServicesPage = () => {
                     </div>
                 </div>
                 <div className="w-full md:max-w-[70vw] max-w-full mx-auto px-4 py-4 md:px-0">
-                    <h1 className="font-heading font-bold text-3xl md:text-4xl text-light-teal-custom">Massage Packages:</h1>
+                    <h1 className="font-heading font-bold pb-8 text-3xl md:text-4xl text-light-teal-custom">Massages:</h1>
                 </div>
                 <div className="flex flex-col justify-center items-center pb-12">
                     <MassageCards />

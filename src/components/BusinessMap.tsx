@@ -38,7 +38,7 @@ const BusinessMap = () => {
         <h3 className="text-lg font-semibold mb-2">{businessInfo.name}</h3>
         <p className="text-gray-600">
           {businessInfo.address.street}<br />
-          {businessInfo.address.city}, {businessInfo.address.zip}
+          {businessInfo.address.zip}, {businessInfo.address.city}
         </p>
         
         {/* Link to full map */}

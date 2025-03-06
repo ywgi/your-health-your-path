@@ -15,10 +15,10 @@ const ConsultCards = () => {
             </div>
             {/* Content box */}
             <div className="flex flex-col flex-grow p-5">
-              <h1 className="font-heading text-light-teal-custom text-xl md:text-lg">
+              <h1 className="font-heading font-bold text-light-teal-custom text-xl md:text-lg">
                     Foundational
               </h1>
-              <h2 className="text-md font-heading text-dark-coral-custom mt-2 mb-4">
+              <h2 className="text-md font-bold font-heading text-dark-coral-custom mt-2 mb-4">
                 This plan lays the foundation for your understanding of Ayurveda.
               </h2>
               <p className="font-medium">
@@ -36,7 +36,7 @@ const ConsultCards = () => {
                   <p className="font-bold text-lg">5 weeks</p>
                   <p className="font-bold text-lg">Investment: €170</p>
                 </div>
-                <button className="inline-flex items-center text-gray-700 
+                <a href="/contact" className="inline-flex items-center text-gray-700 
                 hover:text-green-custom text-sm transition-transform w-full justify-center sm:justify-start">
                   SCHEDULE
                   <svg
@@ -52,7 +52,7 @@ const ConsultCards = () => {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -67,10 +67,10 @@ const ConsultCards = () => {
               />
             </div>
             <div className="flex flex-col flex-grow p-5">
-              <h1 className="font-heading text-light-teal-custom text-xl md:text-lg">
+              <h1 className="font-heading font-bold text-light-teal-custom text-xl md:text-lg">
                 Blooming
               </h1>
-              <h2 className="text-md font-heading text-dark-coral-custom mt-2 mb-4">
+              <h2 className="text-md font-heading font-bold text-dark-coral-custom mt-2 mb-4">
                 This plan helps you build new
                 habits. You are supported as you begin to
                 better understand your body's feedback and
@@ -92,7 +92,7 @@ const ConsultCards = () => {
                   <p className="font-bold text-lg">3 months</p>
                   <p className="font-bold text-lg">Investment: €415</p>
                 </div>
-                <button className="inline-flex items-center text-gray-700 
+                <a href="/contact" className="inline-flex items-center text-gray-700 
                 hover:text-green-custom text-sm transition-transform w-full justify-center sm:justify-start">
                   SCHEDULE
                   <svg
@@ -108,7 +108,7 @@ const ConsultCards = () => {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -123,10 +123,10 @@ const ConsultCards = () => {
               />
             </div>
             <div className="flex flex-col flex-grow p-5">
-              <h1 className="font-heading text-light-teal-custom text-xl md:text-lg">
+              <h1 className="font-heading font-bold text-light-teal-custom text-xl md:text-lg">
                 Rooted
               </h1>
-              <h2 className="text-md font-heading text-dark-coral-custom mt-2 mb-4">
+              <h2 className="text-md font-bold font-heading text-dark-coral-custom mt-2 mb-4">
                 This plan travels with you and helps you
                 deepen your roots with Ayurveda. You are
                 supported as the seasons change.    
@@ -147,7 +147,7 @@ const ConsultCards = () => {
                   <p className="font-bold text-lg">6 months</p>
                   <p className="font-bold text-lg">Investment: €640</p>
                 </div>
-                <button className="inline-flex items-center text-gray-700 
+                <a href="/contact" className="inline-flex items-center text-gray-700 
                 hover:text-green-custom text-sm transition-transform w-full justify-center sm:justify-start">
                   SCHEDULE
                   <svg
@@ -163,7 +163,7 @@ const ConsultCards = () => {
                       d="M17 8l4 4m0 0l-4 4m4-4H3"
                     />
                   </svg>
-                </button>
+                </a>
               </div>
             </div>
           </div>

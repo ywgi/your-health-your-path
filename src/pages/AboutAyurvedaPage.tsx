@@ -36,7 +36,7 @@ const AboutAyurvedaPage = () => {
                   <div className="px-4 md:px-0 md:max-w-6xl mx-auto space-y-2">
                     <div className="space-y-2">
                       <p className="text-2xl md:text-3xl font-heading tracking-wide uppercase text-dark-coral-custom font-bold">Ayurveda, a quick summary:</p>
-                      <p className="text-gray-600 italic text-base md:text-lg">The word ayurveda translated from Sanskrit means: the knowledge or science of life. (ayur-life; veda-knowledge/science)</p>
+                      <p className="text-gray-600 italic text-base md:text-lg">The word Ayurveda translated from Sanskrit means: the knowledge or science of life. (ayur-life; veda-knowledge/science)</p>
                     </div>
                     
                     <div>
@@ -51,7 +51,7 @@ const AboutAyurvedaPage = () => {
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
-                          <span>Sees individuals for their <b>unique ayurvedic type</b>, and where <b>they are in life <u>right now</u></b>.</span>
+                          <span>Sees individuals for their <b>unique Ayurvedic type</b>, and where <b>they are in life <u>right now</u></b>.</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
@@ -126,8 +126,8 @@ const AboutAyurvedaPage = () => {
                 {/* Text section - properly sized */}
                 <div className="w-full md:w-[40vw] px-4 md:px-12 lg:px-16 mb-6 md:mb-0">
                   <p className="text-lg md:text-xl lg:text-2xl mb-4">
-                    Ayurveda is a traditional form of practicing health. It is a <b>holistic system of medicine</b>
-                    meaning the entire individual is seen - their mind, body, and emotions are equally considered when considring the course of action.
+                    Ayurveda is a traditional form of practicing health. It is a <b>holistic system of medicine</b> meaning
+                    the entire individual is seen - their mind, body, and emotions are equally considered when considring the course of action.
                   </p>
                   <p className="text-lg md:text-xl lg:text-2xl">
                     Ayurveda <b>recognizes that every individual is unqiuely themselves</b>. 

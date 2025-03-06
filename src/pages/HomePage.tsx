@@ -139,7 +139,7 @@ const HomePage = () => {
                                 tailored for you and your needs - all in a realistic, do-able way. Because life is busy enough, let's make being healthy 
                                 a whole lot easier.
                             </p>
-                            <Link to="/" 
+                            <Link to="/services" 
                                     className="self-center mt-5 px-3 py-3 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
                                 Take the first steps
                             </Link>
@@ -167,9 +167,11 @@ const HomePage = () => {
                         Before I knew it, I was back in school. Studying Ayurveda for 4 years only increased my passion. Now, I get to enthusiastically share it with others as they travel their path... 
                     </p>
                     <div className="flex justify-center items-center w-full mb-4">
-                        <button className="px-3 py-3 text-xl lg:text-2xl font-helvetica rounded-full text-white bg-green-custom hover:bg-teal-custom hover:text-white transition-colors">
-                            Read more of my story...
-                        </button>
+                        <Link to="/about-jacklyn">
+                            <button className="px-3 py-3 text-xl lg:text-2xl font-helvetica rounded-full text-white bg-green-custom hover:bg-teal-custom hover:text-white transition-colors">
+                                Read more of my story...
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 {/* Image container - add order-1 for mobile */}
