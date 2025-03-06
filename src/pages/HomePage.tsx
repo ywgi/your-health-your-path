@@ -48,8 +48,20 @@ const HomePage = () => {
                                 I look at your <b>individual needs</b> and <b>goals</b> and <b>create a personalized plan</b> to help you along your unique path.
                             </span>
                         </p>
-                        <a href="#feel-better" 
-                            className="self-center mt-10 px-3 py-1 lg:px-4 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
+                        <a 
+                            href="#feel-better" 
+                            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                                e.preventDefault();
+                                const element = document.getElementById('feel-better');
+                                if (element) {
+                                element.scrollIntoView({
+                                    behavior: 'smooth',
+                                    block: 'start'
+                                });
+                                }
+                            }}
+                            className="self-center mt-10 px-3 py-3 lg:px-4 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors duration-500"
+                            >
                             Learn more
                         </a>
                     </div>
@@ -61,7 +73,7 @@ const HomePage = () => {
                         {/* Main image container */}
                         <div className="w-full md:w-auto lg:w-auto relative md:mt-4 md:mr-4 lg:mt-8 lg:mr-8">
                             <img 
-                                className="w-full lg:w-auto lg:max-h-[50rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.jackySection1}
                                 alt=""
                             />
@@ -79,7 +91,7 @@ const HomePage = () => {
                 </div>
 
                 {/* Second Section */}
-                <div id="feel-better" className="flex flex-col md:flex-row lg:flex-row items-center justify-center w-full gap-6 lg:gap-20 pb-12 lg:pb-20">
+                <div id="feel-better" className="flex flex-col md:flex-row lg:flex-row items-center justify-center w-full lg:gap-20 pt-10 md:pt-0 lg:pt-0 pb-6 lg:pb-20">
                     <div className="w-full max-w-2xl mx-auto md:mx-0 px-4 mb-8 md:mb-16 lg:mb-0">
                         <div className="relative aspect-[4/3] w-full">
                             {/* Main image */}
@@ -128,7 +140,7 @@ const HomePage = () => {
                                 a whole lot easier.
                             </p>
                             <Link to="/" 
-                                    className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
+                                    className="self-center mt-5 px-3 py-3 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
                                 Take the first steps
                             </Link>
                     </div>
@@ -136,36 +148,37 @@ const HomePage = () => {
 
                 {/* Third Section */}
                 <div className="flex flex-col md:flex-row lg:flex-row justify-center items-center w-full gap-6 lg:gap-8 bg-white">
-                    {/* Text container - add order-2 for mobile */}
-                    <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 lg:p-4 order-2 md:order-1 lg:order-1">
-                        <h1 className="font-handwriting2 font-black text-3xl md:text-4xl lg:text-5xl pl-0 lg:pl-4">Hi, I'm Jacklyn!</h1>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
-                            The American born, Netherlands living, former teacher who made the switch to ayurveda because feeling good makes enjoying life so much easier! 
-                        </p>
-                        <p className="pl-0 lg:pl-4 text-lg md:xl lg:text-xl leading-tight mt-4">
-                            The short version: Ayurveda helped me on my health journey feel better than I even knew was possible. Calmer in my mind, and more connected to my body.
-                        </p>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
-                            Enthusiasm and curiosity fueled me:
-                        </p>
-                        <p className="font-handwriting text-3xl lg:text-5xl font-bold text-center mt-4">
-                            <i>How did this work?</i>
-                        </p>
-                        <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
-                            Before I knew it, I was back in school. Studying ayurveda for 4 years only increased my passion. Now, I get to enthusiastically share it with others as they travel their path... 
-                        </p>
-                        <Link to="/" 
-                            className="self-center mt-10 px-6 py-4 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
-                            A little about me...
-                        </Link>
-                    </div>
-                    {/* Image container - add order-1 for mobile */}
-                    <div className="w-full lg:w-auto order-1 lg:order-2">
-                        <img className="w-full lg:w-auto lg:max-h-[40rem] object-cover" 
-                            src={images.JackySection3} 
-                            alt="Jacky" />
+                {/* Text container - add order-2 for mobile */}
+                <div className="flex w-full lg:max-w-[40vw] justify-center flex-col text-left px-4 lg:p-4 order-2 md:order-1 lg:order-1">
+                    <h1 className="font-handwriting2 font-black text-3xl md:text-4xl lg:text-5xl pl-0 lg:pl-4">Hi, I'm Jacklyn!</h1>
+                    <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
+                        Born in the States, living in the Netherlands, a former teacher who made the switch to Ayurveda because feeling good makes enjoying life so much easier!
+                    </p>
+                    <p className="pl-0 lg:pl-4 text-lg md:xl lg:text-xl leading-tight mt-4">
+                        <b>My story, the short version</b>: Ayurveda helped me on my health journey feel better than I even knew was possible. Calmer in my mind, and more connected to my body.
+                    </p>
+                    <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
+                        Enthusiasm and curiosity fueled me:
+                    </p>
+                    <p className="font-handwriting text-3xl lg:text-5xl font-bold text-center mt-4">
+                        <i>How did this work?</i>
+                    </p>
+                    <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4 mb-8">
+                        Before I knew it, I was back in school. Studying Ayurveda for 4 years only increased my passion. Now, I get to enthusiastically share it with others as they travel their path... 
+                    </p>
+                    <div className="flex justify-center items-center w-full mb-4">
+                        <button className="px-3 py-3 text-xl lg:text-2xl font-helvetica rounded-full text-white bg-green-custom hover:bg-teal-custom hover:text-white transition-colors">
+                            Read more of my story...
+                        </button>
                     </div>
                 </div>
+                {/* Image container - add order-1 for mobile */}
+                <div className="w-full lg:w-auto order-1 lg:order-2">
+                    <img className="w-full lg:w-auto lg:max-h-[40rem] object-cover" 
+                        src={images.JackySection3} 
+                        alt="Jacky" />
+                </div>
+            </div>
                 <div className="flex justify-center w-full">
                     <TestimonialsSlider />
                 </div>
@@ -175,12 +188,12 @@ const HomePage = () => {
                         backgroundImage: `url(${images.walkYourPath})`
                     }}>
                     <div className="relative h-full flex items-center justify-center">
-                        <div className="flex flex-col items-center bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg max-w-4xl mx-4">
-                            <p className="text-center text-3xl mb-6">
+                        <div className="flex flex-col items-center bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg mx-4 w-full md:w-3/4 lg:w-2/3 xl:max-w-4xl">
+                            <p className="text-center text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6">
                                 Ready to see what ayurveda can do for you?
                             </p>
                             <Link to='/contact'>
-                                <button className="px-4 py-4 bg-green-custom text-white text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg">
+                                <button className="px-3 py-2 md:px-4 md:py-4 bg-green-custom text-white text-lg md:text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg">
                                     Schedule a free 20-minute consult
                                 </button>
                             </Link>

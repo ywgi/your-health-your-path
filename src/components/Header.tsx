@@ -87,7 +87,7 @@ const Header = () => {
                     href="/about-Jacklyn"
                     className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
                 >
-                    About Jacky
+                    About Jacklyn
                 </a>
                 <a
                     href="/ayurveda"

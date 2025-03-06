@@ -11,7 +11,7 @@ const AboutJackyPage = () => {
                 <div className="block md:hidden">
                     <div className="relative h-full flex items-center justify-center p-4">
                             <div className="md:p-8 w-full max-w-5xl">
-                                <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">My Qualifications at a glance</h1>
+                                <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">My Qualifications at a glance:</h1>
                                 <p className="mb-4 text-xl md:text-base">As an Ayurvedic Practitioner I have:</p>
                                 <ul className="list-disc pl-6 md:pl-8 space-y-2 text-xl md:text-base">
                                     <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA: European Institute of Scientific Research on Ayurveda (Dutch: HBO Level)</li>
@@ -38,7 +38,7 @@ const AboutJackyPage = () => {
                             </p>
                             <ul className="list-disc pl-6 md:pl-8 space-y-1 text-sm md:text-base">
                                 <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA (Dutch: HBO Level)</li>
-                                <li>Completed <strong>two ayurvedic internships</strong> in India</li>
+                                <li>Completed <strong>two Ayurvedic internships</strong> in India</li>
                                 <li>Completed the <strong>Medical foundations</strong> (Dutch: Medische Basis Kennis-MBK)</li>
                                 <li>Plus, I have a bachelor's degree in Education (Dutch: PABO)</li>
                             </ul>
@@ -46,27 +46,25 @@ const AboutJackyPage = () => {
                     </div>
                 </div>
                 <div className="bg-white w-full py-5">
-                    <p className="mt-4 text-center font-handwriting font-bold lg:text-5xl">
+                    <p className="mt-4 text-center font-handwriting font-bold text-3xl lg:text-5xl">
                         But more importantly - I've walked with Ayurveda along my <b className="font-handwriting lg:text-5xl text-green-custom">own health path</b>. Experiencing what it can do in a <i>very</i> <span className="font-handwriting lg:text-5xl text-green-custom">personal</span> way.
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row w-full items-center lg:items-center justify-center lg:px-12 pt-6 lg:pt-12 pb-4 gap-6 lg:gap-12">
                     <div className="flex w-full lg:max-w-2xl justify-center flex-col text-left px-4 lg:px-0 space-y-3 text-xl ">
                         <h1 className="text-4xl font-bold font-heading tracking-wide text-light-teal-custom">2015</h1>
-                        <br/>
                         <p>
-                            My love for Ayurveda, like so many of the other loves in my life (including meeting my husband!) started when I dared to follow my curiosity - after all, <b><i className="font-handwriting text-5xl">why not?</i></b>
+                            My love for Ayurveda, like so many of the other loves in my life (including meeting my husband!) started when I dared to follow my curiosity - after all, <b><i className="font-handwriting text-4xl md:text-5xl">why not?</i></b>
                         </p>
                         <p>
-                            In May of 2015, unsatisfied and even shocked by the doctor's advice - I picked up my first book about Ayurveda. The book had been given by a
-                            woman I had the pleasure of sitting next to on a plane. Oh, how I wish I could thank her! I devoured the information and <b>my life's path and overall approach to health, were forever changed.</b>
+                            In May of 2015, unsatisfied and even shocked by the doctor's advice - I picked up my first book about Ayurveda.  The book was a tip given by a woman I had the pleasure sitting next to on a plane. Oh, how I wish I could thank her! I devoured the information and <b>my life's path and overall approach to health, were forever changed.</b>
                         </p>
                         <p>The feeling of <span className="font-handwriting font-bold">YESSSS! </span> filled me. Ayurveda made sense. It explained my experiences.</p>
-                        <p>Immediately, I began making adjustments to my diet and scheduled an appointment with an ayurvedic doctor. My ailment - a half-dollar sized bald spot on the back of my head that had
+                        <p>Immediately, I began making adjustments to my diet and scheduled an appointment with an Ayurvedic doctor. My ailment - a half-dollar sized bald spot on the back of my head that had
                              developed over a matter of weeks, was taken care of with the soft and natural approach of Ayurveda instead of the strong hormonal creams that had been recommended with the explanation: if used sooner than later they <i>just might work</i>.
                         </p>
                         <p>
-                            And, as it turns out, this was <span className="font-handwriting font-bold text-5xl">just the beginning...</span>
+                            And, as it turns out, this was <span className="font-handwriting font-bold text-4xl md:text-5xl"><br/>just the beginning...</span>
                         </p>
                     </div>
                     <div className="relative w-full lg:w-auto self-center">
@@ -90,7 +88,7 @@ const AboutJackyPage = () => {
                         <div className="absolute bottom-0 left-0 w-full h-full bg-teal-custom -z-10 md:block origin-bottom-left scale-90" />
                         
                         {/* Main image container */}
-                        <div className="w-full md:w-auto lg:w-auto relative md:mb-4 md:ml-4 lg:mb-8 lg:ml-8">
+                        <div className="w-full md:max-w-[800px] lg:w-auto relative md:mb-4 md:ml-4 lg:mb-8 lg:ml-8">
                             <img 
                                 className="w-full lg:w-auto lg:max-h-[800px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.jackyNielsBeach}
@@ -104,7 +102,7 @@ const AboutJackyPage = () => {
                         <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">10 years of suffering to relief in <i>months</i>!</h2>
                         <br/>
                         <p>
-                           At that very first Ayurvedic Doctor's appointment, I looked at my husband Niels and said, "Maybe this is something that would help you?"
+                           At that very first Ayurvedic doctor's appointment, I looked at my husband Niels and said, "Maybe this is something that would help you?"
                         </p>
                         <p>
                             For more than 10 years, he'd struggled with intestinal complaints. <b>He went to doctors and specialists, but his symptoms persisted.</b>
@@ -131,12 +129,13 @@ const AboutJackyPage = () => {
                             </li>
                         </ul>
                         <p>
-                            Niels too gave Ayurveda a try. After that first appointment, he began taking herbal supplements perscribed by the ayurvedic doctor and made alterations to his diet. Within a couple of months, he was free of all intestinal complaints, and they haven't returned!
+                            Niels too gave Ayurveda a try. After that first appointment, he began taking herbal supplements perscribed by the yurvedic doctor and made alterations to his diet. Within a couple of months, he was free of all intestinal complaints, and they haven't returned!
                         </p>
                         <p>
                             This dramatic transformation got my attention - Ayurveda was really helping us. 
                         </p>
-                        <p className="font-handwriting font-bold text-5xl pb-2">
+                        <br/>
+                        <p className="font-handwriting font-bold text-4xl md:text-5xl pb-2">
                             So, we both kept going...
                         </p>
                     </div>
@@ -144,7 +143,7 @@ const AboutJackyPage = () => {
                 {/*green divider with text */}
                 <div className="relative w-full min-h-[10rem] lg:min-h-[12rem] bg-green-custom  py-8 lg:py-12">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl">
-                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-quote text-lg lg:whitespace-nowrap sm:text-2xl lg:text-4xl text-white">
+                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-quote text-xl lg:whitespace-nowrap sm:text-2xl lg:text-4xl text-white">
                             It's hard to have energy if your body isn't digesting properly.
                         </span>
                     </div>
@@ -154,7 +153,7 @@ const AboutJackyPage = () => {
                     style={{
                         backgroundImage: `url(${images.mountainColorful})`
                     }}>
-                    <div className="w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
+                    <div className="w-[90vw] md:w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
                         {/* Text content div */}
                         <div className="w-full max-w-3xl mb-2">                    
                             <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Fast Forward to 2019-2020:</h1>
@@ -162,7 +161,7 @@ const AboutJackyPage = () => {
                             <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">My story continued...</h2>
                             <br/>
                             <p className="mb-2 text-xl">
-                                Niels and I had continued to follow basic ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
+                                Niels and I had continued to follow basic Ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
                             </p>
                             <p className="mb-2 text-xl">
                                 <b>How I was feeling on the inside started to manifest on the outside</b>.
@@ -205,7 +204,7 @@ const AboutJackyPage = () => {
                                 I'm calmer and more self-aware.
                             </p>
                             <p className="mb-2 text-xl">
-                                Growing up and functioning in the world with a notoriously active brain - I now have <b>a mental calm that i didn't know was possible</b>.
+                                Growing up and functioning in the world with a notoriously active brain - I now have <b>a mental calm that I didn't know was possible</b>.
                             </p>
                             <p className="font-bold mb-2 text-xl">Other helpful improvements:</p>
                             <ul className="pl-4 lg:pl-8 text-xl">
@@ -226,9 +225,7 @@ const AboutJackyPage = () => {
                     </div>
                 </div>
                 <div className="w-full bg-green-custom h-[150px]">
-                    {/* <h1 className="text-6xl font-handwriting font-bold text-center mb-12 text-coral-custom">
-                        Just for fun...
-                    </h1> */}
+
                 </div>
             </div>
             <Footer/>

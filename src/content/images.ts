@@ -44,7 +44,11 @@ const images = {
     forest: "/images/forest.jpg",
     treeRooted: "/images/tree-rooted.jpg",
     soupWithSpices: "/images/soup-with-spices.jpg",
-    womanStretching: "/images/woman-stretching.jpg",
+    manStretching: "/images/man-stretching.jpg",
+    massageWoman: "/images/massage-woman.jpg",
+    massageFoot: "/images/massage-foot.jpg",
+    space: "/images/space.jpg",
+
 
     //ayurveda page pictures
     marketSpices: '/images/market-spices.jpg',

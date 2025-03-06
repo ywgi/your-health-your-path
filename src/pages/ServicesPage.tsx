@@ -23,7 +23,7 @@ const ServicesPage = () => {
                                 />
                                 <a href="#consult">
                                     <div className="absolute inset-0 flex items-center justify-center">
-                                        <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center">
+                                        <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center rounded-2xl">
                                             <h3 className="text-lg tracking-widest uppercase text-gray-800">Consult</h3>
                                         </div>
                                     </div>
@@ -39,7 +39,7 @@ const ServicesPage = () => {
                                 />
                                 <a href="#massage">
                                     <div className="absolute inset-0 flex items-center justify-center">
-                                        <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center">
+                                        <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center rounded-2xl">
                                             <h3 className="text-lg tracking-widest uppercase text-gray-800">Massage</h3>
                                         </div>
                                     </div>
@@ -55,7 +55,7 @@ const ServicesPage = () => {
                                 />
                                 <Link to="/contact">
                                 <div className="absolute inset-0 flex items-center justify-center">
-                                    <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center">
+                                    <div className="bg-light-pink-custom px-8 py-2 min-w-[200px] text-center rounded-2xl">
                                         <h3 className="text-lg tracking-widest uppercase text-gray-800">Contact Me</h3>
                                     </div>
                                 </div>
@@ -64,90 +64,147 @@ const ServicesPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full bg-white flex items-center justify-center h-[40vh]">
-                    <div className="flex flex-col px-8">
-                        <p className="text-2xl font-heading font-bold text-light-teal-custom max-w-[30vw]">Taking these differences into account, that's what ayurveda does.</p>
-                        <br/>
-                        <p className="text-2xl max-w-[30vw]">
-                        Ayurveda doesn't give a one-size-fits-all approach. Instead, it looks at who <strong>you are </strong>
-                        and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
-                        </p>
-                    </div>
-                    <img src={images.pathway}  className="max-h-full"/>
-                </div>
-                <div className="flex items-center justify-center w-full h-[20vh] text-6xl bg-green-custom">
-                    <div className="flex items-center justify-center gap-8">
-                        <img src={images.yhypWhiteNoBackground} className="max-h-[10vh]" />
-                        <div className="h-[1px] bg-white w-[30vw]"></div>
-                        <p className="text-white font-handwriting text-center">My Services</p>
-                        <div className="h-[1px] bg-white w-[30vw]"></div>
-                        <img src={images.yhypWhiteNoBackground} className="max-h-[10vh]"/>
-                    </div>
-                </div>
-                <div className="flex justify-center items-center w-full py-10 text-xl">
-                    <div className="max-w-[60vw] mx-auto">
-                        <h1 className="font-heading font-bold text-4xl text-light-teal-custom">My Process:</h1>
-                        <br/>
-                        <p>
-                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 1:</span> Start by Scheduling a Free 20 min. phone consult to see if working with Your
-                            Health, Your Path is right for you. This is completely open-ended, there is no obligation.
-                            This is a chat about your (health) goals, and an opportunity to gain clarity
-                            about the offerings of Your Health, Your Path.  
-                        </p>
-                        <br/>
-                        <p>
-                            You want to move forward. Great, now we get started!
+                {/* Desktop and Mobile Responsive Layout For White background section*/}
+                <div className="w-full bg-white h-auto md:h-[40vh]">
+                    {/* For larger screens - horizontal layout with full height image */}
+                    <div className="hidden md:flex items-center justify-center w-full h-full">
+                        <div className="flex flex-col px-8">
+                            <p className="text-2xl font-heading font-bold text-light-teal-custom max-w-[30vw]">
+                                Taking these differences into account, that's what ayurveda does.
+                            </p>
                             <br/>
-                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 2:</span> We schedule your first appointment.
-                            You will receive an in-depth questionnaire to complete and submit at least 72hrs
-                            before the first appointment.
-                        </p>
-                        <br/>
-                        <p>
-                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 3:</span> 1 st appointment (90 minutes)
-                            Included during this appointment:
+                            <p className="text-2xl max-w-[30vw]">
+                                Ayurveda doesn't give a one-size-fits-all approach. Instead, it looks at who <strong>you are </strong>
+                                and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
+                            </p>
+                        </div>
+                        <img src={images.pathway} className="h-full" alt="Ayurveda pathway" />
+                    </div>
 
-                            Deep dive into current health and health history.
-                            Pulse diagnosis (in person only)
-                            Tongue diagnosis
-                            We discuss Ayurveda along the way, so you begin to deepen your
-                            understanding of what it is and how it can help you along your path.
+                    {/* For mobile screens - vertical layout */}
+                    <div className="md:hidden flex flex-col items-center pt-8">
+                        <p className="text-xl font-heading font-bold text-light-teal-custom text-center mb-4">
+                            Taking these differences into account, that's what ayurveda does.
                         </p>
-                        <br/>
-                        <p>
-                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 4:</span> 2nd Appointment (60 minutes)
-                            During this appointment, your will learn about your Ayurvedic type, and what areas, if any, you
-                            are currently out of balance.
-                            You will receive a laid out plan with advice for your specific situation. It will include diet,
-                            lifestyle- and if appropriate herbal supplement- advice. Depending on your needs there can be
-                            cooking tips, and recommendations for (self) massage , yoga asanas, and breathing techniques.
-                            The advice is tailored for you and your lifestyle. It will also be laid out according to the length
-                            of plan you have selected (1 month, 3 months or 6 months) Both the 3 and 6 month plans will
-                            be monitored and adjusted along your journey.
+                        <p className="text-lg text-center mb-6">
+                            Ayurveda doesn't give a one-size-fits-all approach. Instead, it looks at who <strong>you are </strong>
+                            and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
                         </p>
-                        <br/>
-                        <p>
-                            <span className="text-2xl font-heading uppercase text-dark-coral-custom">Step 5:</span> You begin walking your path with Ayurveda. The remaining steps depend upon what
-                            best fits your needs, and what package you selected.
+                        <img src={images.pathway} className="w-full" alt="Ayurveda pathway" />
+                    </div>
+                </div>
+                <div className="flex items-center justify-center w-full h-auto min-h-[15vh] md:h-[20vh] py-4 bg-green-custom">
+                {/* Desktop layout - horizontal with all elements */}
+                    <div className="hidden md:flex items-center justify-center gap-8">
+                        <img src={images.yhypWhiteNoBackground} className="max-h-[10vh]" alt="Logo" />
+                        <div className="h-[1px] bg-white w-[30vw]"></div>
+                        <p className="text-white font-handwriting text-center text-4xl lg:text-6xl">My Services</p>
+                        <div className="h-[1px] bg-white w-[30vw]"></div>
+                        <img src={images.yhypWhiteNoBackground} className="max-h-[10vh]" alt="Logo" />
+                    </div>
+                    
+                    {/* Mobile layout - simplified version */}
+                    <div className="flex md:hidden flex-col items-center justify-center gap-4 py-2">
+                        <img src={images.yhypWhiteNoBackground} className="max-h-[8vh]" alt="Logo" />
+                        <div className="flex items-center justify-center w-full gap-3">
+                            <div className="h-[1px] bg-white w-16"></div>
+                            <p className="text-white font-handwriting text-center text-3xl px-2">My Services</p>
+                            <div className="h-[1px] bg-white w-16"></div>
+                        </div>
+                    </div>
+                </div>
+                <div className="flex justify-center items-center w-full py-8">
+                    <div className="w-full md:max-w-[70vw] mx-auto">
+                        <h1 className="font-heading pl-4 font-bold text-3xl md:text-4xl text-light-teal-custom pb-4 lg:pb-8">My Process:</h1>
+                        <div className="space-y-6 px-4 md:ml-16">
+                            <div>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 1:</p>
+                                <p className="text-base md:text-xl ml-8">
+                                    Start by Scheduling a Free 20 min. phone consult to see if working with Your
+                                    Health, Your Path is right for you. This is completely open-ended, there is no obligation.
+                                    This is a chat about your (health) goals, and an opportunity to gain clarity
+                                    about the offerings of Your Health, Your Path.  
+                                </p>
+                            </div>
+                            <div>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 2:</p>
+                                <div className="ml-8">
+                                    <p className="mb-2">You want to move forward. Great, now we get started!</p>
+                                    <p className="text-base md:text-xl">
+                                        We schedule your first appointment.
+                                        You will receive an in-depth questionnaire to complete and submit at least 72hrs
+                                        before the first appointment.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 3:</p>
+                                <div className="ml-8">
+                                    <p className="text-base md:text-xl font-semibold mb-1">1st appointment (90 minutes)</p>
+                                    <p className="text-base md:text-xl mb-2">Included during this appointment:</p>
+                                    <ul className="list-disc pl-5 text-base md:text-xl space-y-1">
+                                        <li>Deep dive into current health and health history.</li>
+                                        <li>Pulse diagnosis (in person only)</li>
+                                        <li>Tongue diagnosis</li>
+                                        <li>We discuss Ayurveda along the way, so you begin to deepen your
+                                        understanding of what it is and how it can help you along your path.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 4:</p>
+                                <div className="ml-8">
+                                    <p className="text-base md:text-xl font-semibold mb-1">2nd Appointment (60 minutes)</p>
+                                    <p className="text-base md:text-xl">
+                                        During this appointment, your will learn about your Ayurvedic type, and what areas, if any, you
+                                        are currently out of balance.
+                                    </p>
+                                    <p className="text-base md:text-xl mt-2">
+                                        You will receive a laid out plan with advice for your specific situation. It will include diet,
+                                        lifestyle- and if appropriate herbal supplement- advice. Depending on your needs there can be
+                                        cooking tips, and recommendations for (self) massage, yoga asanas, and breathing techniques.
+                                    </p>
+                                    <p className="text-base md:text-xl mt-2">
+                                        The advice is tailored for you and your lifestyle. It will also be laid out according to the length
+                                        of plan you have selected (1 month, 3 months or 6 months) Both the 3 and 6 month plans will
+                                        be monitored and adjusted along your journey.
+                                    </p>
+                                </div>
+                            </div>
+                            <div>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 5:</p>
+                                <div className="ml-8">
+                                    <p className="text-base md:text-xl">
+                                        You begin walking your path with Ayurveda. The remaining steps depend upon what
+                                        best fits your needs, and what package you selected.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className="w-full md:max-w-[70vw] max-w-full mx-auto px-4 md:px-0">
+                    <h1 className="font-heading font-bold text-3xl md:text-4xl text-light-teal-custom">Consult Packages:</h1>
+                </div>
+                <div className="flex flex-col justify-center items-center px-4 py-4 md:px-6">
+                    <ConsultCards />
+                    <div className="w-full max-w-4xl mx-auto text-base md:text-lg lg:text-xl space-y-6 mt-2">
+                        <p className="text-center text-sm md:text-base italic">
+                            *If supplements are advised, guidance is given for trusted sources. Your Health, Your Path does not sell supplements, thus the cost for supplements is additional.
+                        </p>
+                        
+                        <p className="text-center">
+                            Health is important for Everyone. If you want to work with me, but your budget is constricted, please
+                            reach out so we can discuss payment options. 
+                            <span className="">
+                                Ideally we can find an option that fits your needs and
+                                helps you reach your health goals.
+                            </span>
                         </p>
                     </div>
                 </div>
-                <div className="max-w-[60vw] mx-auto">
-                    <h1 className="font-heading font-bold text-4xl text-light-teal-custom">Consult Packages:</h1>
-                </div>
-                <div className="flex flex-col justify-center items-center text-xl">
-                    <ConsultCards />
-                    <p>*If supplements are advised, guidance is given for trusted sources. Your Health, Your Path does not sell supplements, thus the cost for supplements is additional.</p>
-                    <br/>
-                    <p>Health is important for Everyone. If you want to work with me, but your budget is constricted, please
-                        reach out so we can discuss payment options. <br/> Ideally we can find an options that fits your needs and
-                        helps you reach your health goals.
-                    </p>
-                    <br/>
-                </div>
-                <div className="max-w-[60vw] mx-auto">
-                    <h1 className="font-heading font-bold text-4xl text-light-teal-custom">Massage Packages:</h1>
-                    <br/>
+                <div className="w-full md:max-w-[70vw] max-w-full mx-auto px-4 py-4 md:px-0">
+                    <h1 className="font-heading font-bold text-3xl md:text-4xl text-light-teal-custom">Massage Packages:</h1>
                 </div>
                 <div className="flex flex-col justify-center items-center pb-12">
                     <MassageCards />
