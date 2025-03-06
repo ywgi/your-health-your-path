@@ -121,7 +121,7 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="flex w-full lg:max-w-[40vw] flex-col mt-16 md:mt-4 lg:mt-4 text-left px-4 lg:px-0">
+                    <div className="flex w-full lg:max-w-[800px] flex-col mt-16 md:mt-4 lg:mt-4 text-left px-4 lg:px-0">
                             <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Are you ready to feel better?</h1>
                             <br/>
                             <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">It's time to be empowered with your health.</h2>
