@@ -14,8 +14,8 @@ const BusinessMap = () => {
     // 4. Select "Show Address"
     // 5. Copy the coordinates
     coordinates: {
-      latitude: 52.87083,
-      longitude: 6.51725
+      latitude: 52.8726621,
+      longitude: 6.5232508
     }
   };
 
