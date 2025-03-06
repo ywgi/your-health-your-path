@@ -39,7 +39,7 @@ const DoshaCards = () => {
                         </div>
                     </div>
                     {/* Content box - set to take remaining height */}
-                    <div className="h-[70%] text-sm">
+                    <div className="h-[70%] text-md">
                         <div className="p-4">
                             <p>Elements: air and space</p>
                             <br/>
@@ -80,7 +80,7 @@ const DoshaCards = () => {
                         </div>
                     </div>
                     {/* Content box */}
-                    <div className="h-[70%] text-sm">
+                    <div className="h-[70%] text-md">
                         <div className="p-4">
                             <p>Elements: fire and a little water</p>
                             <br/>
@@ -134,7 +134,7 @@ const DoshaCards = () => {
                         </div>
                     </div>
                     {/* Content box */}
-                    <div className="h-[70%] text-sm">
+                    <div className="h-[70%] text-md">
                         <div className="p-4">
                             <p>Elements: earth and water</p>
                             <br/>

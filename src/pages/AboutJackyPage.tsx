@@ -76,7 +76,7 @@ const AboutJackyPage = () => {
                             <img 
                                 className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.AboutJacky1}
-                                alt="Jacky sitting cross-legged in a chair in her office" 
+                                alt="Ayurvedic practitioner Jacklyn sitting cross-legged in a chair in her office" 
                             />
                         </div>
                     </div>
@@ -92,7 +92,7 @@ const AboutJackyPage = () => {
                             <img 
                                 className="w-full lg:w-auto lg:max-h-[800px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.jackyNielsBeach}
-                                alt="Jacklyn and husband walking on beach after wedding tenerife" 
+                                alt="Jacklyn and husband walking on beach after wedding in tenerife" 
                             />
                         </div>
                     </div>
@@ -183,7 +183,7 @@ const AboutJackyPage = () => {
                                 <h3 className="text-xl font-bold mb-2">2020</h3>
                                 <img 
                                     src={images.jackyAcne} 
-                                    alt="Before"
+                                    alt="Jacklyn before committing to Ayurveda"
                                     className="w-80 h-80 object-cover border-8 border-white"
                                 />
                             </div>
@@ -191,7 +191,7 @@ const AboutJackyPage = () => {
                                 <h3 className="text-xl font-bold mb-2">2021</h3>
                                 <img 
                                     src={images.jackyAcneHealed} 
-                                    alt="After"
+                                    alt="Jacklyn after Ayurveda"
                                     className="w-80 h-80 object-cover border-8 border-white"
                                 />
                             </div>

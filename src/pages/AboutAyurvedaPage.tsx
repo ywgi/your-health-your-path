@@ -140,7 +140,7 @@ const AboutAyurvedaPage = () => {
                   <img 
                     src={images.asana} 
                     className="w-full h-auto md:h-full object-cover" 
-                    alt="Ayurvedic practice"
+                    alt="Ayurvedic yoga pose"
                   />
                 </div>
               </div>
@@ -174,24 +174,24 @@ const AboutAyurvedaPage = () => {
                         <img
                           src={images.gmaD}
                           className="w-full h-full object-cover object-top"
-                          alt="Grandma D"
+                          alt="Jacklyn's Grandma D"
                         />
                       </div>
                       <div className="flex flex-col w-full max-w-[320px] sm:max-w-[400px] min-h-[320px] md:min-h-[375px] bg-white p-4 md:p-8 mt-4">
-                        <p className="text-sm">
+                        <p className="text-md">
                           Grandma D. She was always on the go and was very creative. When I was seven, I awoke from a nap to discover, in that short amount of time
                           she managed to make a new outfit for my doll.
                         </p>
                         <br/>
-                        <p className="text-sm">
+                        <p className="text-md">
                           Not only her hands, but also her mind was quick and tucked in between all her thoughts was often worry.
                         </p>
                         <br/>
-                        <p className="text-sm">
+                        <p className="text-md">
                           She was easy with change, furniture was replaced and items from the past were let go.
                         </p>
                         <br/>
-                        <p className="text-sm">
+                        <p className="text-md">
                           Although she ate sweets and carbs and everything else in-between, gaining weight was never a concern for her.
                           Actually, keeping weight on, especially in her later years, was more of a challenge.
                         </p>
@@ -205,20 +205,20 @@ const AboutAyurvedaPage = () => {
                         <img
                           src={images.gmaM}
                           className="w-full h-full object-cover object-top"
-                          alt="Grandma M"
+                          alt="Jacklyn's Grandma M"
                         />
                       </div>
                       <div className="flex flex-col w-full max-w-[320px] sm:max-w-[400px] min-h-[320px] md:min-h-[375px] bg-white p-4 md:p-8 mt-4">
-                        <p className="text-sm">
+                        <p className="text-md">
                           Grandma M was, in some aspects, almost the complete opposite to Grandma D
                         </p>
                         <br/>
-                        <p className="text-sm">
+                        <p className="text-md">
                           She was steady, not especially active and wasn't one to worry very easily. Going to her house, was a predictable treat.
                           I could always find whatever I was looking for because she wasn't one for change.
                         </p>
                         <br/>
-                        <p className="text-sm">
+                        <p className="text-md">
                           After struggling with her weight for years, Grandma M watched what she ate, and could complain that
                           <i> just looking at sweets </i>
                           would bring weight gain.
@@ -232,7 +232,7 @@ const AboutAyurvedaPage = () => {
                     <img 
                       src={images.yhypGreenNoBackground}
                       className="max-h-[120px] lg:max-h-[200px]"
-                      alt="Logo"
+                      alt="Your Health Your Path Logo"
                     />
                   </div>
                 </div>
@@ -248,7 +248,7 @@ const AboutAyurvedaPage = () => {
               </div>
               <div className="w-full bg-white flex flex-col md:flex-row items-center justify-center md:h-[40vh]">
                 <div className="w-full md:w-auto flex justify-center md:h-full">
-                  <img src={images.meditate} className="h-auto md:h-full object-contain"/>
+                  <img src={images.meditate} className="h-auto md:h-full object-contain" alt="Ayurvedic Woman Meditating on the beach"/>
                 </div>
                 <div className="flex flex-col px-4 md:px-8 py-4 md:py-0">
                   <p className="text-xl md:text-2xl font-heading font-bold text-light-teal-custom max-w-full md:max-w-[30vw]">
@@ -289,7 +289,7 @@ const AboutAyurvedaPage = () => {
                     <img 
                       className="w-full md:max-w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                       src={images.manStretching}
-                      alt="Man practicing stretching exercise"
+                      alt="Ayurvedic Man practicing stretching exercise"
                     />
                   </div>
                 </div>
@@ -304,7 +304,7 @@ const AboutAyurvedaPage = () => {
                       <img 
                           className="w-full md:max-w-full lg:w-auto lg:max-h-[800px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                           src={images.soupWithSpices}
-                          alt="Bowl of soup with assorted spices" 
+                          alt="Bowl of soup with assorted Ayurvedic spices" 
                       />
                   </div>
                 </div>

@@ -85,13 +85,13 @@ const ServicesPage = () => {
                     </div>
                 </div>
                 {/* Desktop and Mobile Responsive Layout For White background section*/}
-                <div className="w-full bg-white h-auto md:h-[40vh]">
+                <div className="w-full bg-white h-auto md:h-[50vh]">
                     {/* For larger screens - horizontal layout with full height image */}
                     <div className="hidden md:flex items-center justify-center w-full h-full">
-                        <div className="flex flex-col px-8 max-w-[30vw] space-y-3">
+                        <div className="flex flex-col px-8 max-w-[50vw] xl:max-w-[50vw] space-y-3">
                             <h1 className="text-3xl font-heading font-bold text-light-teal-custom">Thrive Naturally, Live Fully</h1>
                             <p className="text-xl">Using the wisdom of Ayurveda, my goal is to see you for the unique person you are while recognizing the patterns of feedback the body provides.</p>
-                            <p className="text-xl max-w-[30vw]">
+                            <p className="text-xl">
                                 <b>Who benefits from Ayurveda?</b> The short answer - everyone can benefit from
                                 becoming more connected to their body and gaining understanding on how to
                                 support it.

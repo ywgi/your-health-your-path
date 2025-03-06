@@ -44,7 +44,7 @@ const ContactPage = () => {
                                     <img 
                                         className="w-full lg:max-h-[800px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                         src={images.jackyWithNotepad}
-                                        alt="Jacklyn with notepad" 
+                                        alt="Jacklyn Bestenbreur Ayurvedic practioner with notepad" 
                                     />
                                 </div>
                             </div>
@@ -57,14 +57,14 @@ const ContactPage = () => {
                                 <img 
                                     src={images.whatsApp} 
                                     className="max-h-[40px] md:max-h-[50px]"
-                                    alt="WhatsApp"
+                                    alt="WhatsApp Link to contact Jacklyn BestenBreur"
                                 />
                             </a>
                             <a href="signal://+1234567890" className="inline-block">
                                 <img
                                     src={images.signalLogo}
                                     className="max-h-[40px] md:max-h-[50px]"
-                                    alt="Signal"
+                                    alt="Signal Link to contact Jacklyn Bestenbreur"
                                 />
                             </a>
                         </div>

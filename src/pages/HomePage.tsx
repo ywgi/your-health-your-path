@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import './HomePage.css'
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import images from '../content/images'
@@ -75,7 +74,7 @@ const HomePage = () => {
                             <img 
                                 className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.jackySection1}
-                                alt=""
+                                alt="Jacklyn Bestenbreur, Ayurvedic practitioner"
                             />
                         </div>
                     </div>
@@ -99,7 +98,7 @@ const HomePage = () => {
                             <img 
                                 className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover" 
                                 src={images.massageTools} 
-                                alt="Massage Tools" 
+                                alt="Ayurvedic Massage Tools" 
                             />
                             </div>
                             
@@ -108,7 +107,7 @@ const HomePage = () => {
                             <img
                                 className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover"  
                                 src={images.holistic}
-                                alt="Holistic"
+                                alt="Holistic tiles"
                             />
                             </div>
                             
@@ -117,7 +116,7 @@ const HomePage = () => {
                                 <img
                                     className="w-full object-contain"
                                     src={images.yhypLogoNoBackground}
-                                    alt="Logo"
+                                    alt="Your Health Your Path Logo, Ayurvedic practice"
                                 />
                             </div>
                         </div>
@@ -178,7 +177,7 @@ const HomePage = () => {
                 <div className="w-full lg:w-auto order-1 lg:order-2">
                     <img className="w-full lg:w-auto lg:max-h-[40rem] object-cover" 
                         src={images.JackySection3} 
-                        alt="Jacky" />
+                        alt="Jacklyn Bestenbreur, Ayurvedic Practitioner" />
                 </div>
             </div>
                 <div className="flex justify-center w-full">
