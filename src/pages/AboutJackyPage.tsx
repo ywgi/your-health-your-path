@@ -65,7 +65,7 @@ const AboutJackyPage = () => {
                         </p>
                         <p>
                             And, as it turns out, this was 
-                            <span className="font-handwriting hidden md:inline text-4xl font-bold">just the beginning...</span>
+                            <span className="font-handwriting hidden md:inline text-4xl font-bold"> just the beginning...</span>
                             <span className="font-handwriting md:hidden text-4xl font-bold"><br/>just the beginning...</span>
                         </p>
                     </div>
