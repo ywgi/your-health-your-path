@@ -64,7 +64,9 @@ const AboutJackyPage = () => {
                              developed over a matter of weeks, was taken care of with the soft and natural approach of Ayurveda instead of the strong hormonal creams that had been recommended with the explanation: if used sooner than later they <i>just might work</i>.
                         </p>
                         <p>
-                            And, as it turns out, this was <span className="font-handwriting font-bold text-4xl md:text-5xl"><br/>just the beginning...</span>
+                            And, as it turns out, this was 
+                            <span className="font-handwriting hidden md:inline text-4xl font-bold">just the beginning...</span>
+                            <span className="font-handwriting md:hidden text-4xl font-bold"><br/>just the beginning...</span>
                         </p>
                     </div>
                     <div className="relative w-full lg:w-auto self-center">
