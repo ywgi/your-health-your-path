@@ -157,7 +157,7 @@ const AboutAyurvedaPage = () => {
                 </div>
                 
                 {/* Main content section - stack on mobile, side by side on desktop */}
-                <div className="flex flex-col md:flex-row md:gap-8 lg:gap-20 items-center">
+                <div className="flex flex-col md:flex-row md:gap-8 lg:gap-20 justify-center items-center">
                   {/* "Work with nature" text - standard text on mobile, rotated on desktop */}
                   <div className="w-full md:max-w-[15%] flex items-center justify-center my-6 md:my-0">
                     <p className="text-5xl text-green-custom md:text-5xl lg:text-7xl md:text-black font-handwriting md:transform md:-rotate-90 md:origin-center md:whitespace-nowrap">
