@@ -50,6 +50,7 @@ const images = {
     space: "/images/space.jpg",
 
 
+
     //ayurveda page pictures
     marketSpices: '/images/market-spices.jpg',
     asana: '/images/ayurveda/asana.jpg',
@@ -58,7 +59,8 @@ const images = {
     earth: '/images/ayurveda/earth.jpg',
     water: '/images/ayurveda/water.jpg',
     gmaD: '/images/ayurveda/gmad.jpg',
-    gmaM: '/images/ayurveda/gmam.jpg'
+    gmaM: '/images/ayurveda/gmam.jpg',
+    yhypIcon: "/images/ayurveda/yhyp-icon.png"
 }
 
 export default images;
