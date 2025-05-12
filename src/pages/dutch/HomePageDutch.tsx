@@ -153,7 +153,7 @@ const HomePageDutch = () => {
                         Geboren in de V.S., woonachtig in Nederland, een voormalig lerares die de overstap naar Ayurveda heeft
                         gemaakt omdat je goed voelen het genieten van het leven zoveel makkelijker maakt!                    </p>
                     <p className="pl-0 lg:pl-4 text-lg md:xl lg:text-xl leading-tight mt-4">
-                        <b>Mijn verhaal, de korte versie:</b>: Ayurveda heeft me op mijn gezondheidsreis geholpen me beter te voelen dan ik zelfs wist dat mogelijk was. 
+                        <b>Mijn verhaal, de korte versie</b>: Ayurveda heeft me op mijn gezondheidsreis geholpen me beter te voelen dan ik zelfs wist dat mogelijk was. 
                         Rustiger in mijn hoofd en meer verbonden met mijn lichaam.
                     </p>
                     <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
@@ -192,7 +192,7 @@ const HomePageDutch = () => {
                     <div className="relative h-full flex items-center justify-center">
                         <div className="flex flex-col items-center bg-white/70 backdrop-blur-sm p-8 rounded-lg shadow-lg mx-4 w-full md:w-3/4 lg:w-2/3 xl:max-w-4xl">
                             <p className="text-center text-xl md:text-2xl lg:text-3xl mb-4 md:mb-6">
-                                Klaar om te zien wat ayurveda voor jou kan doen?
+                                Klaar om te zien wat Ayurveda voor jou kan doen?
                             </p>
                             <Link to='/contact'>
                                 <button className="px-3 py-2 md:px-4 md:py-4 bg-green-custom text-white text-lg md:text-xl hover:bg-teal-custom transition-colors duration-200 rounded-lg">
