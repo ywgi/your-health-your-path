@@ -83,30 +83,33 @@ const Header = () => {
                 id="mobile-menu"
             >
                 <div className="w-screen px-2 pt-2 pb-3 space-y-1 bg-teal-custom">
-                <a
-                    href="/en/about-Jacklyn"
-                    className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
-                >
-                    About Jacklyn
-                </a>
-                <a
-                    href="/en/ayurveda"
-                    className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
-                >
-                    Ayurveda
-                </a>
-                <a
-                    href="/en/services"
-                    className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
-                >
-                    Services
-                </a>
-                <a
-                    href="/en/contact"
-                    className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
-                >
-                    Contact
-                </a>
+                    <a
+                        href="/en/about-Jacklyn"
+                        className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
+                    >
+                        About Jacklyn
+                    </a>
+                    <a
+                        href="/en/ayurveda"
+                        className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
+                    >
+                        Ayurveda
+                    </a>
+                    <a
+                        href="/en/services"
+                        className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
+                    >
+                        Services
+                    </a>
+                    <a
+                        href="/en/contact"
+                        className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
+                    >
+                        Contact
+                    </a>
+                    <a href="/" className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100">
+                        Dutch
+                    </a>
                 </div>
             </div>
             <div className="hidden md:block">
