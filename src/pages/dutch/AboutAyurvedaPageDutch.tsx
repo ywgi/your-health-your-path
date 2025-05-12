@@ -1,12 +1,12 @@
-import DoshaCards from "../components/DoshaCards";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import images from "../content/images";
+import DoshaCardsDutch from "../../components/DoshaCardsDutch";
+import FooterDutch from "../../components/FooterDutch";
+import HeaderDutch from "../../components/HeaderDutch";
+import images from "../../content/images";
 
-const AboutAyurvedaPage = () => {
+const AboutAyurvedaPageDutch = () => {
         return (
           <>
-            <Header/>
+            <HeaderDutch/>
             <div className="flex flex-col items-center w-full">
               {/*First section*/}
               <div className="w-full">
@@ -29,41 +29,41 @@ const AboutAyurvedaPage = () => {
                 {/* Content container - adjusted for better mobile display */}
                 <div className="w-full md:max-w-[80%] mx-auto bg-gradient-to-b from-white from-50% via-white via-65% to-light-pink-custom md:-mt-[22.5vh] relative z-10 pb-6 md:pb-12">
                   <div className="px-4 md:px-8 py-6 md:py-8 flex flex-col items-center">
-                    <h1 className="text-3xl md:text-5xl font-heading font-bold text-light-teal-custom leading-snug">What is Ayurveda?</h1>
-                    <p className="text-lg text-center md:text-xl mt-2">Ayur...what? Are you like the many I've met (and myself included in the very beginning!) that has little to no background with this ancient healing tradition?</p>
+                    <h1 className="text-3xl md:text-5xl font-heading font-bold text-light-teal-custom leading-snug">Wat is Ayurveda?</h1>
+                    <p className="text-lg text-center md:text-xl mt-2">Ayur...wat? Ben jij net als de velen die ik heb ontmoet (en ikzelf ook vanaf het begin!) die weinig tot geen achtergrond hebben in deze eeuwenoude geneeswijze?</p>
                   </div>
                   
                   <div className="px-4 md:px-0 md:max-w-6xl mx-auto space-y-2">
                     <div className="space-y-2">
-                      <p className="text-2xl md:text-3xl font-heading tracking-wide uppercase text-dark-coral-custom font-bold">Ayurveda, a quick summary:</p>
-                      <p className="text-gray-600 italic text-base md:text-lg">The word Ayurveda translated from Sanskrit means: the knowledge or science of life. (ayur-life; veda-knowledge/science)</p>
+                      <p className="text-2xl md:text-3xl font-heading tracking-wide uppercase text-dark-coral-custom font-bold">Ayurveda, een korte samenvatting:</p>
+                      <p className="text-gray-600 italic text-base md:text-lg">Het woord Ayurveda vertaald uit het Sanskriet betekent: de kennis of wetenschap van het leven. (ayur-leven; veda-kennis/wetenschap)</p>
                     </div>
                     
                     <div>
                       <ul className="space-y-2 md:space-y-1 list-none pl-2 md:pl-8 text-base md:text-xl">
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
-                          <span>A <b>traditional and natural form of medicine recognized by the World Health Organization.</b> (5000+ years old, originating in India)</span>
+                          <span>Een <b>traditionele en natuurlijke vorm van geneeskunde, erkend door de Wereldgezondheidsorganisatie.</b> (5000+ jaar oud, afkomstig uit India)</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
-                          <span><b>Holistic</b> - it treats a person, recognizing all systems, mind, body and emotion are connected.</span>
+                          <span><b>Holistisch</b> - het behandelt een persoon en erkent dat alle systemen, geest, lichaam en emotie met elkaar verbonden zijn.</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
-                          <span>Sees individuals for their <b>unique Ayurvedic type</b>, and where <b>they are in life <u>right now</u></b>.</span>
+                          <span>Ziet individuen op hun <b>unieke Ayurvedische type</b>, en waar <b>ze zich op dit moment in het leven bevinden</b>.</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
-                          <span>Focuses on <b>prevention</b> and assists with <b>healing</b></span>
+                          <span>Richt zich op <b>preventie</b> en helpt bij <b>genezing</b>.</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
-                          <span>Has <b>multifaceted approach</b>: diet, lifestyle, herbal supplements, breath work, and treatments such as warm oil massages.</span>
+                          <span>Heeft een <b>veelzijdige aanpak</b>: dieet, levensstijl, kruidensupplementen, ademwerk en behandelingen zoals massages met warme olie.</span>
                         </li>
                         <li className="flex items-start">
                           <span className="mr-2 text-green-custom flex-shrink-0 md:mt-1">•</span>
-                          <span>Is the <b>"sister" of yoga</b>, originating from the same source of knowledge, thus it overlaps with some techniques such as breathing practices and asana poses.</span>
+                          <span>Is the <b>"zusje" van yoga</b>, komt voort uit dezelfde kennisbron en overlapt daarom sommige technieken zoals ademhalingsoefeningen en asana houdingen.</span>
                         </li>
                       </ul>
                     </div>
@@ -93,32 +93,29 @@ const AboutAyurvedaPage = () => {
                 {/* Text section - full width on mobile */}
                 <div className="w-full md:w-3/4 space-y-2 order-2 md:order-last p-4">
                   <h1 className="text-3xl md:text-4xl font-heading font-bold text-light-teal-custom">
-                    Standing the test of 5000 years
+                    De test van 5000 jaar heeft Ayurveda doorstaan.
                   </h1>
                   <div className="text-lg md:text-xl">
                     <p>
-                      Ayurveda has stood up to the test of time. While growing up in the U.S. in the 90s, 
-                      the Adkins diet became popular, in NL the Sonja Bakker diet was popular, these trend 
-                      diets with their strict rules and one-size-fits-all approach waned in popularity after 
-                      just a few years.
+                        Toen ik in de jaren 90 opgroeide in de VS werd het Adkins-dieet populair, in NL was het Sonja Bakker-dieet populair, maar deze trenddiëten 
+                        met hun strenge regels en one-size-fits-all aanpak namen al na een paar jaar in populariteit af.
                     </p>
-                    
                     <h2 className="text-2xl md:text-3xl font-heading font-bold tracking-wide text-dark-coral-custom mt-6 mb-4">
-                      AN APPROACH TO <span className="font-handwriting font-bold text-green-custom">Life</span>
+                        EEN AANPAK VAN HET <span className="font-handwriting font-bold text-green-custom">Leven</span>
                     </h2>
-                    
                     <p>
-                      While Ayurveda offers specific diet advice, <b>it isn't a diet</b>.<b> It's an approach to life</b>. 
-                      The advice changes with you as you travel through life's different phases. 
-                      Allowing your body to find its natural balance and healthy weight. 
-                      You work with your body's wisdom instead of trying to force it into unnatural states to achieve a desired appearance or number on a scale.
+                        Hoewel Ayurveda specifieke dieetadviezen geeft, is het geen dieet..<b> Het is een benadering van het leven</b>. 
+                        Het advies verandert met je mee terwijl je door de verschillende levensfasen reist. Zo kan je lichaam zijn natuurlijke balans 
+                        en gezonde gewicht vinden. Je werkt met de wijsheid van je lichaam in plaats van te proberen het in onnatuurlijke toestanden te 
+                        dwingen om een gewenst uiterlijk of getal op een weegschaal te bereiken.
                     </p>
                   </div>
                 </div>
               </div>
               {/*Quote divider*/}
               <div className="flex flex-col items-center justify-center w-full py-8 md:h-[20vh] bg-green-custom px-4 md:px-8">
-                <p className="font-quote text-white text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">"Health is not just the absence of disease; it is the presence of vitality."</p>
+                <p className="font-quote text-white text-center text-xl sm:text-2xl md:text-3xl lg:text-4xl">
+                    "Gezondheid is niet alleen de afwezigheid van ziekte; het is de aanwezigheid van vitaliteit."</p>
                 <p className="font-quote text-white text-center text-lg sm:text-xl md:text-2xl lg:text-3xl mt-4">- Charaka Samhita</p>
               </div>
               {/*Section 2 Dosha Intro*/}
@@ -126,12 +123,13 @@ const AboutAyurvedaPage = () => {
                 {/* Text section - properly sized */}
                 <div className="w-full md:w-[40vw] px-4 md:px-12 lg:px-16 mb-6 md:mb-0">
                   <p className="text-lg md:text-xl lg:text-2xl mb-4">
-                    Ayurveda is a traditional form of practicing health. It is a <b>holistic system of medicine</b> meaning
-                    the entire individual is seen - their mind, body, and emotions are equally considered when considering the course of action.
+                    Ayurveda is een traditionele vorm van gezondheidszorg. Het is een<b>holistisch systeem van geneeskunde</b>, wat 
+                    betekent dat het hele individu wordt bekeken - de geest, het lichaam en de emoties worden in gelijke mate in 
+                    aanmerking genomen bij het overwegen van de te nemen maatregelen.
                   </p>
                   <p className="text-lg md:text-xl lg:text-2xl">
-                    Ayurveda <b>recognizes that every individual is unqiuely themselves</b>. 
-                    There are body and mind characteristics or the ayurvedic types (doshas).
+                    Ayurveda <b>erkent dat elk individu uniek is.</b>. 
+                    Er zijn lichaams - en geestkenmerken of de ayurvedische types (dosha’s).
                   </p>
                 </div>
                 
@@ -145,14 +143,14 @@ const AboutAyurvedaPage = () => {
                 </div>
               </div>
               {/*Doshas section*/}
-              <DoshaCards />
+              <DoshaCardsDutch />
               {/*Grandmas section*/}
               <div className="flex flex-col items-center px-2 py-4 md:px-2 md:p-y">
                 {/* Header section */}
                 <div className="flex h-auto md:h-[15vh] items-center mb-6 md:mb-0">
                   <p className="text-lg sm:text-xl md:text-2xl text-center">
-                    Since day one, ayurveda has offered me clarity and a way to understand the differences I'd observed in
-                    those around me. <br className="hidden md:block"/> A wonderful example is with two of my all-time favorite people, my grandmas.
+                    Vanaf de eerste dag heeft ayurveda me duidelijkheid gegeven en een manier om de verschillen te begrijpen die ik zag in de mensen om me heen.
+                    <br className="hidden md:block"/> Een prachtig voorbeeld hiervan zijn mijn oma's, twee van mijn favoriete mensen aller tijden.
                   </p>
                 </div>
                 
@@ -164,12 +162,11 @@ const AboutAyurvedaPage = () => {
                       Work with nature.
                     </p>
                   </div>
-                  
                   {/* Center content - stack Grandma D and M on mobile, side by side on desktop */}
                   <div className="flex flex-col md:flex-row md:gap-6 lg:gap-10 w-full md:w-auto">
                     {/* Grandma D section */}
                     <div className="flex flex-col items-center pb-8 w-full md:w-auto">
-                      <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-dark-coral-custom mb-4">Grandma D</h1>
+                      <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-dark-coral-custom mb-4">Oma D</h1>
                       <div className="w-full max-w-[280px] sm:max-w-[300px] md:w-auto lg:h-[450px] lg:w-[330px] p-2 md:p-4 border-2 border-black">
                         <img
                           src={images.gmaD}
@@ -179,28 +176,25 @@ const AboutAyurvedaPage = () => {
                       </div>
                       <div className="flex flex-col w-full max-w-[320px] sm:max-w-[400px] min-h-[320px] md:min-h-[375px] bg-white p-4 md:p-8 mt-4">
                         <p className="text-md">
-                          Grandma D. She was always on the go and was very creative. When I was seven, I awoke from a nap to discover, in that short amount of time
-                          she managed to make a new outfit for my doll.
+                          Oma D. Ze was altijd in de weer en erg creatief. Toen ik zeven was, werd ik wakker uit een dutje en ontdekte ik dat ze in die korte tijd een nieuwe outfit voor mijn pop had gemaakt.
                         </p>
                         <br/>
                         <p className="text-md">
-                          Not only her hands, but also her mind was quick and tucked in between all her thoughts was often worry.
+                            Niet alleen haar handen, maar ook haar geest was snel en tussen al haar gedachten door maakte ze zich vaak zorgen.
                         </p>
                         <br/>
                         <p className="text-md">
-                          She was easy with change, furniture was replaced and items from the past were let go.
+                            Ze was makkelijk met veranderingen, meubels werden vervangen en spullen uit het verleden werden losgelaten.
                         </p>
                         <br/>
                         <p className="text-md">
-                          Although she ate sweets and carbs and everything else in-between, gaining weight was never a concern for her.
-                          Actually, keeping weight on, especially in her later years, was more of a challenge.
+                            Hoewel ze snoep at en koolhydraten en alles daartussenin, was aankomen nooit een zorg voor haar. Eigenlijk was het meer een uitdaging om op gewicht te blijven, vooral in haar latere jaren.
                         </p>
                       </div>
                     </div>
-                    
                     {/* Grandma M section */}
                     <div className="flex flex-col items-center pb-8 w-full md:w-auto">
-                      <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-dark-coral-custom mb-4">Grandma M</h1>
+                      <h1 className="font-heading font-bold text-2xl md:text-3xl lg:text-4xl text-dark-coral-custom mb-4">Oma M</h1>
                       <div className="w-full max-w-[280px] sm:max-w-[300px] md:w-auto lg:h-[450px] lg:w-[330px] p-2 md:p-4 border-2 overflow-hidden border-black">
                         <img
                           src={images.gmaM}
@@ -210,18 +204,17 @@ const AboutAyurvedaPage = () => {
                       </div>
                       <div className="flex flex-col w-full max-w-[320px] sm:max-w-[400px] min-h-[320px] md:min-h-[375px] bg-white p-4 md:p-8 mt-4">
                         <p className="text-md">
-                          Grandma M was, in some aspects, almost the complete opposite to Grandma D
+                            Oma M was in sommige opzichten bijna het tegenovergestelde van oma D.
                         </p>
                         <br/>
                         <p className="text-md">
-                          She was steady, not especially active and wasn't one to worry very easily. Going to her house, was a predictable treat.
-                          I could always find whatever I was looking for because she wasn't one for change.
+                            Ze was stabiel, niet bijzonder actief en maakte zich niet snel zorgen. Naar haar huis gaan was een voorspelbare traktatie. Ik kon altijd vinden wat ik zocht omdat ze niet van verandering hield.
                         </p>
                         <br/>
                         <p className="text-md">
-                          After struggling with her weight for years, Grandma M watched what she ate, and could complain that
-                          <i> just looking at sweets </i>
-                          would bring weight gain.
+                            Nadat ze jarenlang met haar gewicht had geworsteld, lette oma M op wat ze at en ze kon klagen dat alleen al
+                          <i> het kijken naar snoep voor </i>
+                          gewichtstoename zorgde.
                         </p>
                       </div>
                     </div>
@@ -240,9 +233,9 @@ const AboutAyurvedaPage = () => {
                 {/* Footer section */}
                 <div className="flex flex-col items-center justify-center pb-6 md:pb-10 mt-4 md:mt-8">
                   <p className="w-full md:max-w-[80vw] lg:max-w-[60vw] text-base sm:text-lg md:text-xl">
-                    Grandma M wouldn't even consider eating the things that Grandma D ate, but if they did eat the same diet, their bodies would react very differently.
-                    My observations weren't limited to family. As a teacher, I served several sets of brothers and/or sisters over the years and despite having the same 
-                    parents, living in the same house, eating the same diet - they were very different.
+                    Oma M zou niet eens overwegen om de dingen te eten die oma D at, maar als ze hetzelfde dieet zouden eten, zou hun lichaam heel anders reageren. 
+                    Mijn observaties waren niet beperkt tot familie. Als leerkracht heb ik in de loop der jaren verschillende reeksen broers en/of zussen 
+                    gediend en ondanks het feit dat ze dezelfde ouders hadden, in hetzelfde huis woonden en hetzelfde dieet aten - waren ze heel verschillend.
                   </p>
                 </div>
               </div>
@@ -252,32 +245,32 @@ const AboutAyurvedaPage = () => {
                 </div>
                 <div className="flex flex-col px-4 md:px-8 py-4 md:py-0">
                   <p className="text-xl md:text-2xl font-heading font-bold text-light-teal-custom max-w-full md:max-w-[30vw]">
-                    Taking these differences into account, that's what ayurveda does.
+                    Rekening houden met deze verschillen, dat is wat ayurveda doet.
                   </p>
                   <br/>
                   <p className="text-lg md:text-2xl max-w-full md:max-w-[30vw]">
-                    Ayurveda doesn't give a one-size-fits-all approach. Instead, it looks at who <strong>you are </strong>
-                    and <strong>where you're at</strong> and helps you <strong>navigate your way from right there.</strong>
+                   Ayurveda geeft geen standaardaanpak. In plaats daarvan kijkt Ayurveda naar <strong>wie je bent </strong>
+                   en <strong>waar je staat</strong> en helpt je van <strong>daaruit je weg te vinden.</strong>
                   </p>
                 </div>
               </div>
               <div className="flex flex-col lg:flex-row items-center py-8 lg:py-12 gap-8 lg:gap-12 md:px-6 lg:px-0">
                 <div className="flex flex-col w-full lg:max-w-[800px] lg:w-[80vw] px-4 lg:py-6 text-base md:text-lg lg:text-xl">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-light-teal-custom">"It's So Logical!"</h1>
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-light-teal-custom">“Het is zo logisch!”</h1>
                   <br/>
-                  <p>Several clients have echoed this phrase that I repeated countless time during my Ayurvedic studies.</p>
+                  <p>Verschillende klanten hebben deze zin, die ik tijdens mijn Ayurvedische studie ontelbare keren heb herhaald, herhaald.</p>
                   <br/>
-                  <p>Ayurveda works with the natural reactions of your body. In many ways many people already do this, for instance if
-                      you get a sunburn, it is common knowledge to get out of the sun and offer a cooling agent, like aloe vera gel, to
-                      sooth the red skin. Although a lot of our health complaints can be more complicated than a sunburn, this is the line
-                      of reasoning that Ayurveda follows. Remove the cause and help the body in the healing process.
+                  <p>
+                    Ayurveda werkt met de natuurlijke reacties van je lichaam. In veel opzichten doen veel mensen dit al, bijvoorbeeld als je verbrandt, is het 
+                    algemeen bekend om uit de zon te gaan en een verkoelend middel, zoals aloë vera gel, aan te bieden om de rode huid te kalmeren. Hoewel 
+                    veel van onze gezondheidsklachten ingewikkelder kunnen zijn dan een zonnebrand, is dit de redenering die Ayurveda volgt. Neem 
+                    de oorzaak weg en help het lichaam bij het genezingsproces.
                   </p>
                   <br/>
                   <p>
-                    If your body is providing signs of being light and dry (Vata complaints) then it is important to consume foods that
-                    offer a grounding effect and that contain moisture- or help your body retain moisture. The art is in understanding
-                    the body's signals and knowing what ways you can best move forward. Here is where working with a professional is
-                    immensely helpful.
+                    Als je lichaam tekenen geeft van licht en droog zijn (Vata-klachten) dan is het belangrijk om voedingsmiddelen te consumeren die een 
+                    aardend effect hebben en vocht bevatten - of je lichaam helpen vocht vast te houden. Het is de kunst om de signalen van het lichaam te 
+                    begrijpen en te weten hoe je het beste verder kunt gaan. Hier is het werken met een professional enorm nuttig.
                   </p>
                 </div>
                 <div className="relative w-full md:w-4/5 lg:w-auto self-center mt-6 lg:mt-0">
@@ -309,33 +302,33 @@ const AboutAyurvedaPage = () => {
                   </div>
                 </div>
                 <div className="flex flex-col w-full lg:max-w-[800px] lg:w-[80vw] px-4  lg:py-6 text-base md:text-lg lg:text-xl">
-                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-light-teal-custom">The tools of Ayurveda</h1>
+                  <h1 className="text-3xl md:text-4xl lg:text-5xl font-heading text-light-teal-custom">De gereedschappen van Ayurveda</h1>
                   <br/>
                   <p>
-                    <b>Ayurveda uses food as Medicine</b>. This involves eating foods that help your current situation, while taking into account the climate and current seasons
+                    <b>Ayurveda gebruikt voedsel als medicijn.</b>. Dit houdt in dat je voedsel eet dat je helpt in je huidige situatie, rekening houdend met het klimaat en de huidige seizoenen.
                   </p>
                   <br/>
                   <p>
-                    Various <b>warm oil treatments and massages</b>. The type of herb infused oil that is selected is specific to your dosha type and current (health) goals.
+                    Diverse <b>warme oliebehandelingen en massages</b>. Het type olie met kruiden is specifiek afgestemd op je dosha-type en huidige (gezondheids)doelen.
                   </p>
                   <br/>
                   <p>
-                    <b>Herbal Supplements</b>. Supplements can help with a wide variety of conditions. The goal is to help your body
-                      get a boost of help in the direction you'd like it to go. Supplements are intended to be a temporary help, not a long-term solution.
+                    <b>Kruidensupplementen</b>. Supplementen kunnen helpen bij een grote verscheidenheid aan aandoeningen. Het doel is om je lichaam een duwtje in de goede richting te geven. 
+                    Supplementen zijn bedoeld als tijdelijke hulp, niet als oplossing voor de lange termijn.
                   </p>
                   <br/>
                   <p>
-                    <b>Breath work and Yoga Asanas</b>. Working consciously with breath and body movements. There are techiniques to help you build in calmness, and there are techniques to help you build heat, or inspire movement.
-                    What you do, depends on the next right step for you along your path.
+                    <b>Ademwerk en Yoga Asana's</b>. Bewust werken met adem en lichaamsbewegingen. Er zijn technieken om je te helpen kalmte op te bouwen en er zijn technieken om je te helpen 
+                    warmte op te bouwen of beweging te inspireren. Wat je doet, hangt af van de volgende juiste stap voor jou op je pad.
                   </p>
                 </div>
               </div>
             </div>
-            <Footer />
+            <FooterDutch />
           </>
         );
 }
 
-export default AboutAyurvedaPage;
+export default AboutAyurvedaPageDutch;
 
 

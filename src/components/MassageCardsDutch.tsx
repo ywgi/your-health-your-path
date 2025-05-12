@@ -1,6 +1,6 @@
 import images from "../content/images";
 
-const MassageCards: React.FC = () => {
+const MassageCardsDutch: React.FC = () => {
     return (
         <div className="flex flex-col space-y-12">
             <div id="massage" className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md 
@@ -18,17 +18,18 @@ const MassageCards: React.FC = () => {
                     {/* Content section with proper padding */}
                     <div className="p-6 md:p-8 flex-grow">
                         <h3 className="text-xl md:text-2xl font-semibold font-heading text-light-teal-custom mb-3">
-                            Relaxation Massage (Abhyanga)
+                            Ontspanningsmassage (Abhyanga)
                         </h3>
-                        <p className="text-gray-600 font-bold text-lg mb-2">Duration: ca. 60 minutes</p>
+                        <p className="text-gray-600 font-bold text-lg mb-2">Duur: ca. 60 minuten</p>
                         <p className="text-coral-custom font-bold text-lg md:text-md mb-4">€77</p>
                         <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
-                            Abhyanga is a therapeutic, full body massage with warm herbal oil that is tailored to the person and their current health. Using traditional techniques this gentle massage brings calmness to your nervous system and a deep relaxation for your entire being.
-                            Abhyanga promotes blood circulation and activates the lymphatic system. It helps with sleep disorders, and digestive problems. It is recommended in various conditions such as: burnout, skin conditions, back/neck/muscle pain, and anxiety. This massage is good for anyone who wants more rest and calmness in his/her life.
+                            Abhyanga is een therapeutische, volledige lichaamsmassage met warme kruidenolie die is afgestemd op de persoon en zijn of haar huidige gezondheid. Met behulp van traditionele technieken brengt deze zachte 
+                            massage rust in je zenuwstelsel en een diepe ontspanning voor je hele wezen. Abhyanga bevordert de bloedsomloop en activeert het lymfestelsel. Het helpt bij slaapstoornissen en spijsverteringsproblemen. Het wordt 
+                            aanbevolen bij verschillende aandoeningen zoals: burn-out, huidaandoeningen, rug/nek/spierpijn en angst. Deze massage is goed voor iedereen die meer rust en kalmte in zijn/haar leven wil.
                         </p>
                         <a href="/contact" className="inline-flex items-center text-gray-700
                             hover:text-green-custom text-sm group-hover:translate-x-1 transition-transform">
-                            SCHEDULE
+                            MAAK EEN AFSPRAAK
                             <svg
                                 className="w-4 h-4 ml-2"
                                 fill="none"
@@ -63,22 +64,21 @@ const MassageCards: React.FC = () => {
                         {/* Content area that will grow/shrink as needed */}
                         <div className="flex-grow">
                             <h3 className="text-xl md:text-2xl font-bold font-heading text-light-teal-custom mb-3">
-                                Energy-releasing Massage (Marma)
+                                Energieverrijkende massage (Marma)
                             </h3>
-                            <p className="text-gray-600 font-bold text-lg mb-2">Duration: ca. 90 minutes</p>
+                            <p className="text-gray-600 font-bold text-lg mb-2">Duur: ca. 90 minuten</p>
                             <p className="text-coral-custom font-bold text-lg mb-4">€95</p>
                             <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
-                                This makes use of the interconnectedness of our systems. Marma points are often compared to acupuncture/ acupressure points. 
-                                The 107 points are spread in all the regions of the body in areas where tension often accumulates. 
-                                Gentle pressure in combination with the warm herbal oil that is selected according to the person's specific needs, stimulates the release of tension and toxins. 
-                                This full body massage is helpful in keeping the mind and body in balance.
+                                Hierbij wordt gebruik gemaakt van de onderlinge verbondenheid van onze systemen. Marma punten worden vaak vergeleken met acupunctuur/acupressuur punten. De 107 
+                                punten liggen verspreid over alle delen van het lichaam in gebieden waar spanning zich vaak ophoopt. Zachte druk in combinatie met de warme kruidenolie die wordt geselecteerd op 
+                                basis van de specifieke behoeften van de persoon, stimuleert het loslaten van spanning en gifstoffen. Deze massage van het hele lichaam helpt om lichaam en geest in balans te houden.
                             </p>
                         </div>
                         {/* Button positioned at the bottom */}
                         <div className="mt-auto pt-2">
                             <a href="/contact" className="inline-flex items-center text-gray-700 
                                 hover:text-green-custom text-sm group-hover:translate-x-1 transition-transform">
-                                SCHEDULE
+                                MAAK EEN AFSPRAAK
                                 <svg
                                     className="w-4 h-4 ml-2"
                                     fill="none"
@@ -102,4 +102,4 @@ const MassageCards: React.FC = () => {
     );
 };
 
-export default MassageCards;
+export default MassageCardsDutch;

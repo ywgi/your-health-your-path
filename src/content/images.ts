@@ -41,6 +41,7 @@ const images = {
     plants: "/images/plants.jpg",
     pathway: "/images/pathway.jpg",
     pinkFlowers: "images/pink-flowers.jpg",
+    pinkFlowers2: "images/pink-flowers2.jpg",
     forest: "/images/forest.jpg",
     treeRooted: "/images/tree-rooted.jpg",
     soupWithSpices: "/images/soup-with-spices.jpg",
@@ -48,6 +49,9 @@ const images = {
     massageWoman: "/images/massage-woman.jpg",
     massageFoot: "/images/massage-foot.jpg",
     space: "/images/space.jpg",
+    netherlandsFlag: "/images/Flag_of_the_Netherlands.png",
+    unitedKingdomFlag: "/images/Flag_of_the_United_Kingdom.png",
+    purpleFlowers2: "/images/purple-flowers2.jpg",
 
 
 

@@ -1,16 +1,16 @@
 import { Link } from "react-router-dom";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import MassageCards from "../components/MassageCards";
-import images from "../content/images";
-import ConsultCards from "../components/ConsultCards";
+import images from "../../content/images";
+import HeaderDutch from "../../components/HeaderDutch";
+import FooterDutch from "../../components/FooterDutch";
+import ConsultCardsDutch from "../../components/ConsultCardsDutch";
+import MassageCardsDutch from "../../components/MassageCardsDutch";
 
 
 
-const ServicesPage = () => {
+const ServicesPageDutch = () => {
     return (
         <>
-            <Header />
+            <HeaderDutch />
             <div>
                 <div className="flex px-4 pt-4 pb-12">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -85,23 +85,21 @@ const ServicesPage = () => {
                     </div>
                 </div>
                 {/* Desktop and Mobile Responsive Layout For White background section*/}
-                <div className="w-full bg-white h-auto md:h-[55vh]">
+                <div className="w-full bg-white h-auto md:h-[50vh]">
                     {/* For larger screens - horizontal layout with full height image */}
+
                     <div className="hidden md:flex items-center justify-center w-full h-full overflow-hidden">
                         <div className="flex flex-col px-4 md:px-6 lg:px-8 flex-grow max-w-[70%] lg:max-w-[65%] xl:max-w-[40%] space-y-2 md:space-y-3">
-                            <h1 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-light-teal-custom leading-tight">Thrive Naturally, Live Fully</h1>
-                            <p className="text-base md:text-lg lg:text-xl">Using the wisdom of Ayurveda, my goal is to see you for the unique person you are while recognizing the patterns of feedback the body provides.</p>
+                            <h1 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-light-teal-custom leading-tight">Bloei op een natuurlijke manier, leef voluit</h1>
+                            <p className="text-base md:text-lg lg:text-xl">Met behulp van de wijsheid van Ayurveda is het mijn doel om jou te zien als de unieke persoon die je bent, en tegelijkertijd de feedbackpatronen van je lichaam te herkennen.</p>
                             <p className="text-base md:text-lg lg:text-xl">
-                                <b>Who benefits from Ayurveda?</b> The short answer - everyone can benefit from
-                                becoming more connected to their body and gaining understanding on how to
-                                support it.
+                                <b>Wie heeft baat bij Ayurveda?</b> Het korte antwoord: iedereen kan baat hebben bij een betere verbinding met zijn of haar lichaam en inzicht krijgen in hoe het te ondersteunen.
                             </p>
-                            <p className="text-base md:text-lg lg:text-xl">Clients who best match with <span className="font-handwriting font-bold text-green-custom">Your Health, Your Path</span> are
-                                ready to take a step forward; whether it be that they finally decide to relax with a warm oil massage or are ready to take larger steps for their overall health 
-                                and well-being.
+                            <p className="text-base md:text-lg lg:text-xl">Cliënten die het beste passen bij <span className="font-handwriting font-bold text-green-custom">Your Health, Your Path</span> zijn klaar om een ​​stap voorwaarts te 
+                                zetten; of ze nu eindelijk besluiten om te ontspannen met een warme oliemassage of klaar zijn om grotere stappen te zetten voor hun algehele gezondheid en welzijn.
                             </p>
                             <p className="text-base md:text-lg lg:text-xl">
-                                I gladly Serve to assist you along your way; it is a delight to celebrate all of the progress as you travel forward.
+                                Ik help je graag op je pad; het is een genot om alle vooruitgang te vieren terwijl je verdergaat.
                             </p>
                         </div>
                         <div className="flex-shrink-1 h-full ml-2 md:ml-4">
@@ -111,19 +109,16 @@ const ServicesPage = () => {
 
                     {/* For mobile screens - vertical layout */}
                     <div className="md:hidden flex flex-col items-center pt-8 space-y-4">
-                        <h1 className="text-2xl justify-start font-heading font-bold text-light-teal-custom px-4">Thrive Naturally, Live Fully</h1>
-                        <p className="text-xl px-4">Using the wisdom of Ayurveda, my goal is to see you for the unique person you are while recognizing the patterns of feedback the body provides.</p>
+                        <h1 className="text-2xl justify-start font-heading font-bold text-light-teal-custom px-4">Bloei op een natuurlijke manier, leef voluit</h1>
+                        <p className="text-xl px-4">Met behulp van de wijsheid van Ayurveda is het mijn doel om jou te zien als de unieke persoon die je bent, en tegelijkertijd de feedbackpatronen van je lichaam te herkennen..</p>
                         <p className="text-xl px-4">
-                            <b>Who benefits from Ayurveda?</b> The short answer - everyone can benefit from
-                            becoming more connected to their body and gaining understanding on how to
-                            support it.
+                            <b>Wie heeft baat bij Ayurveda?</b> Het korte antwoord: iedereen kan baat hebben bij een betere verbinding met zijn of haar lichaam en inzicht krijgen in hoe het te ondersteunen.
                         </p>
-                        <p className="text-xl px-4">Clients who best match with <span className="font-handwriting font-bold text-green-custom">Your Health, Your Path </span> are
-                            ready to take a step forward; whether it be that they finally decide to relax with a warm oil massage or are ready to take larger steps for their overall health 
-                            and well-being.
+                        <p className="text-xl px-4">Cliënten die het beste passen bij <span className="font-handwriting font-bold text-green-custom">Your Health, Your Path </span> zijn klaar om een ​​stap voorwaarts te 
+                            zetten; of ze nu eindelijk besluiten om te ontspannen met een warme oliemassage of klaar zijn om grotere stappen te zetten voor hun algehele gezondheid en welzijn.
                         </p>
                         <p className="text-xl px-4">
-                            I gladly Serve to assist you along your way; it is a delight to celebrate all of the progress as you travel forward.
+                            Ik help je graag op je pad; het is een genot om alle vooruitgang te vieren terwijl je verdergaat.
                         </p>
                         <img src={images.pathway} className="w-full" alt="Ayurveda pathway" />
                     </div>
@@ -133,7 +128,7 @@ const ServicesPage = () => {
                     <div className="hidden md:flex items-center justify-center gap-8">
                         <img src={images.yhypWhiteNoBackground} className="max-h-[10vh]" alt="Logo" />
                         <div className="h-[1px] bg-white w-[30vw]"></div>
-                        <p className="text-white font-handwriting text-center text-4xl lg:text-6xl">My Services</p>
+                        <p className="text-white font-handwriting text-center text-4xl lg:text-6xl">Mijn diensten</p>
                         <div className="h-[1px] bg-white w-[30vw]"></div>
                         <img src={images.yhypWhiteNoBackground} className="max-h-[10vh]" alt="Logo" />
                     </div>
@@ -143,75 +138,67 @@ const ServicesPage = () => {
                         <img src={images.yhypWhiteNoBackground} className="max-h-[8vh]" alt="Logo" />
                         <div className="flex items-center justify-center w-full gap-3">
                             <div className="h-[1px] bg-white w-16"></div>
-                            <p className="text-white font-handwriting text-center text-3xl px-2">My Services</p>
+                            <p className="text-white font-handwriting text-center text-3xl px-2">Mijn diensten</p>
                             <div className="h-[1px] bg-white w-16"></div>
                         </div>
                     </div>
                 </div>
                 <div className="flex justify-center items-center w-full py-8" id="consult">
                     <div className="w-full md:max-w-[70vw] mx-auto">
-                        <h1 className="font-heading pl-4 font-bold text-3xl md:text-4xl text-light-teal-custom pb-4 lg:pb-8">My Process:</h1>
+                        <h1 className="font-heading pl-4 font-bold text-3xl md:text-4xl text-light-teal-custom pb-4 lg:pb-8">Mijn Proces:</h1>
                         <div className="space-y-6 px-4 md:ml-16">
                             <div>
-                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 1:</p>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Stap 1:</p>
                                 <p className="text-base md:text-xl ml-8">
-                                    Start by Scheduling a Free 20 min. phone consult to see if working with Your
-                                    Health, Your Path is right for you. This is completely open-ended, there is no obligation.
-                                    This is a chat about your (health) goals, and an opportunity to gain clarity
-                                    about the offerings of Your Health, Your Path.  
+                                    Begin met het plannen van een gratis telefonisch consult van 20 minuten om te zien of werken met Jouw Gezondheid, Jouw Pad iets voor jou is. Dit is volledig vrijblijvend en 
+                                    verplicht tot niets. Dit is een gesprek over je (gezondheids)doelen en een kans om duidelijkheid te krijgen over de mogelijkheden van Jouw Gezondheid, Jouw Pad.
                                 </p>
                             </div>
                             <div>
-                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 2:</p>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Stap 2:</p>
                                 <div className="ml-8">
-                                    <p className="text-base md:text-xl">You want to move forward. Great, now we get started!</p>
+                                    <p className="mb-2 text-base md:text-xl">Je wilt vooruit. Geweldig, nu gaan we beginnen!</p>
                                     <p className="text-base md:text-xl">
-                                        We schedule your first appointment.
-                                        You will receive an in-depth questionnaire to complete and submit at least 72hrs
-                                        before the first appointment.
+                                        We plannen je eerste afspraak. Je ontvangt een uitgebreide vragenlijst die je minimaal 72 uur
+                                        voor de eerste afspraak moet invullen en inleveren.
                                     </p>
                                 </div>
                             </div>
                             <div>
-                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 3:</p>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Stap 3:</p>
                                 <div className="ml-8">
-                                    <p className="text-base md:text-xl font-semibold mb-1">1st appointment (90 minutes)</p>
-                                    <p className="text-base md:text-xl mb-2">Included during this appointment:</p>
+                                    <p className="text-base md:text-xl font-semibold mb-1">Eerste afspraak (90 minuten)</p>
+                                    <p className="text-base md:text-xl mb-2">Inbegrepen tijdens deze afspraak:</p>
                                     <ul className="list-disc pl-5 text-base md:text-xl space-y-1">
-                                        <li>Deep dive into current health and health history.</li>
-                                        <li>Pulse diagnosis (in person only)</li>
-                                        <li>Tongue diagnosis</li>
-                                        <li>We discuss Ayurveda along the way, so you begin to deepen your
-                                        understanding of what it is and how it can help you along your path.</li>
+                                        <li>Diepe duik in je huidige gezondheid en medische geschiedenis.</li>
+                                        <li>Polsdiagnose (alleen in persoon)</li>
+                                        <li>Tongdiagnose</li>
+                                        <li>We bespreken Ayurveda gaandeweg, zodat je je begrip ervan verdiept en hoe het je kan helpen op je pad.</li>
                                     </ul>
                                 </div>
                             </div>
                             <div>
-                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 4:</p>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Stap 4:</p>
                                 <div className="ml-8">
-                                    <p className="text-base md:text-xl font-semibold mb-1">2nd Appointment (60 minutes)</p>
+                                    <p className="text-base md:text-xl font-semibold mb-1">2e Afspraak (60 minuten)</p>
                                     <p className="text-base md:text-xl">
-                                        During this appointment, your will learn about your Ayurvedic type, and what areas, if any, you
-                                        are currently out of balance.
+                                        Tijdens deze afspraak leert u meer over uw Ayurveda-type en op welke gebieden u momenteel uit balans bent, indien van toepassing.
                                     </p>
                                     <p className="text-base md:text-xl mt-2">
-                                        You will receive a laid out plan with advice for your specific situation. It will include diet,
-                                        lifestyle- and if appropriate herbal supplement- advice. Depending on your needs there can be
-                                        cooking tips, and recommendations for (self) massage, yoga asanas, and breathing techniques.
+                                        U ontvangt een plan met advies voor uw specifieke situatie. Dit plan omvat advies over voeding, leefstijl en eventueel kruidensupplementen. Afhankelijk van uw 
+                                        behoeften kunnen er kooktips en aanbevelingen voor (zelf)massage, yogahoudingen en ademhalingstechnieken worden gegeven.
                                     </p>
                                     <p className="text-base md:text-xl mt-2">
-                                        The advice is tailored for you and your lifestyle. It will also be laid out according to the length
-                                        of plan you have selected (1 month, 3 months or 6 months) Both the 3 and 6 month plans will
-                                        be monitored and adjusted along your journey.
+                                        Het advies is afgestemd op u en uw levensstijl. Het wordt ook opgesteld op basis van de door u gekozen duur van het plan (1 maand, 3 maanden of 6 maanden). Zowel 
+                                        het 3- als het 6- maandenplan wordt tijdens uw reis gemonitord en aangepast.
                                     </p>
                                 </div>
                             </div>
                             <div>
-                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Step 5:</p>
+                                <p className="text-xl md:text-2xl font-heading uppercase text-dark-coral-custom font-semibold mb-2">Stap 5:</p>
                                 <div className="ml-8">
                                     <p className="text-base md:text-xl">
-                                        You begin walking your path with Ayurveda. The remaining steps depend upon what
-                                        best fits your needs, and what package you selected.
+                                        U begint uw pad met Ayurveda te bewandelen. De resterende stappen zijn afhankelijk van wat het beste bij uw behoeften past en welk pakket u heeft gekozen.
                                     </p>
                                 </div>
                             </div>
@@ -222,18 +209,16 @@ const ServicesPage = () => {
                     <h1 className="font-heading font-bold text-3xl md:text-4xl text-light-teal-custom">Consult Packages:</h1>
                 </div>
                 <div className="flex flex-col justify-center items-center px-4 py-4 md:px-6">
-                    <ConsultCards />
+                    <ConsultCardsDutch />
                     <div className="w-full max-w-4xl mx-auto text-base md:text-lg lg:text-xl space-y-6 mt-2">
                         <p className="text-center text-sm md:text-base italic">
-                            *If supplements are advised, guidance is given for trusted sources. Your Health, Your Path does not sell supplements, thus the cost for supplements is additional.
+                            *Als er supplementen worden geadviseerd, wordt er begeleiding gegeven voor betrouwbare bronnen. Your Health, Your Path verkoopt geen supplementen, dus de kosten voor supplementen zijn extra.
                         </p>
                         
                         <p className="text-center">
-                            Health is important for Everyone. If you want to work with me, but your budget is constricted, please
-                            reach out so we can discuss payment options. 
+                            Gezondheid is belangrijk voor iedereen. Als je met mij wilt werken, maar je budget is beperkt, neem dan contact met me op zodat we betalingsopties kunnen bespreken.
                             <span className="">
-                                Ideally we can find an option that fits your needs and
-                                helps you reach your health goals.
+                                Idealiter kunnen we een optie vinden die past bij jouw behoeften en die je helpt je gezondheidsdoelen te bereiken.
                             </span>
                         </p>
                     </div>
@@ -242,12 +227,12 @@ const ServicesPage = () => {
                     <h1 className="font-heading font-bold pb-8 text-3xl md:text-4xl text-light-teal-custom">Massages:</h1>
                 </div>
                 <div className="flex flex-col justify-center items-center pb-12">
-                    <MassageCards />
+                    <MassageCardsDutch />
                 </div>
             </div>
-            <Footer />
+            <FooterDutch />
         </>
     );
 }
 
-export default ServicesPage;
+export default ServicesPageDutch;

@@ -1,18 +1,18 @@
 import images from "../content/images";
 
-const DoshaCards = () => {
+const DoshaCardsDutch = () => {
     return(
                      
         <div className="flex flex-col items-center">
             <div className="flex flex-col pt-4 md:py-8 max-w-[90vw] lg:max-w-[75vw]">
-                <h1 className="text-3xl md:text-4xl font-heading text-light-teal-custom font-bold">About the Doshas (Ayurvedic types):</h1>
+                <h1 className="text-3xl md:text-4xl font-heading text-light-teal-custom font-bold">Over de dosha's (Ayurvedische types):</h1>
                 <br/>
                 <p className="text-2xl font-heading text-dark-coral-custom tracking-wide uppercase">
-                    What dosha type am I? Let's talk about the body types.
+                    Welk dosha-type ben ik? Laten we het eens hebben over de lichaamstypes.
                 </p>
                 <br/>
                 <p className="text-xl">
-                    First and foremost - <b>Everyone is comprised of ALL 3 doshas</b>. Ayurveda observes that most people have a dominance of one or two dosha qualities.
+                    Eerst en vooral - <b>Iedereen bestaat uit ALLE 3 dosha's.</b>. Ayurveda merkt op dat de meeste mensen een dominantie van één of tweedosha's hebben.
                 </p>
             </div>
             {/* 3 dosha cards */}
@@ -41,27 +41,26 @@ const DoshaCards = () => {
                     {/* Content box - set to take remaining height */}
                     <div className="h-[70%] text-md">
                         <div className="p-4">
-                            <p>Elements: air and space</p>
+                            <p>Elementen: lucht en ruimte</p>
                             <br/>
                             <p>
-                                <strong>Vata</strong> is related to <strong>all of the movement that happens within the body</strong>.
+                            <strong>Vata</strong> heeft te maken met <strong>alle beweging in het lichaam.</strong>.
                             </p>
                             <br/>
                             <p>
-                                For Example:
+                                Bijvoorbeeld:
                             </p>
                             <ul className="list-disc pl-6">
-                                <li>air and blood flow</li>
-                                <li>signals sent via the nervous system</li>
-                                <li>the endocrine system's flow of hormones</li>
-                                <li>waste removal from body</li>
-                                <li>the stream of thought that is almost always on the move</li>
+                                <li>lucht en bloedstroom</li>
+                                <li>signalen via het zenuwstelsel</li>
+                                <li>de hormonenstroom van het endocriene systeem</li>
+                                <li>afvalverwijdering uit het lichaam</li>
+                                <li>de gedachtestroom die bijna altijd in beweging is</li>
                             </ul>
                             <br/>
                             <p>
-                            All that space makes movement easier, and often fast. There is a lightness to the Vata dosha. 
-                            People with a high Vata dosha tend to be light and often experience dryness - for example dry 
-                            skin or constipation.
+                                Al die ruimte maakt beweging gemakkelijker, en vaak snel. Er zit een lichtheid in de Vata dosha. Mensen met een hoge Vata dosha 
+                                hebben de neiging om licht te zijn en ervaren vaak droogheid - bijvoorbeeld een droge huid of obstipatie.
                             </p>
                         </div>
                     </div>
@@ -82,29 +81,30 @@ const DoshaCards = () => {
                     {/* Content box */}
                     <div className="h-[70%] text-md">
                         <div className="p-4">
-                            <p>Elements: fire and a little water</p>
+                            <p>Elementen: vuur en een beetje water</p>
                             <br/>
                             <p>
-                                <b>Pitta</b> is related <b>to the transformation within the body</b>.
+                            <b>Pitta</b> heeft te maken met <b>de transformatie in het lichaam.</b>.
                             </p>
                             <br/>
                             <p>
-                                For Example:
+                                Bijvoorbeeld:
                             </p>
                             <ul className="list-disc pl-6">
-                                <li>digestion of food</li>
-                                <li>"digestion" of emotions</li>
-                                <li>processing images and thoughts</li>
-                                <li>hormonal reactions</li>
+                                <li>vertering van voedsel</li>
+                                <li>"vertering" van emoties</li>
+                                <li>verwerking van beelden en gedachten</li>
+                                <li>hormonale reacties</li>
                             </ul>
                             <br/>
                             <p>
-                            Being the element of fire - pitta is connected to warmth. From science class we know that a by-product from chemical reactions is warmth.
-                            It is of no surprise that people with a high pitta dosha tend to have extra warmth in their body.
+                                Omdat pitta het element vuur is, is het verbonden met warmte. Door school weten we dat warmte een bijproduct is van chemische 
+                                reacties. Het is geen verrassing dat mensen met een hoge pitta dosha de neiging hebben om extra warmte in hun lichaam te hebben.
                             </p>
                             <br/>
                             <p>
-                                (For clarity: the movement of hormones from place to place is Vata, but the actual hormonal reaction is related to Pitta)
+                                (Voor de duidelijkheid: de beweging van hormonen van plaats naar plaats is Vata, maar 
+                                de eigenlijke hormonale reactie is gerelateerd aan Pitta)
                             </p>
                         </div>
                     </div>
@@ -136,27 +136,27 @@ const DoshaCards = () => {
                     {/* Content box */}
                     <div className="h-[70%] text-md">
                         <div className="p-4">
-                            <p>Elements: earth and water</p>
+                            <p>Elementen: aarde en water</p>
                             <br/>
                             <p>
-                                <b>Kapha</b> provides the protective structures and fluids.
+                                <b>Kapha</b> zorgt voor de beschermende structurenen vloeistoffen.
                             </p>
                             <br/>
                             <p>
-                                For example:
+                                Bijvoorbeeld:
                             </p>
                             <ul className="list-disc pl-6">
-                                <li>Main body mass</li>
-                                <li>Shape to cells and organs</li>
-                                <li>Lymph and blood plasma</li>
-                                <li>Myelin sheath around nerve cells</li>
-                                <li>Synovial fluid in joints</li>
-                                <li>Gastric mucosal barrier to protect stomach lining</li>
+                                <li>Hoofdmassa van het lichaam</li>
+                                <li>Vorm aan cellen en organen</li>
+                                <li>Lymfe en bloedplasma</li>
+                                <li>Myelineschede rond zenuwcellen</li>
+                                <li>Synoviale vloeistof in gewrichten</li>
+                                <li>Maagslijmvliesbarrière ter bescherming van het maagslijmvlies</li>
                             </ul>
                             <br/>
                             <p>
-                                Kapha's earth and water elements are heavier and more stable in nature. People described as having thick skin tend to have more Kapha.
-                                These people are more grounded, don't let things bother them quickly and they're less reactive.
+                                De aarde - en waterelementen van Kapha zijn zwaarder en stabieler van aard. Mensen met een dikke huid hebben vaak meer Kapha. Deze 
+                                mensen zijn meer geaard en zijn minder reactief.
                             </p>
                         </div>
                     </div>
@@ -166,4 +166,4 @@ const DoshaCards = () => {
     );
 }
 
-export default DoshaCards;
+export default DoshaCardsDutch;

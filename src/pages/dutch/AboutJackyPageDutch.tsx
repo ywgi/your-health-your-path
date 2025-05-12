@@ -1,23 +1,23 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import images from '../content/images'
+import FooterDutch from "../../components/FooterDutch";
+import HeaderDutch from "../../components/HeaderDutch";
+import images from '../../content/images'
 
-const AboutJackyPage = () => {
+const AboutJackyPageDutch = () => {
     return (
         <>
-            <Header />
+            <HeaderDutch />
             <div className="flex flex-col items-center w-full">
                 {/*first section*/}
                 <div className="block md:hidden">
                     <div className="relative h-full flex items-center justify-center p-4">
                             <div className="md:p-8 w-full max-w-5xl">
-                                <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">My Qualifications at a glance:</h1>
-                                <p className="mb-4 text-xl md:text-base">As an Ayurvedic Practitioner I have:</p>
+                                <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">Mijn kwalificaties:</h1>
+                                <p className="mb-4 text-xl md:text-base">Als Ayurvedisch Practitioner heb ik:</p>
                                 <ul className="list-disc pl-6 md:pl-8 space-y-2 text-xl md:text-base">
-                                    <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA: European Institute of Scientific Research on Ayurveda (Dutch: HBO Level)</li>
-                                    <li>Completed <b>two ayurvedic interships</b> in India</li>
-                                    <li>Completed the <b>Medical foundations</b> (Dutch: Medische Basis Kennis-MBK)</li>
-                                    <li>Plus, I have a bachelor's degree in Education (Dutch: PABO)</li>
+                                    <li>Een vierjarige bacheloropleiding tot Ayurvedic Practitioner van EISRA (Nederlands: HBO niveau)</li>
+                                    <li><strong>Twee Ayurvedische stages</strong> in India afgerond</li>
+                                    <li>Medische Basis Kennis-MBK afgerond.</li>
+                                    <li>Daarnaast ben ik leerkracht geweest in het basisonderwijs(PABO).</li>
                                 </ul>
                             </div>
                         </div>
@@ -30,43 +30,46 @@ const AboutJackyPage = () => {
                     <div className="relative w-full py-16 flex items-center justify-center px-4">
                         <div className="bg-white/70 backdrop-blur-md p-4 md:p-8 shadow-lg w-full max-w-3xl rounded-lg">
                             <h1 className="text-4xl text-center font-bold font-heading tracking-wide text-light-teal-custom">
-                                My Qualifications at a glance
+                                Mijn kwalificaties:
                             </h1>
                             <br/>
                             <p className="mb-4 text-sm md:text-base">
-                                As an Ayurvedic Practitioner I have:
+                                Als Ayurvedisch Practitioner heb ik:
                             </p>
                             <ul className="list-disc pl-6 md:pl-8 space-y-1 text-sm md:text-base">
-                                <li>A four-year bachelor's degree as Ayurvedic Practitioner from EISRA (Dutch: HBO Level)</li>
-                                <li>Completed <strong>two Ayurvedic internships</strong> in India</li>
-                                <li>Completed the <strong>Medical foundations</strong> (Dutch: Medische Basis Kennis-MBK)</li>
-                                <li>Plus, I have a bachelor's degree in Education (Dutch: PABO)</li>
+                                <li>Een vierjarige bacheloropleiding tot Ayurvedic Practitioner van EISRA (Nederlands: HBO niveau)</li>
+                                <li><strong>Twee Ayurvedische stages</strong> in India afgerond</li>
+                                <li>Medische Basis Kennis-MBK afgerond.</li>
+                                <li>Daarnaast ben ik leerkracht geweest in het basisonderwijs(PABO).</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 <div className="bg-white w-full py-5">
                     <p className="mt-4 text-center font-handwriting font-bold text-3xl lg:text-5xl">
-                        But more importantly - I've walked with Ayurveda along my <b className="font-handwriting lg:text-5xl text-green-custom">own health path</b>. Experiencing what it can do in a <i>very</i> <span className="font-handwriting lg:text-5xl text-green-custom">personal</span> way.
+                        Maar wat nog belangrijker is - ik heb met Ayurveda mijn <b className="font-handwriting lg:text-5xl text-green-custom">eigen gezondheidspas bewandeld.</b>. 
+                        Ervaren wat het kan doen op een <i>heel</i> <span className="font-handwriting lg:text-5xl text-green-custom">persoonlijke</span> manier.
                     </p>
                 </div>
                 <div className="flex flex-col lg:flex-row w-full items-center lg:items-center justify-center lg:px-12 pt-6 lg:pt-12 pb-4 gap-6 lg:gap-12">
                     <div className="flex w-full lg:max-w-2xl justify-center flex-col text-left px-4 lg:px-0 space-y-3 text-xl ">
                         <h1 className="text-4xl font-bold font-heading tracking-wide text-light-teal-custom">2015</h1>
                         <p>
-                            My love for Ayurveda, like so many of the other loves in my life (including meeting my husband!) started when I dared to follow my curiosity - after all, <b><i className="font-handwriting text-4xl md:text-5xl">why not?</i></b>
+                            Mijn liefde voor Ayurveda, zoals zoveel andere liefdes in mijn leven (inclusief het ontmoeten van mijn man!) begon toen ik mijn nieuwsgierigheid durfde te volgen <b><i className="font-handwriting text-4xl md:text-5xl">waarom ook niet?</i></b>
                         </p>
                         <p>
-                            In May of 2015, unsatisfied and even shocked by the doctor's advice - I picked up my first book about Ayurveda.  The book was a tip given by a woman I had the pleasure sitting next to on a plane. Oh, how I wish I could thank her! I devoured the information and <b>my life's path and overall approach to health, were forever changed.</b>
+                            In Mei 2015, ontevreden en zelfs geschokt door het advies van de dokter - pakte ik mijn eerste boek over Ayurveda. Het boek was een tip die ik kreeg van een vrouw naast wie ik in het vliegtuig zat. Ik wou dat ik haar kon bedanken! 
+                            Ik verslond de informatie en <b>mijn levenspad en algehele benadering van gezondheid</b>
                         </p>
-                        <p>The feeling of <span className="font-handwriting font-bold">YESSSS! </span> filled me. Ayurveda made sense. It explained my experiences.</p>
-                        <p>Immediately, I began making adjustments to my diet and scheduled an appointment with an Ayurvedic doctor. My ailment - a half-dollar sized bald spot on the back of my head that had
-                             developed over a matter of weeks, was taken care of with the soft and natural approach of Ayurveda instead of the strong hormonal creams that had been recommended with the explanation: if used sooner than later they <i>just might work</i>.
+                        <p>Het gevoel van <span className="font-handwriting font-bold">YESSSS! </span> vervulde me. Ayurveda was logisch. Het verklaarde mijn ervaringen.</p>
+                        <p>
+                            Onmiddellijk begon ik mijn dieet aan te passen en maakte ik een afspraak met een Ayurvedische arts. Mijn kwaal - een kale plek op mijn achterhoofd ter grootte van een halve dollar die zich in een paar weken had ontwikkeld - 
+                            werd behandeld met de zachte en natuurlijke benadering van Ayurveda in plaats van de sterke hormonale crèmes die waren aanbevolen met de uitleg: als je ze vroeg gebruikt, werken ze misschien wel.
                         </p>
                         <p>
-                            And, as it turns out, this was 
-                            <span className="font-handwriting hidden md:inline text-4xl font-bold"> just the beginning...</span>
-                            <span className="font-handwriting md:hidden text-4xl font-bold"><br/>just the beginning...</span>
+                            En dit bleek nog
+                            <span className="font-handwriting hidden md:inline text-4xl font-bold"> maar het begin te zijn...</span>
+                            <span className="font-handwriting md:hidden text-4xl font-bold"><br/> maar het begin te zijn...</span>
                         </p>
                     </div>
                     <div className="relative w-full lg:w-auto self-center">
@@ -99,46 +102,47 @@ const AboutJackyPage = () => {
                         </div>
                     </div>
                     <div className="order-first lg:order-last flex w-full lg:max-w-2xl justify-center flex-col text-left px-4 lg:px-0 text-xl">
-                        <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Niels' story in a nutshell:</h1>
+                        <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Het verhaal van Niels in een notendop:</h1>
                         <br/>
-                        <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">10 years of suffering to relief in <i>months</i>!</h2>
+                        <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">10 jaar lijden naar verlichting in <i>maanden</i>!</h2>
                         <br/>
                         <p>
-                           At that very first Ayurvedic doctor's appointment, I looked at my husband Niels and said, "Maybe this is something that would help you?"
+                            Bij die allereerste afspraak met een Ayurvedische arts keek ik mijn man Niels aan en zei: “Misschien is dit iets wat jou kan helpen?”
                         </p>
                         <p>
-                            For more than 10 years, he'd struggled with intestinal complaints. <b>He went to doctors and specialists, but his symptoms persisted.</b>
+                            Al meer dan 10 jaar kampte hij met darmklachten. <b>Hij ging naar artsen en specialisten, maar zijn klachten hielden aan.</b>
                         </p>
                         <p>
-                            Accompanying a constant feeling of limited energy, he suffered from:
+                            Naast een constant gevoel van beperkte energie, had hij last van:                        
                         </p>
                         <ul className="pl-4 lg:pl-8 lg:text-xl">
                             <li className="flex items-start gap-2 lg:gap-3">
                                 <span className="text-green-custom">•</span>
-                                <span className="leading-snug">fluctuating amounts of gas</span>
+                                <span className="leading-snug">fluctuerende hoeveelheden gas</span>
                             </li>
                             <li className="flex items-start gap-2 lg:gap-3">
                                 <span className="text-green-custom">•</span>
-                                <span className="leading-snug">bloating</span>
+                                <span className="leading-snug">opgeblazen gevoel</span>
                             </li>
                             <li className="flex items-start gap-2 lg:gap-3">
                                 <span className="text-green-custom">•</span>
-                                <span className="leading-snug">abdominal cramps</span>
+                                <span className="leading-snug">buikkrampen</span>
                             </li>
                             <li className="flex items-start gap-2 lg:gap-3">
                                 <span className="text-green-custom">•</span>
-                                <span className="leading-snug">fluctuations between loose bowels and mild constipation</span>
+                                <span className="leading-snug">schommelingen tussen losse darmen en lichte constipatie</span>
                             </li>
                         </ul>
                         <p>
-                            Niels too gave Ayurveda a try. After that first appointment, he began taking herbal supplements advised by the Ayurvedic doctor and made alterations to his diet. Within a couple of months, he was free of all intestinal complaints, and they haven't returned!
+                            Ook Niels probeerde Ayurveda. Na die eerste afspraak begon hij met het innemen van kruidensupplementen geadviseerd door de Ayurvedische arts en paste hij zijn dieet aan. 
+                            Binnen een paar maanden was hij <strong>verlost van alle darmklachten, en ze zijn niet meer teruggekomen</strong>!
                         </p>
                         <p>
-                            This dramatic transformation got my attention - Ayurveda was really helping us. 
+                            Deze dramatische transformatie trok mijn aandacht - Ayurveda hielp ons echt.
                         </p>
                         <br/>
                         <p className="font-handwriting font-bold text-4xl md:text-5xl pb-2">
-                            So, we both kept going...
+                            Dus we gingen allebei door...
                         </p>
                     </div>
                 </div>
@@ -146,7 +150,7 @@ const AboutJackyPage = () => {
                 <div className="relative w-full min-h-[10rem] lg:min-h-[12rem] bg-green-custom  py-8 lg:py-12">
                     <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl">
                         <span className="block text-center px-4 lg:px-10 leading-relaxed font-quote text-xl lg:whitespace-nowrap sm:text-2xl lg:text-4xl text-white">
-                            It's hard to have energy if your body isn't digesting properly.
+                            Het is moeilijk om energie te hebben als je lichaam niet goed verteert.
                         </span>
                     </div>
                 </div>
@@ -158,24 +162,24 @@ const AboutJackyPage = () => {
                     <div className="w-[90vw] md:w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
                         {/* Text content div */}
                         <div className="w-full max-w-3xl mb-2">                    
-                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Fast Forward to 2019-2020:</h1>
+                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Snel door naar 2019-2020:</h1>
                             <br/>
-                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">My story continued...</h2>
+                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">Mijn verhaal gaat verder...</h2>
                             <br/>
                             <p className="mb-2 text-xl">
-                                Niels and I had continued to follow basic Ayurvedic diet advice in our daily lives, but <b>my stress levels had risen</b>, this - added to <b>my stockpile of old shoved-to-the-side emotions</b> - was an overload for my system.
+                            Niels en ik waren doorgegaan met het volgen van Ayurvedische dieetadviezen in ons dagelijks leven, maar mijn <b>stressniveaus waren gestegen</b>, en dit - gevoegd bij mijn voorraad<b>oude, naar de kant geschoven emoties</b> - was een overbelasting voor mijn systeem.
                             </p>
                             <p className="mb-2 text-xl">
-                                <b>How I was feeling on the inside started to manifest on the outside</b>.
+                                <b>Hoe ik me van binnen voelde, begon zich aan de buitenkant te manifesteren.</b>.
                             </p>
                             <p className="mb-2 text-xl">
-                                I developed a severe case of adult acne. My self-esteem plummeted, and I just wanted to hide my face - which didn't help my already stressed system!
+                                Ik kreeg een ernstig geval van acne bij volwassenen. Mijn gevoel van eigenwaarde kelderde en ik wilde alleen maar mijn gezicht verbergen - wat mijn toch al overspannen systeem niet hielp!
                             </p>
                             <p className="mb-2 text-xl">
-                                Again, I turned to Ayurveda. This time, working on deeper levels. And again it helped me...
+                                Opnieuw wendde ik me tot Ayurveda. Deze keer werkte ik op diepere niveaus. En weer hielp het me...
                             </p>
                             <p className="mb-2 text-xl">
-                                I began to heal myself from the inside out.
+                                Ik begon mezelf te genezen van binnenuit.
                             </p>
                         </div>
                         
@@ -201,26 +205,26 @@ const AboutJackyPage = () => {
 
                         {/* Results section */}
                         <div className="w-full max-w-3xl">
-                            <h1 className="text-xl lg:text-2xl mb-2"><b>The results:</b> clearer skin, but really... So. Much. More.</h1>
+                            <h1 className="text-xl lg:text-2xl mb-2"><b>Het resultaat:</b> een heldere huid, maar echt...Zo. Veel. Meer.</h1>
                             <p className="mb-2 text-xl">
-                                I'm calmer and more self-aware.
+                                Ik ben rustiger en zelfbewuster.
                             </p>
                             <p className="mb-2 text-xl">
-                                Growing up and functioning in the world with a notoriously active brain - I now have <b>a mental calm that I didn't know was possible</b>.
+                            Opgroeien en functioneren in de wereld met een notoir actief brein - ik heb nu een <b>mentale rust waarvan ik niet wist dat het mogelijk was.</b>.
                             </p>
-                            <p className="font-bold mb-2 text-xl">Other helpful improvements:</p>
+                            <p className="font-bold mb-2 text-xl">Andere nuttige verbeteringen:</p>
                             <ul className="pl-4 lg:pl-8 text-xl">
                                 <li className="flex items-start gap-2 lg:gap-3">
                                     <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Better sleep</span>
+                                    <span className="leading-tight">Beter slapen</span>
                                 </li>
                                 <li className="flex items-start gap-2 lg:gap-3">
                                     <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Warm hands and feet - instead of the ice cold feet that I used to have all winter long</span>
+                                    <span className="leading-tight">Warme handen en voeten - in plaats van de ijskoude voeten die ik de hele winter had</span>
                                 </li>
                                 <li className="flex items-start gap-2 lg:gap-3">
                                     <span className="text-green-custom lg:mt-0.5">•</span>
-                                    <span className="leading-tight">Improved digestion</span>
+                                    <span className="leading-tight">Verbeterde spijsvertering</span>
                                 </li>
                             </ul>
                         </div>
@@ -230,10 +234,10 @@ const AboutJackyPage = () => {
 
                 </div>
             </div>
-            <Footer/>
+            <FooterDutch/>
         </>
     );
 }
 
-export default AboutJackyPage;
+export default AboutJackyPageDutch;
 
