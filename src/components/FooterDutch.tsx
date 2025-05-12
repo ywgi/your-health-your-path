@@ -32,11 +32,11 @@ const FooterDutch = () => {
                 <div className="text-center lg:text-left">
                     <h2 className="text-gold-custom font-bold text-xl mb-4">Navigation</h2>
                     <div className="flex flex-col gap-2">
-                        <Link to='nl/' className="text-white hover:text-gray-200 cursor-pointer">Home</Link>
-                        <Link to='nl/about-Jacklyn' className="text-white hover:text-gray-200 cursor-pointer">Over Jacklyn</Link>
-                        <Link to='nl/ayurveda' className="text-white hover:text-gray-200 cursor-pointer">Ayurveda</Link>
-                        <Link to='nl/services' className="text-white hover:text-gray-200 cursor-pointer">Diensten</Link>
-                        <Link to='nl/contact' className="text-white hover:text-gray-200 cursor-pointer">Contact</Link>
+                        <Link to='/' className="text-white hover:text-gray-200 cursor-pointer">Home</Link>
+                        <Link to='/over-Jacklyn' className="text-white hover:text-gray-200 cursor-pointer">Over Jacklyn</Link>
+                        <Link to='/ayurveda' className="text-white hover:text-gray-200 cursor-pointer">Ayurveda</Link>
+                        <Link to='/diensten' className="text-white hover:text-gray-200 cursor-pointer">Diensten</Link>
+                        <Link to='/contact' className="text-white hover:text-gray-200 cursor-pointer">Contact</Link>
                     </div>
                 </div>
             </div>

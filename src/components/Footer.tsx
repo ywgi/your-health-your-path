@@ -32,11 +32,11 @@ const Footer = () => {
                 <div className="text-center lg:text-left">
                     <h2 className="text-gold-custom font-bold text-xl mb-4">Navigation</h2>
                     <div className="flex flex-col gap-2">
-                        <Link to='/' className="text-white hover:text-gray-200 cursor-pointer">Home</Link>
-                        <Link to='/about-Jacklyn' className="text-white hover:text-gray-200 cursor-pointer">About Jacklyn</Link>
-                        <Link to='/ayurveda' className="text-white hover:text-gray-200 cursor-pointer">Ayurveda</Link>
-                        <Link to='/services' className="text-white hover:text-gray-200 cursor-pointer">Services</Link>
-                        <Link to='/contact' className="text-white hover:text-gray-200 cursor-pointer">Contact</Link>
+                        <Link to='/en/' className="text-white hover:text-gray-200 cursor-pointer">Home</Link>
+                        <Link to='/en/about-Jacklyn' className="text-white hover:text-gray-200 cursor-pointer">About Jacklyn</Link>
+                        <Link to='/en/ayurveda' className="text-white hover:text-gray-200 cursor-pointer">Ayurveda</Link>
+                        <Link to='/en/services' className="text-white hover:text-gray-200 cursor-pointer">Services</Link>
+                        <Link to='/en/contact' className="text-white hover:text-gray-200 cursor-pointer">Contact</Link>
                     </div>
                 </div>
             </div>
