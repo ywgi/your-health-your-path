@@ -31,7 +31,7 @@ const TestimonialsSlider = () => {
   };
 
   return (
-    <div className="w-full bg-green-custom py-16">
+    <div className="w-full bg-green-custom py-16 animate-[fade-in_1s_ease-out]">
       <div className="relative max-w-5xl mx-auto px-4 sm:px-8">
         <h2 className="text-3xl lg:text-4xl font-semibold text-white text-center mb-12">
           Kind words from clients

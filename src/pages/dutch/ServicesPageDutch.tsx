@@ -89,7 +89,7 @@ const ServicesPageDutch = () => {
                     {/* For larger screens - horizontal layout with full height image */}
 
                     <div className="hidden md:flex items-center justify-center w-full h-full overflow-hidden">
-                        <div className="flex flex-col px-4 md:px-6 lg:px-8 flex-grow max-w-[70%] lg:max-w-[65%] xl:max-w-[40%] space-y-2 md:space-y-3">
+                        <div className="flex flex-col px-4 md:px-6 lg:px-8 flex-grow max-w-[70%] lg:max-w-[65%] xl:max-w-[40%] space-y-2 md:space-y-3 animate-[fade-in_1s_ease-out]">
                             <h1 className="text-xl md:text-2xl lg:text-3xl font-heading font-bold text-light-teal-custom leading-tight">Bloei op een natuurlijke manier, leef voluit</h1>
                             <p className="text-base md:text-lg lg:text-xl">Met behulp van de wijsheid van Ayurveda is het mijn doel om jou te zien als de unieke persoon die je bent, en tegelijkertijd de feedbackpatronen van je lichaam te herkennen.</p>
                             <p className="text-base md:text-lg lg:text-xl">
@@ -103,7 +103,7 @@ const ServicesPageDutch = () => {
                             </p>
                         </div>
                         <div className="flex-shrink-1 h-full ml-2 md:ml-4">
-                            <img src={images.pathway} className="h-full w-auto max-h-full object-contain" alt="Ayurveda pathway" />
+                            <img src={images.pathway} className="h-full w-auto max-h-full object-contain animate-[fade-in_1s_ease-out]" alt="Ayurveda pathway" />
                         </div>
                     </div>
 
@@ -120,7 +120,7 @@ const ServicesPageDutch = () => {
                         <p className="text-xl px-4">
                             Ik help je graag op je pad; het is een genot om alle vooruitgang te vieren terwijl je verdergaat.
                         </p>
-                        <img src={images.pathway} className="w-full" alt="Ayurveda pathway" />
+                        <img src={images.pathway} className="w-full animate-[fade-in_1s_ease-out]" alt="Ayurveda pathway" />
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full h-auto min-h-[15vh] md:h-[20vh] py-4 bg-green-custom">

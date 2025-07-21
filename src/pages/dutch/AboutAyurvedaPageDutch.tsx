@@ -281,7 +281,7 @@ const AboutAyurvedaPageDutch = () => {
                   <div className="w-full md:w-auto lg:w-auto relative md:mt-4 md:mr-4 lg:mt-8 lg:mr-8">
                     <img 
                       className="w-full md:max-w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
-                      src={images.manStretching}
+                      src={images.womanStretching}
                       alt="Ayurvedic Man practicing stretching exercise"
                     />
                   </div>

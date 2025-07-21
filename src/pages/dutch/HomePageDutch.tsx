@@ -74,7 +74,7 @@ const HomePageDutch = () => {
                             <img 
                                 className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
                                 src={images.jackySection1}
-                                alt="Jacklyn Bestenbreur, Ayurvedic practitioner"
+                                alt="Ayurvedisch Practitioner Buiten leunend op houten muur."
                             />
                         </div>
                     </div>
@@ -98,7 +98,7 @@ const HomePageDutch = () => {
                             <img 
                                 className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover" 
                                 src={images.massageTools} 
-                                alt="Ayurvedic Massage Tools" 
+                                alt="spamaterialen zoals handdoek, kaarsen, olie en op een tafel leggen" 
                             />
                             </div>
                             
@@ -107,7 +107,7 @@ const HomePageDutch = () => {
                             <img
                                 className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover"  
                                 src={images.holistic}
-                                alt="Holistic tiles"
+                                alt="het woord Holistic gespeld met scrabble tegels en drie kleine bloemen liggen op een witte marmeren tafel."
                             />
                             </div>
                             
@@ -116,7 +116,7 @@ const HomePageDutch = () => {
                                 <img
                                     className="w-full object-contain"
                                     src={images.yhypLogoNoBackground}
-                                    alt="Your Health Your Path Logo, Ayurvedic practice"
+                                    alt="logo van Your Health Your Path"
                                 />
                             </div>
                         </div>
@@ -178,7 +178,7 @@ const HomePageDutch = () => {
                 <div className="w-full lg:w-auto order-1 lg:order-2">
                     <img className="w-full lg:w-auto lg:max-h-[40rem] object-cover" 
                         src={images.JackySection3} 
-                        alt="Jacklyn Bestenbreur, Ayurvedic Practitioner" />
+                        alt="Ayurvedisch Practitioner zittend en lachend naar de camera" />
                 </div>
             </div>
                 <div className="flex justify-center w-full">

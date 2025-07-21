@@ -20,7 +20,7 @@ const ContactPage = () => {
                         <div className="flex flex-col lg:flex-row p-4 md:p-8 items-center">
                             {/* Headings section - full width on mobile, right side on desktop */}
                             <div className="flex flex-col w-full lg:w-1/2 mb-8 lg:mb-0">
-                                <div className="px-4 md:px-8">
+                                <div className="px-4 md:px-8 animate-[fade-in_1s_ease-out]">
                                     <h1 className="font-heading font-bold text-2xl md:text-3xl text-light-teal-custom">
                                         I can't wait to connect with you!
                                     </h1>
@@ -38,7 +38,7 @@ const ContactPage = () => {
                             {/* Image section - full width on mobile, left side on desktop */}
                             <div className="relative w-full lg:w-1/2 self-center">
                                 {/* Background decorative block */}
-                                <div className="absolute bottom-0 left-0 w-[90%] h-full bg-teal-custom -z-10 md:block origin-bottom-left scale-90" />
+                                <div className="absolute bottom-0 left-0 w-[90%] h-full bg-teal-custom -z-10 md:block origin-bottom-left scale-90 animate-[fade-in_1s_ease-out]" />
                                 {/* Main image container */}
                                 <div className="relative md:mb-4 md:ml-4 lg:mb-8 lg:ml-8">
                                     <img 

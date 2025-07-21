@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import './Header.css'
 import images from "../content/images";
 import { useState } from "react";
+import LanguageDropdown from "./LanguageDropdown";
 
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -113,9 +114,7 @@ const Header = () => {
                 </div>
             </div>
             <div className="hidden md:block">
-                <a href="/">
-                    <img src={images.netherlandsFlag} className="max-h-10" alt="Netherlands Flag" />
-                </a>
+                <LanguageDropdown />
             </div>
         </header>
     );

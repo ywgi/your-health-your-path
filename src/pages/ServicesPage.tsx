@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import MassageCards from "../components/MassageCards";
 import images from "../content/images";
-import ConsultCards from "../components/ConsultCards";
+import { Suspense, lazy } from "react";
+
+const ConsultCards = lazy(() => import("../components/ConsultCards"));
+const MassageCards = lazy(() => import("../components/MassageCards"));
+
 
 
 
@@ -241,9 +244,12 @@ const ServicesPage = () => {
                 <div className="w-full md:max-w-[70vw] max-w-full mx-auto px-4 py-4 md:px-0">
                     <h1 className="font-heading font-bold pb-8 text-3xl md:text-4xl text-light-teal-custom">Massages:</h1>
                 </div>
-                <div className="flex flex-col justify-center items-center pb-12">
-                    <MassageCards />
-                </div>
+                <Suspense>
+                    <div className="flex flex-col justify-center items-center pb-12">
+                        <MassageCards />
+                    </div>
+                </Suspense>
+
             </div>
             <Footer />
         </>

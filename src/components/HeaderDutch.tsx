@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import images from "../content/images";
 import { useState } from "react";
+import LanguageDropdown from "./LanguageDropdown";
 
 const HeaderDutch = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -77,9 +78,7 @@ const HeaderDutch = () => {
                 </nav>
             </div>
             <div className="hidden md:block">
-                <a href="/en/">
-                    <img src={images.unitedKingdomFlag} className="max-h-10" alt="United Kingdom Flag" />
-                </a>
+                <LanguageDropdown />
             </div>
             {/* Mobile menu */}
             <div
