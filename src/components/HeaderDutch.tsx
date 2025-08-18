@@ -43,6 +43,9 @@ const HeaderDutch = () => {
                                 <a href="/diensten" className="font-bold md:text-lg lg:text-2xl px-2 pt-2 pb-2 rounded-3xl text-teal-custom hover:text-white hover:bg-green-custom">
                                     Diensten
                                 </a>
+                                <a href="/faq" className="font-bold md:text-lg lg:text-2xl px-2 pt-2 pb-2 rounded-3xl text-teal-custom hover:text-white hover:bg-green-custom">
+                                    FAQ
+                                </a>
                                 <a href="/contact" className="font-bold md:text-lg lg:text-2xl px-2 pt-2 pb-2 rounded-3xl text-teal-custom hover:text-white hover:bg-green-custom">
                                     Contact
                                 </a>
@@ -103,6 +106,12 @@ const HeaderDutch = () => {
                         className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
                     >
                         Diensten
+                    </a>
+                    <a
+                        href="/faq"
+                        className="block px-3 py-2 rounded-md text-white hover:text-gray-900 hover:bg-gray-100"
+                    >
+                        FAQ
                     </a>
                     <a
                         href="/contact"

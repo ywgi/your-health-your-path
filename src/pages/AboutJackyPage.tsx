@@ -226,8 +226,97 @@ const AboutJackyPage = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full bg-green-custom h-[150px]">
-
+                <div className="w-full bg-green-custom h-[150px] flex items-center justify-center">
+                    <h1 className="text-5xl text-white font-quote">Just For Fun...</h1>
+                </div>
+                <div className="flex flex-col">
+                    <div className="flex flex-col items-start w-[60vw] mx-auto">
+                        <div className="p-10">
+                            <h1 className="text-5xl text-light-teal-custom font-handwriting font-bold">
+                                Best summer job ever...
+                            </h1>
+                        </div>
+                        <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md 
+                            relative overflow-hidden group w-full lg:max-w-[1200px] mb-8">
+                            {/* Responsive flex container with more specific breakpoints */}
+                            <div className="flex flex-col md:flex-row">
+                                {/* Fixed-size image container */}
+                                <div className="w-full md:w-96 flex-shrink-0">
+                                    <img 
+                                        src={images.jackyParkRanger} 
+                                        alt="Abhyanga massage therapy" 
+                                        className="w-full h-64 md:h-full object-cover"
+                                    />
+                                </div>
+                                {/* Content section with proper padding */}
+                                <div className="p-6 md:p-8 flex-grow flex items-center">
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
+                                        Working as a Park Ranger at Congaree National Park as a part of a program for teachers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-end w-[60vw] mx-auto">
+                        <div className="p-10">
+                            <h1 className="text-5xl text-light-teal-custom font-handwriting font-bold">
+                                A great gift to my future self...
+                            </h1>
+                        </div>
+                        <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md 
+                            relative overflow-hidden group w-full lg:max-w-[1200px] mb-8">
+                            {/* Responsive flex container with more specific breakpoints */}
+                            <div className="flex flex-col md:flex-row">
+                                {/* Content section with proper padding */}
+                                <div className="p-6 md:p-8 flex-grow flex flex-col items-center justify-center">
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
+                                        Learning to swim in my 20 - where I could go underwater without plugging my nose and swim longer distances was a great gift.
+                                    </p>
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
+                                        Just recently I joined a Dutch swim club and have been working on the breaststroke - a quote from the trainer:
+                                    </p>
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
+                                        "Now you can do what four-year-olds here do!"
+                                    </p>
+                                </div>
+                                {/* Fixed-size image container */}
+                                <div className="w-full md:w-96 flex-shrink-0">
+                                    <img 
+                                        src={images.pool} 
+                                        alt="Abhyanga massage therapy" 
+                                        className="w-full h-64 md:h-full object-cover"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="flex flex-col items-start w-[60vw] mx-auto">
+                        <div className="p-10">
+                            <h1 className="text-5xl text-light-teal-custom font-handwriting font-bold">
+                                The Worst Dancers, but the Best Laughers...
+                            </h1>
+                        </div>
+                        <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md 
+                            relative overflow-hidden group w-full lg:max-w-[1200px] mb-8">
+                            {/* Responsive flex container with more specific breakpoints */}
+                            <div className="flex flex-col md:flex-row">
+                                {/* Fixed-size image container */}
+                                <div className="w-full md:w-96 flex-shrink-0">
+                                    <img 
+                                        src={images.dancing} 
+                                        alt="A" 
+                                        className="w-full h-64 md:h-full object-cover"
+                                    />
+                                </div>
+                                {/* Content section with proper padding */}
+                                <div className="p-6 md:p-8 flex-grow flex items-center">
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-sm md:text-base">
+                                        Working as a Park Ranger at Congaree National Park as a part of a program for teachers.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footer/>

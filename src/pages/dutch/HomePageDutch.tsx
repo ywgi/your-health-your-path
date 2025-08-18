@@ -137,7 +137,7 @@ const HomePageDutch = () => {
                                 help ik door alle tegenstrijdige gezondheidsruis heen en door jouw unieke geschiedenis te volgen, wordt er een plan gemaakt dat speciaal op jou en je behoeften is 
                                 afgestemd - en dat alles op een realistische, behapbare manier. Omdat het leven al druk genoeg is, maken we gezond zijn een stuk gemakkelijker.
                             </p>
-                            <Link to="/nl/services" 
+                            <Link to="/diensten" 
                                     className="self-center mt-5 px-3 py-3 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
                                 Neem de eerste stappen
                             </Link>
@@ -167,7 +167,7 @@ const HomePageDutch = () => {
                         vergroot. Nu kan ik het enthousiast met anderen delen als zij hun pad afleggen...                    
                     </p>
                     <div className="flex justify-center items-center w-full mb-4">
-                        <Link to="/about-jacklyn">
+                        <Link to="/over-jacklyn">
                             <button className="px-3 py-3 text-xl lg:text-2xl font-helvetica rounded-full text-white bg-green-custom hover:bg-teal-custom hover:text-white transition-colors">
                                 Lees meer over mijn verhaal…
                             </button>

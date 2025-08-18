@@ -71,7 +71,7 @@ const ContactForm: React.FC = () => {
                     />
                     <textarea
                         name="message"
-                        placeholder="Your Message"
+                        placeholder="Graag schrijf een bericht met: Wat voor afspraak wil je maken? In kort samenvatting beschrijf doelen en/of klachten. Graag geef twee of drie tijden die schikt voor jou te afspreken."
                         rows={6}
                         required
                         className="w-full p-2 border border-gray-300 focus:border-orange-500 focus:outline-none text-sm sm:text-base"

@@ -11,6 +11,7 @@ import AboutAyurvedaPageDutch from './pages/dutch/AboutAyurvedaPageDutch';
 import AboutJackyPageDutch from './pages/dutch/AboutJackyPageDutch';
 import ServicesPageDutch from './pages/dutch/ServicesPageDutch';
 import ContactPageDutch from './pages/dutch/ContactPageDutch';
+import FAQPageDutch from './pages/dutch/FAQPageDutch';
 
 function App() {
     return (
@@ -26,6 +27,7 @@ function App() {
           <Route path="/ayurveda" element={<AboutAyurvedaPageDutch />} />
           <Route path="/diensten" element={<ServicesPageDutch />} />
           <Route path="/contact" element={<ContactPageDutch />} />
+          <Route path="/faq" element={<FAQPageDutch />} />
         </Routes>
       </ScrollToTop>
     );

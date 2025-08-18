@@ -73,17 +73,17 @@ const AboutAyurvedaPageDutch = () => {
               {/*market spices with intro paragraph*/}
               <div className="flex flex-col md:flex-row gap-0 md:gap-8 lg:gap-20 items-center max-w-6xl mx-auto lg:pb-12">
                 {/* Image section - full width on mobile with no margins or background, reordered to appear first on mobile */}
-                <div className="relative w-full md:w-1/2 self-center order-1 md:order-first mb-6 md:mb-0">
+                <div className="relative w-full md:w-3/5 self-center order-1 md:order-first mb-6 md:mb-0">
                   {/* Main image container - limited height on mobile, normal styling on desktop */}
                   <div className="w-full relative md:mt-6 md:ml-6 lg:mt-8 lg:ml-8">
                     {/* Background decorative block - hidden on mobile */}
                     <div className="hidden md:block absolute md:-top-6 md:-left-6 lg:-top-8 lg:-left-8 w-full h-full bg-teal-custom -z-10" />
                     
                     {/* Mobile-specific wrapper with fixed height */}
-                    <div className="h-[250px] md:h-auto overflow-hidden">
+                    <div className="h-[250px] md:h-[500px] overflow-hidden">
                       <img 
                         className="w-full h-full object-cover object-[center_25%] md:object-center shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards] relative"
-                        src={images.marketSpices}
+                        src={images.spices}
                         alt="Ayurvedic spices in a market" 
                       />
                     </div>

@@ -230,8 +230,8 @@ const AboutJackyPageDutch = () => {
                         </div>
                     </div>
                 </div>
-                <div className="w-full bg-green-custom h-[150px]">
-
+                <div className="w-full bg-green-custom h-[150px] flex items-center justify-center">
+                    {/* <h1 className="text-5xl text-white font-quote">Just For Fun...</h1> */}
                 </div>
             </div>
             <FooterDutch/>

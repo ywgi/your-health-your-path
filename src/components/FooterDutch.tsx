@@ -36,6 +36,7 @@ const FooterDutch = () => {
                         <Link to='/over-Jacklyn' className="text-white hover:text-gray-200 cursor-pointer">Over Jacklyn</Link>
                         <Link to='/ayurveda' className="text-white hover:text-gray-200 cursor-pointer">Ayurveda</Link>
                         <Link to='/diensten' className="text-white hover:text-gray-200 cursor-pointer">Diensten</Link>
+                        <Link to='/faq' className="text-white hover:text-gray-200 cursor-pointer">FAQ</Link>
                         <Link to='/contact' className="text-white hover:text-gray-200 cursor-pointer">Contact</Link>
                     </div>
                 </div>

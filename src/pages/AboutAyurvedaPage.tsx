@@ -80,10 +80,10 @@ const AboutAyurvedaPage = () => {
                     <div className="hidden md:block absolute md:-top-6 md:-left-6 lg:-top-8 lg:-left-8 w-full h-full bg-teal-custom -z-10" />
                     
                     {/* Mobile-specific wrapper with fixed height */}
-                    <div className="h-[250px] md:h-auto overflow-hidden">
+                    <div className="h-[250px] md:h-[500px] overflow-hidden">
                       <img 
                         className="w-full h-full object-cover object-[center_25%] md:object-center shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards] relative"
-                        src={images.marketSpices}
+                        src={images.spices}
                         alt="Ayurvedic spices in a market" 
                       />
                     </div>
