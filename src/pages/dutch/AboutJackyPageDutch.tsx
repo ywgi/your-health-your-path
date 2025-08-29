@@ -231,7 +231,95 @@ const AboutJackyPageDutch = () => {
                     </div>
                 </div>
                 <div className="w-full bg-green-custom h-[150px] flex items-center justify-center">
-                    {/* <h1 className="text-5xl text-white font-quote">Just For Fun...</h1> */}
+                    <h1 className="text-5xl text-white font-quote">Just For Fun...</h1>
+                </div>
+                <div className="flex flex-col pb-8 px-2">
+                    {/* Section 1 */}
+                    <div className="w-full md:w-[50vw] mx-auto mt-4">
+                        {/* Centered on mobile, aligned to left on desktop */}
+                        <div className="p-4 md:p-10 flex flex-col items-center md:items-start">
+                            <h1 className="text-center md:text-left text-3xl md:text-5xl text-light-teal-custom font-handwriting font-bold">
+                                Beste zomerbaan ooit...
+                            </h1>
+                        </div>
+                        <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md relative overflow-hidden my-4">
+                            <div className="flex flex-col md:flex-row">
+                                <div className="w-full md:w-96 flex-shrink-0">
+                                    <img
+                                        src={images.jackyParkRanger}
+                                        alt="Abhyanga massage therapy"
+                                        className="w-full h-64 md:h-full object-cover"
+                                    />
+                                </div>
+                                {/* Centered on mobile, aligned to left on desktop */}
+                                <div className="p-6 md:p-8 flex-grow flex items-center text-center md:text-left">
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-md md:text-2xl">
+                                        Werken als boswachter in Congaree National Park als onderdeel van een programma voor leraren.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Section 2 */}
+                    <div className="w-full md:w-[50vw] mx-auto md:self-end">
+                        {/* Centered on mobile, aligned to right on desktop */}
+                        <div className="p-4 md:p-10 flex flex-col items-center md:items-end">
+                            <h1 className="text-center md:text-right text-3xl md:text-5xl text-light-teal-custom font-handwriting font-bold">
+                                Een geweldig cadeau voor mijn toekomstige zelf...
+                            </h1>
+                        </div>
+                        <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md relative overflow-hidden my-4">
+                            <div className="flex flex-col md:flex-row-reverse">
+                                <div className="w-full md:w-96 flex-shrink-0">
+                                    <img
+                                        src={images.pool}
+                                        alt="Abhyanga massage therapy"
+                                        className="w-full h-64 md:h-full object-cover"
+                                    />
+                                </div>
+                                {/* Centered on mobile, aligned to left on desktop */}
+                                <div className="p-6 md:p-8 flex-grow flex flex-col items-center justify-center md:items-start text-center md:text-left">
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-md md:text-2xl">
+                                        Leren zwemmen in mijn twintiger jaren - toen ik onder water kon zonder mijn neus dicht te houden en langere afstanden kon zwemmen, was een geweldig cadeau.
+                                    </p>
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-md md:text-2xl">
+                                        Onlangs ben ik lid geworden van een Nederlandse zwemclub en ben ik aan de schoolslag gaan werken - een citaat van de trainer:
+                                    </p>
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-md md:text-2xl">
+                                        "Nu kun je doen wat vierjarigen hier doen!"
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Section 3 */}
+                    <div className="w-full md:w-[50vw] mx-auto">
+                        {/* Centered on mobile, aligned to left on desktop */}
+                        <div className="p-4 md:p-10 flex flex-col items-center md:items-start">
+                            <h1 className="text-center md:text-left text-3xl md:text-5xl text-light-teal-custom font-handwriting font-bold">
+                                De slechtste dansers, maar de beste lachers...
+                            </h1>
+                        </div>
+                        <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md relative overflow-hidden my-4">
+                            <div className="flex flex-col md:flex-row">
+                                <div className="w-full md:w-96 flex-shrink-0">
+                                    <img
+                                        src={images.dancing}
+                                        alt="A"
+                                        className="w-full h-64 md:h-full object-cover"
+                                    />
+                                </div>
+                                {/* Centered on mobile, aligned to left on desktop */}
+                                <div className="p-6 md:p-8 flex-grow flex items-center text-center md:text-left">
+                                    <p className="text-gray-600 mb-4 leading-relaxed text-md md:text-2xl">
+                                        Een paar jaar geleden namen mijn man Niels en ik salsales. We waren verreweg de <strong>slechtste van de klas</strong>, maar we waren ook <strong>degenen die het meest lachten!</strong>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <FooterDutch/>
@@ -240,4 +328,6 @@ const AboutJackyPageDutch = () => {
 }
 
 export default AboutJackyPageDutch;
+
+
 

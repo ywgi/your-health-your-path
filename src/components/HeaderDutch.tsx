@@ -11,7 +11,7 @@ const HeaderDutch = () => {
     };
 
     return (
-        <header className="flex flex-col md:flex-row lg:flex-row items-center w-full p-2 md:p-4 lg:p-5 md:pb-8 lg:pb-12 relative text-center min-w-full md:min-w-[768px] md:h-[140px] lg:min-w-[1024px] lg:h-[150px] whitespace-normal md:whitespace-nowrap lg:whitespace-nowrap gap-4 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-full before:h-[0.2rem] before:bg-gradient-to-r before:from-transparent before:via-[#c17557] before:to-transparent">
+        <header className="flex flex-col md:flex-row lg:flex-row items-center w-full mt-4 md:mt-6 p-2 md:p-4 lg:p-5 md:pb-8 lg:pb-12 relative text-center min-w-full md:min-w-[768px] md:h-[140px] lg:min-w-[1024px] lg:h-[150px] whitespace-normal md:whitespace-nowrap lg:whitespace-nowrap gap-4 before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:-translate-x-1/2 before:w-full before:h-[0.2rem] before:bg-gradient-to-r before:from-transparent before:via-[#c17557] before:to-transparent">
             <div className="flex flex-row w-full md:w-[40vw] lg:w-[40vw] items-center justify-center gap-2 lg:gap-0">
                 <Link to='/' aria-label='Go to homepage'>
                     <div className="flex flex-row w-auto">
@@ -129,7 +129,3 @@ const HeaderDutch = () => {
 }
 
 export default HeaderDutch;
-
-
-
-

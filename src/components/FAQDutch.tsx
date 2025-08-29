@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+// The FAQ data remains unchanged
 interface FAQItem {
   id: number;
   question: string;
@@ -40,45 +41,46 @@ const faqs: FAQItem[] = [
 ];
 
 const FAQDutch = () => {
-      const [openItemId, setOpenItemId] = useState<number | null>(null);
+    const [openItemId, setOpenItemId] = useState<number | null>(null);
 
-  // Function to toggle the open state of an FAQ item
-  const handleItemClick = (id: number) => {
-    setOpenItemId(openItemId === id ? null : id);
-  };
+    const handleItemClick = (id: number) => {
+        setOpenItemId(openItemId === id ? null : id);
+    };
 
-  return (
-    <section className='flex flex-col items-center justify-center'>
-        <div className="border-t border-gray-300 max-w-[1000px]">
-            {faqs.map(faq => (
-                <div key={faq.id} className="border-b border-gray-300 py-6">
-                <div
-                    className="flex justify-between items-center cursor-pointer"
-                    onClick={() => handleItemClick(faq.id)}
-                >
-                    <h3 className="text-lg font-semibold uppercase tracking-wide">
-                    {faq.question}
-                    </h3>
-                    <span className="text-2xl text-gray-500 transition-transform duration-300">
-                    {openItemId === faq.id ? '-' : '+'}
-                    </span>
-                </div>
-                
-                {/* Animated content wrapper using max-height */}
-                <div 
-                    className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openItemId === faq.id ? 'max-h-[1000px]' : 'max-h-0'}`}
-                >
-                    <div 
-                    className="mt-4 text-gray-600 leading-relaxed whitespace-pre-wrap"
-                    dangerouslySetInnerHTML={{ __html: faq.answer.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }}
-                    />
-                </div>
-                </div>
-            ))}
-        </div>
-    </section>
-  );
-}
-
+    return (
+        <section className='flex flex-col items-center justify-center w-full px-6 md:px-8'>
+            <div className="border-t border-gray-300 w-full max-w-5xl">
+                {faqs.map(faq => (
+                    <div key={faq.id} className="border-b border-gray-300 py-6">
+                        <div
+                            className="flex justify-between items-center cursor-pointer"
+                            onClick={() => handleItemClick(faq.id)}
+                        >
+                            <h3 className="text-lg sm:text-xl font-semibold uppercase tracking-wide">
+                                {faq.question}
+                            </h3>
+                            <span className="text-2xl text-gray-500 transition-transform duration-300 transform"
+                                style={{
+                                    transform: openItemId === faq.id ? 'rotate(45deg)' : 'rotate(0deg)'
+                                }}
+                            >
+                                +
+                            </span>
+                        </div>
+                        
+                        <div 
+                            className={`overflow-hidden transition-[max-height] duration-500 ease-in-out ${openItemId === faq.id ? 'max-h-[1000px]' : 'max-h-0'}`}
+                        >
+                            <div 
+                                className="mt-4 text-gray-600 leading-relaxed text-sm sm:text-base whitespace-pre-wrap"
+                                dangerouslySetInnerHTML={{ __html: faq.answer.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }}
+                            />
+                        </div>
+                    </div>
+                ))}
+            </div>
+        </section>
+    );
+};
 
 export default FAQDutch;

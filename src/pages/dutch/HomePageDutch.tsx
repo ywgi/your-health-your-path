@@ -3,10 +3,20 @@ import images from '../../content/images'
 import HeaderDutch from "../../components/HeaderDutch";
 import TestimonialsSliderDutch from "../../components/TestimonialsDutch";
 import FooterDutch from "../../components/FooterDutch";
+import openHousePDF from '../../assets/Open house.pdf';
+
 
 const HomePageDutch = () => {
     return (
         <>
+           <a 
+                href={openHousePDF} 
+                download 
+                className="hidden md:block bg-green-custom text-white text-center py-2 px-4 w-full text-lg font-semibold hover:bg-[#c17557] transition-colors duration-300 mb-8"
+                aria-label="Download information about the open house on September 17, 2025"
+            >
+                Kom naar mijn Open Huis op 13 september 2025!            
+            </a>
             <HeaderDutch />
             <div className="flex flex-col items-center w-full">
                 {/* First Section */}
