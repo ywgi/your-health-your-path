@@ -1,17 +1,35 @@
 import images from "../content/images";
+import { useInView } from "react-intersection-observer";
 
 const MassageCardsDutch: React.FC = () => {
+    // Setup refs for each of the two cards
+    const [abhyangaRef, abhyangaInView] = useInView({
+        triggerOnce: true, // Animation will only happen once
+        threshold: 0.1,    // Trigger when 10% of the card is visible
+    });
+
+    const [marmaRef, marmaInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return (
         <div className="flex flex-col space-y-12">
-            <div id="massage" className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md 
-                    relative overflow-hidden group w-[85vw] lg:w-[80vw] lg:max-w-[1200px] mx-auto">
+            {/* Abhyanga Card */}
+            <div 
+                ref={abhyangaRef} // Attach the ref here
+                id="massage" 
+                className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md relative overflow-hidden group w-[85vw] lg:w-[80vw] lg:max-w-[1200px] mx-auto transition-opacity duration-1000 ease-in-out ${
+                    abhyangaInView ? 'opacity-100' : 'opacity-0'
+                }`} // Add conditional classes
+            >
                 {/* Responsive flex container with more specific breakpoints */}
                 <div className="flex flex-col md:flex-row">
                     {/* Fixed-size image container */}
                     <div className="w-full md:w-96 flex-shrink-0">
                         <img 
                             src={images.massageWoman} 
-                            alt="Abhyanga massage therapy" 
+                            alt="Een jonge vrouw ligt op een massagetafel en haar rug wordt gemasseerd." 
                             className="w-full h-64 md:h-full object-cover"
                         />
                     </div>
@@ -47,15 +65,21 @@ const MassageCardsDutch: React.FC = () => {
                     </div>
                 </div>
             </div>
-            <div className="bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md 
-                relative overflow-hidden group w-[85vw] lg:w-[80vw] lg:max-w-[1200px] mx-auto">
+            
+            {/* Marma Card */}
+            <div 
+                ref={marmaRef} // Attach the ref here
+                className={`bg-gradient-to-br from-white to-gray-50 rounded-xl shadow-md relative overflow-hidden group w-[85vw] lg:w-[80vw] lg:max-w-[1200px] mx-auto transition-opacity duration-1000 ease-in-out ${
+                    marmaInView ? 'opacity-100' : 'opacity-0'
+                }`} // Add conditional classes
+            >
                 {/* Responsive flex container - column on mobile, row on larger screens */}
                 <div className="flex flex-col md:flex-row">
                     {/* Image container with responsive sizing */}
                     <div className="w-full md:w-96 flex-shrink-0">
                         <img 
                             src={images.massageFoot} 
-                            alt="Marma massage therapy" 
+                            alt="Een masseuse die een punt in het midden van een voet masseert van de persoon die ze masseert." 
                             className="w-full h-64 md:h-[389px] object-cover"
                         />
                     </div>
@@ -98,7 +122,6 @@ const MassageCardsDutch: React.FC = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 

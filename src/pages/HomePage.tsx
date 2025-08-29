@@ -144,9 +144,9 @@ const HomePage = () => {
                                 <div className="absolute top-0 right-0 w-1/5 z-30">
                                     <img
                                         loading="lazy"
-                                        className="w-full object-contain"
+                                        className="w-full object-contain animate-[fade-in_1s_ease-out]"
                                         src={images.yhypLogoNoBackground}
-                                        alt="Your Health Your Path Logo, Ayurvedic practice animate-[fade-in_1s_ease-out]"
+                                        alt="Your Health Your Path Logo, Ayurvedic practice"
                                     />
                                 </div>
                             </div>
@@ -208,7 +208,7 @@ const HomePage = () => {
                         <div className="w-full lg:w-auto order-1 lg:order-2">
                             <img
                                 loading="lazy" 
-                                className="w-full lg:w-auto lg:max-h-[40rem] object-cover" 
+                                className="w-full lg:w-auto lg:max-h-[40rem] object-cover animate-[fade-in_1s_ease-out]" 
                                 src={images.JackySection3} 
                                 alt="Jacklyn Bestenbreur, Ayurvedic Practitioner" />
                         </div>

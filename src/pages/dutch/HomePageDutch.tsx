@@ -4,9 +4,37 @@ import HeaderDutch from "../../components/HeaderDutch";
 import TestimonialsSliderDutch from "../../components/TestimonialsDutch";
 import FooterDutch from "../../components/FooterDutch";
 import openHousePDF from '../../assets/Open house.pdf';
+import { useInView } from "react-intersection-observer"; // New: Import useInView hook
 
 
 const HomePageDutch = () => {
+
+    // Setup hooks for each image
+    const [jackySection1Ref, jackySection1InView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [massageToolsRef, massageToolsInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [holisticRef, holisticInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [yhypLogoRef, yhypLogoInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [jackySection3Ref, jackySection3InView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
     return (
         <>
            <a 
@@ -51,7 +79,7 @@ const HomePageDutch = () => {
                             </span>
                             <span className="block md:text-xl lg:text-xl">
                                 Een Ayurvedisch Practitioner, die er is om u te helpen bloeien en volledig te leven, op
-                                <span className="font-handwriting font-black text-green-custom lg:text-4xl"> natuurlijke wijze.</span>
+                                <span className="font-handwriting font-black text-green-custom lg:text-4xl"> natuurlijk wijze.</span>
                             </span>
                             <span className="block md:text-xl lg:text-xl">
                                 Ik kijk naar je <b>individuele behoeften</b> en <b>doelen</b> en maak een <b>persoonlijk plan</b> om je te helpen op jouw unieke pad.
@@ -59,14 +87,14 @@ const HomePageDutch = () => {
                         </p>
                         <a 
                             href="#feel-better" 
-                            onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
+                            onClick={(e) => {
                                 e.preventDefault();
                                 const element = document.getElementById('feel-better');
                                 if (element) {
-                                element.scrollIntoView({
-                                    behavior: 'smooth',
-                                    block: 'start'
-                                });
+                                    element.scrollIntoView({
+                                        behavior: 'smooth',
+                                        block: 'start'
+                                    });
                                 }
                             }}
                             className="self-center mt-10 px-3 py-3 lg:px-4 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors duration-500"
@@ -82,7 +110,10 @@ const HomePageDutch = () => {
                         {/* Main image container */}
                         <div className="w-full md:w-auto lg:w-auto relative md:mt-4 md:mr-4 lg:mt-8 lg:mr-8">
                             <img 
-                                className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                ref={jackySection1Ref}
+                                className={`w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg transition-opacity duration-1000 ease-out ${
+                                    jackySection1InView ? 'opacity-100' : 'opacity-0'
+                                }`}
                                 src={images.jackySection1}
                                 alt="Ayurvedisch Practitioner Buiten leunend op houten muur."
                             />
@@ -106,7 +137,11 @@ const HomePageDutch = () => {
                             {/* Main image */}
                             <div className="relative w-4/5 sm:w-3/4 z-10">
                             <img 
-                                className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover" 
+                                ref={massageToolsRef}
+                                loading="lazy"
+                                className={`w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover transition-opacity duration-1000 ease-out ${
+                                    massageToolsInView ? 'opacity-100' : 'opacity-0'
+                                }`}
                                 src={images.massageTools} 
                                 alt="spamaterialen zoals handdoek, kaarsen, olie en op een tafel leggen" 
                             />
@@ -115,7 +150,11 @@ const HomePageDutch = () => {
                             {/* Overlapping image */}
                             <div className="absolute bottom-0 right-0 w-2/3 sm:w-3/5 transform translate-y-1/4 z-20">
                             <img
-                                className="w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover"  
+                                ref={holisticRef}
+                                loading="lazy"
+                                className={`w-full border-8 md:border-4 lg:border-8 border-coral-custom object-cover transition-opacity duration-1000 ease-out ${
+                                    holisticInView ? 'opacity-100' : 'opacity-0'
+                                }`}
                                 src={images.holistic}
                                 alt="het woord Holistic gespeld met scrabble tegels en drie kleine bloemen liggen op een witte marmeren tafel."
                             />
@@ -124,7 +163,11 @@ const HomePageDutch = () => {
                             {/* Logo */}
                             <div className="absolute top-0 right-0 w-1/5 z-30">
                                 <img
-                                    className="w-full object-contain"
+                                    ref={yhypLogoRef}
+                                    loading="lazy"
+                                    className={`w-full object-contain transition-opacity duration-1000 ease-out ${
+                                        yhypLogoInView ? 'opacity-100' : 'opacity-0'
+                                    }`}
                                     src={images.yhypLogoNoBackground}
                                     alt="logo van Your Health Your Path"
                                 />
@@ -132,25 +175,25 @@ const HomePageDutch = () => {
                         </div>
                     </div>
                     <div className="flex w-full lg:max-w-[800px] flex-col mt-16 md:mt-4 lg:mt-4 text-left px-4 lg:px-0">
-                            <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Ben je klaar om je beter te voelen?</h1>
-                            <br/>
-                            <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">Het is tijd om je gezondheid in eigen handen te nemen.</h2>
-                            <br/>
-                            <p className="text-lg lg:text-xl leading-tight max-w-[800px]">
-                                Cliënten die bij mij komen, weten dat ze een krachtig vermogen hebben om hoe ze zich voelen positief te
-                                beïnvloeden. Voor hen is gewoon niet ziek zijn niet genoeg; ze willen vol energie en vitaal zijn.
-                                <b> Gezondheid is holistisch </b> de systemen van het lichaam zijn met elkaar verbonden en net als bij een spinnenweb wordt alles beïnvloed als je aan één draad trekt. 
-                                <b>Beter slapen, minder stress, een goede spijsvertering</b> en een <b>aangepast dieet</b> zijn enkele 
-                                van de manieren waarop ik je kan helpen om<br/><br/>
-                                Cliënten willen geen symptoomveroorzakende Whac-A-Mole meer spelen, maar in plaats daarvan het probleem bij de wortel aanpakken.
-                                Met behulp van de wetenschappelijke wijsheid van <b>Ayurveda</b> - een <b>geneeskundig systeem dat erkend is door de Wereldgezondheidsorganisatie</b> - 
-                                help ik door alle tegenstrijdige gezondheidsruis heen en door jouw unieke geschiedenis te volgen, wordt er een plan gemaakt dat speciaal op jou en je behoeften is 
-                                afgestemd - en dat alles op een realistische, behapbare manier. Omdat het leven al druk genoeg is, maken we gezond zijn een stuk gemakkelijker.
-                            </p>
-                            <Link to="/diensten" 
-                                    className="self-center mt-5 px-3 py-3 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
-                                Neem de eerste stappen
-                            </Link>
+                        <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Ben je klaar om je beter te voelen?</h1>
+                        <br/>
+                        <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">Het is tijd om je gezondheid in eigen handen te nemen.</h2>
+                        <br/>
+                        <p className="text-lg lg:text-xl leading-tight max-w-[800px]">
+                            Cliënten die bij mij komen, weten dat ze een krachtig vermogen hebben om hoe ze zich voelen positief te
+                            beïnvloeden. Voor hen is gewoon niet ziek zijn niet genoeg; ze willen vol energie en vitaal zijn.
+                            <b> Gezondheid is holistisch </b> de systemen van het lichaam zijn met elkaar verbonden en net als bij een spinnenweb wordt alles beïnvloed als je aan één draad trekt. 
+                            <b>Beter slapen, minder stress, een goede spijsvertering</b> en een <b>aangepast dieet</b> zijn enkele 
+                            van de manieren waarop ik je kan helpen om<br/><br/>
+                            Cliënten willen geen symptoomveroorzakende Whac-A-Mole meer spelen, maar in plaats daarvan het probleem bij de wortel aanpakken.
+                            Met behulp van de wetenschappelijke wijsheid van <b>Ayurveda</b> - een <b>geneeskundig systeem dat erkend is door de Wereldgezondheidsorganisatie</b> - 
+                            help ik door alle tegenstrijdige gezondheidsruis heen en door jouw unieke geschiedenis te volgen, wordt er een plan gemaakt dat speciaal op jou en je behoeften is 
+                            afgestemd - en dat alles op een realistische, behapbare manier. Omdat het leven al druk genoeg is, maken we gezond zijn een stuk gemakkelijker.
+                        </p>
+                        <Link to="/diensten" 
+                                className="self-center mt-5 px-3 py-3 lg:px-8 lg:py-2 text-xl lg:text-2xl font-helvetica rounded-3xl text-white bg-green-custom hover:bg-teal-custom hover:text-white hover:border-transparent transition-colors">
+                            Neem de eerste stappen
+                        </Link>
                     </div>
                 </div>
 
@@ -161,7 +204,7 @@ const HomePageDutch = () => {
                     <h1 className="font-handwriting2 font-black text-3xl md:text-4xl lg:text-5xl pl-0 lg:pl-4">Hoi! Ik ben Jacklyn!</h1>
                     <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4">
                         Geboren in de V.S., woonachtig in Nederland, een voormalig lerares die de overstap naar Ayurveda heeft
-                        gemaakt omdat je goed voelen het genieten van het leven zoveel makkelijker maakt!                    </p>
+                        gemaakt omdat je goed voelen het genieten van het leven zoveel makkelijker maakt!                </p>
                     <p className="pl-0 lg:pl-4 text-lg md:xl lg:text-xl leading-tight mt-4">
                         <b>Mijn verhaal, de korte versie</b>: Ayurveda heeft me op mijn gezondheidsreis geholpen me beter te voelen dan ik zelfs wist dat mogelijk was. 
                         Rustiger in mijn hoofd en meer verbonden met mijn lichaam.
@@ -174,7 +217,7 @@ const HomePageDutch = () => {
                     </p>
                     <p className="pl-0 lg:pl-4 text-lg lg:text-xl leading-tight mt-4 mb-8">
                         Voor ik het wist, zat ik weer op school. Vier jaar lang Ayurveda studeren heeft mijn passie alleen maar
-                        vergroot. Nu kan ik het enthousiast met anderen delen als zij hun pad afleggen...                    
+                        vergroot. Nu kan ik het enthousiast met anderen delen als zij hun pad afleggen...                 
                     </p>
                     <div className="flex justify-center items-center w-full mb-4">
                         <Link to="/over-jacklyn">
@@ -186,16 +229,23 @@ const HomePageDutch = () => {
                 </div>
                 {/* Image container - add order-1 for mobile */}
                 <div className="w-full lg:w-auto order-1 lg:order-2">
-                    <img className="w-full lg:w-auto lg:max-h-[40rem] object-cover" 
+                    <img 
+                        ref={jackySection3Ref}
+                        loading="lazy"
+                        className={`w-full lg:w-auto lg:max-h-[40rem] object-cover transition-opacity duration-1000 ease-out ${
+                            jackySection3InView ? 'opacity-100' : 'opacity-0'
+                        }`}
                         src={images.JackySection3} 
-                        alt="Ayurvedisch Practitioner zittend en lachend naar de camera" />
+                        alt="Ayurvedisch Practitioner zittend en lachend naar de camera" 
+                    />
                 </div>
             </div>
                 <div className="flex justify-center w-full">
                     <TestimonialsSliderDutch />
                 </div>
                 {/* Section with fixed background */}
-                <div className="w-full relative md:h-[60vh] h-[50vh] bg-fixed bg-center bg-cover bg-no-repeat"
+                <div 
+                    className="w-full relative md:h-[60vh] h-[50vh] bg-fixed bg-center bg-cover bg-no-repeat"
                     style={{
                         backgroundImage: `url(${images.walkYourPath})`
                     }}>
@@ -219,4 +269,3 @@ const HomePageDutch = () => {
 }
 
 export default HomePageDutch;
-

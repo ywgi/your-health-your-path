@@ -1,8 +1,45 @@
 import FooterDutch from "../../components/FooterDutch";
 import HeaderDutch from "../../components/HeaderDutch";
 import images from '../../content/images'
+import { useInView } from "react-intersection-observer";
 
 const AboutJackyPageDutch = () => {
+    // Setup hooks for each image
+    const [jacky1Ref, jacky1InView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [jackyNielsRef, jackyNielsInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [jackyAcneRef, jackyAcneInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [jackyAcneHealedRef, jackyAcneHealedInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [parkRangerRef, parkRangerInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [poolRef, poolInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
+    const [dancingRef, dancingInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+    
     return (
         <>
             <HeaderDutch />
@@ -10,18 +47,25 @@ const AboutJackyPageDutch = () => {
                 {/*first section*/}
                 <div className="block md:hidden">
                     <div className="relative h-full flex items-center justify-center p-4">
-                            <div className="md:p-8 w-full max-w-5xl">
-                                <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">Mijn kwalificaties:</h1>
-                                <p className="mb-4 text-xl md:text-base">Als Ayurvedisch Practitioner heb ik:</p>
-                                <ul className="list-disc pl-6 md:pl-8 space-y-2 text-xl md:text-base">
-                                    <li>Een vierjarige bacheloropleiding tot Ayurvedic Practitioner van EISRA (Nederlands: HBO niveau)</li>
-                                    <li><strong>Twee Ayurvedische stages</strong> in India afgerond</li>
-                                    <li>Medische Basis Kennis-MBK afgerond.</li>
-                                    <li>Daarnaast ben ik leerkracht geweest in het basisonderwijs(PABO).</li>
-                                </ul>
-                            </div>
+                        <div className="md:p-8 w-full max-w-5xl">
+                            <h1 className="text-2xl md:text-4xl font-bold text-center mb-4">Mijn kwalificaties:</h1>
+                            <p className="mb-4 text-xl md:text-base">Als Ayurvedisch Practitioner heb ik:</p>
+                            <ul className="list-disc pl-6 md:pl-8 space-y-2 text-xl md:text-base">
+                                <li>Een vierjarige bacheloropleiding tot Ayurvedic Practitioner van EISRA (Nederlands: HBO niveau)</li>
+                                <li><strong>Twee Ayurvedische stages</strong> in India afgerond</li>
+                                <li>Medische Basis Kennis-MBK afgerond.</li>
+                                <li>Daarnaast ben ik leerkracht geweest in het basisonderwijs(PABO).</li>
+                            </ul>
                         </div>
-                    <img src={images.purpleFlowers}/>
+                    </div>
+                    <img 
+                        ref={jacky1Ref}
+                        src={images.purpleFlowers}
+                        className={`transition-opacity duration-1000 ease-out ${
+                            jacky1InView ? 'opacity-100' : 'opacity-0'
+                        }`}
+                        alt="Jacklyn sitting in her office"
+                    />
                 </div>
                 <div className="hidden md:block w-full relative min-h-[40px] bg-fixed bg-center bg-cover bg-no-repeat"
                     style={{
@@ -79,9 +123,12 @@ const AboutJackyPageDutch = () => {
                         {/* Main image container */}
                         <div className="w-full md:w-auto lg:w-auto relative md:mt-4 md:mr-4 lg:mt-8 lg:mr-8">
                             <img 
-                                className="w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                ref={jacky1Ref}
+                                className={`w-full lg:w-auto lg:max-h-[40rem] object-cover shadow-lg transition-opacity duration-1000 ease-out ${
+                                    jacky1InView ? 'opacity-100' : 'opacity-0'
+                                }`}
                                 src={images.AboutJacky1}
-                                alt="Ayurvedic practitioner Jacklyn sitting cross-legged in a chair in her office" 
+                                alt="Ayurvedisch Practitioner zittend in een stoel in een woonkamer lachend naar de camera" 
                             />
                         </div>
                     </div>
@@ -95,9 +142,13 @@ const AboutJackyPageDutch = () => {
                         {/* Main image container */}
                         <div className="w-full md:max-w-[800px] lg:w-auto relative md:mb-4 md:ml-4 lg:mb-8 lg:ml-8">
                             <img 
-                                className="w-full lg:w-auto lg:max-h-[800px] object-cover shadow-lg animate-[fade-in_1s_ease-out] opacity-0 [animation-fill-mode:forwards]"
+                                ref={jackyNielsRef}
+                                loading="lazy"
+                                className={`w-full lg:w-auto lg:max-h-[800px] object-cover shadow-lg transition-opacity duration-1000 ease-out ${
+                                    jackyNielsInView ? 'opacity-100' : 'opacity-0'
+                                }`}
                                 src={images.jackyNielsBeach}
-                                alt="Jacklyn and husband walking on beach after wedding in tenerife" 
+                                alt="Een pas getrouwd stel loopt hand in hand over het strand." 
                             />
                         </div>
                     </div>
@@ -113,7 +164,7 @@ const AboutJackyPageDutch = () => {
                             Al meer dan 10 jaar kampte hij met darmklachten. <b>Hij ging naar artsen en specialisten, maar zijn klachten hielden aan.</b>
                         </p>
                         <p>
-                            Naast een constant gevoel van beperkte energie, had hij last van:                        
+                            Naast een constant gevoel van beperkte energie, had hij last van:                        
                         </p>
                         <ul className="pl-4 lg:pl-8 lg:text-xl">
                             <li className="flex items-start gap-2 lg:gap-3">
@@ -147,27 +198,23 @@ const AboutJackyPageDutch = () => {
                     </div>
                 </div>
                 {/*green divider with text */}
-                <div className="relative w-full min-h-[10rem] lg:min-h-[12rem] bg-green-custom  py-8 lg:py-12">
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[90%] max-w-4xl">
-                        <span className="block text-center px-4 lg:px-10 leading-relaxed font-quote text-xl lg:whitespace-nowrap sm:text-2xl lg:text-4xl text-white">
-                            Het is moeilijk om energie te hebben als je lichaam niet goed verteert.
-                        </span>
-                    </div>
+                <div className="w-full bg-green-custom h-[150px] flex items-center justify-center text-center">
+                    <h1 className="text:lg px-8 md:text-4xl text-white font-quote">Het is moeilijk om energie te hebben als je lichaam niet goed verteert.</h1>
                 </div>
                 {/* Third Section */}
-                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
+                <div className="flex flex-col w-full items-center justify-center bg-center bg-cover bg-no-repeat"                    
                     style={{
                         backgroundImage: `url(${images.mountainColorful})`
                     }}>
                     <div className="w-[90vw] md:w-[70vw] flex flex-col items-center h-full bg-light-pink-custom px-8 py-8">
                         {/* Text content div */}
-                        <div className="w-full max-w-3xl mb-2">                    
+                        <div className="w-full max-w-3xl mb-2">                    
                             <h1 className="text-3xl font-bold font-heading tracking-wide text-light-teal-custom">Snel door naar 2019-2020:</h1>
                             <br/>
                             <h2 className="text-2xl font-heading uppercase tracking-wide text-dark-coral-custom">Mijn verhaal gaat verder...</h2>
                             <br/>
                             <p className="mb-2 text-xl">
-                            Niels en ik waren doorgegaan met het volgen van Ayurvedische dieetadviezen in ons dagelijks leven, maar mijn <b>stressniveaus waren gestegen</b>, en dit - gevoegd bij mijn voorraad<b>oude, naar de kant geschoven emoties</b> - was een overbelasting voor mijn systeem.
+                                iels en ik waren doorgegaan met het volgen van Ayurvedische dieetadviezen in ons dagelijks leven, maar mijn <b>stressniveaus waren gestegen</b>, en dit - gevoegd bij mijn voorraad<b>oude, naar de kant geschoven emoties</b> - was een overbelasting voor mijn systeem.
                             </p>
                             <p className="mb-2 text-xl">
                                 <b>Hoe ik me van binnen voelde, begon zich aan de buitenkant te manifesteren.</b>.
@@ -188,17 +235,25 @@ const AboutJackyPageDutch = () => {
                             <div className="flex flex-col items-center">
                                 <h3 className="text-xl font-bold mb-2">2020</h3>
                                 <img 
+                                    ref={jackyAcneRef}
+                                    loading="lazy"
                                     src={images.jackyAcne} 
-                                    alt="Jacklyn before committing to Ayurveda"
-                                    className="w-80 h-80 object-cover border-8 border-white"
+                                    alt="Een voorvertoning van het gezicht van een vrouw met acne op haar wangen, voorhoofd en kin."
+                                    className={`w-80 h-80 object-cover border-8 border-white transition-opacity duration-1000 ease-out ${
+                                        jackyAcneInView ? 'opacity-100' : 'opacity-0'
+                                    }`}
                                 />
                             </div>
                             <div className="flex flex-col items-center">
                                 <h3 className="text-xl font-bold mb-2">2021</h3>
                                 <img 
+                                    ref={jackyAcneHealedRef}
+                                    loading="lazy"
                                     src={images.jackyAcneHealed} 
-                                    alt="Jacklyn after Ayurveda"
-                                    className="w-80 h-80 object-cover border-8 border-white"
+                                    alt="Een nabeeld van het gezicht van een vrouw zonder acne op haar gezicht"
+                                    className={`w-80 h-80 object-cover border-8 border-white transition-opacity duration-1000 ease-out ${
+                                        jackyAcneHealedInView ? 'opacity-100' : 'opacity-0'
+                                    }`}
                                 />
                             </div>
                         </div>
@@ -246,9 +301,13 @@ const AboutJackyPageDutch = () => {
                             <div className="flex flex-col md:flex-row">
                                 <div className="w-full md:w-96 flex-shrink-0">
                                     <img
+                                        ref={parkRangerRef}
+                                        loading="lazy"
                                         src={images.jackyParkRanger}
                                         alt="Abhyanga massage therapy"
-                                        className="w-full h-64 md:h-full object-cover"
+                                        className={`w-full h-64 md:h-full object-cover transition-opacity duration-1000 ease-out ${
+                                            parkRangerInView ? 'opacity-100' : 'opacity-0'
+                                        }`}
                                     />
                                 </div>
                                 {/* Centered on mobile, aligned to left on desktop */}
@@ -273,9 +332,13 @@ const AboutJackyPageDutch = () => {
                             <div className="flex flex-col md:flex-row-reverse">
                                 <div className="w-full md:w-96 flex-shrink-0">
                                     <img
+                                        ref={poolRef}
+                                        loading="lazy"
                                         src={images.pool}
                                         alt="Abhyanga massage therapy"
-                                        className="w-full h-64 md:h-full object-cover"
+                                        className={`w-full h-64 md:h-full object-cover transition-opacity duration-1000 ease-out ${
+                                            poolInView ? 'opacity-100' : 'opacity-0'
+                                        }`}
                                     />
                                 </div>
                                 {/* Centered on mobile, aligned to left on desktop */}
@@ -306,9 +369,13 @@ const AboutJackyPageDutch = () => {
                             <div className="flex flex-col md:flex-row">
                                 <div className="w-full md:w-96 flex-shrink-0">
                                     <img
+                                        ref={dancingRef}
+                                        loading="lazy"
                                         src={images.dancing}
                                         alt="A"
-                                        className="w-full h-64 md:h-full object-cover"
+                                        className={`w-full h-64 md:h-full object-cover transition-opacity duration-1000 ease-out ${
+                                            dancingInView ? 'opacity-100' : 'opacity-0'
+                                        }`}
                                     />
                                 </div>
                                 {/* Centered on mobile, aligned to left on desktop */}
@@ -328,6 +395,3 @@ const AboutJackyPageDutch = () => {
 }
 
 export default AboutJackyPageDutch;
-
-
-

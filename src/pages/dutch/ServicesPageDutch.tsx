@@ -17,9 +17,9 @@ const ServicesPageDutch = () => {
                         <div className="relative w-full">
                             <div className="aspect-[4/3] md:aspect-[3/4] w-full overflow-hidden max-w-xs mx-auto">
                                 <img 
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover animate-[fade-in_1s_ease-out]"
                                     src={images.womanOnLaptop}
-                                    alt="Consult"
+                                    alt="De arm en romp van een vrouw terwijl ze op een laptop typt."
                                 />
                                 <a href="#consult" 
                                     onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -43,9 +43,9 @@ const ServicesPageDutch = () => {
                         <div className="relative w-full">
                             <div className="aspect-[4/3] md:aspect-[3/4] w-full overflow-hidden max-w-xs mx-auto">
                                 <img 
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover animate-[fade-in_1s_ease-out]"
                                     src={images.massage}
-                                    alt="Massage"
+                                    alt="Een hand die de schouderband masseert van een man die op de tafel ligt."
                                 />
                                 <a href="#massage"                             
                                     onClick={(e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -69,9 +69,9 @@ const ServicesPageDutch = () => {
                         <div className="relative w-full">
                             <div className="aspect-[4/3] md:aspect-[3/4] w-full overflow-hidden max-w-xs mx-auto">
                                 <img 
-                                    className="w-full h-full object-cover"
+                                    className="w-full h-full object-cover animate-[fade-in_1s_ease-out]"
                                     src={images.noteTaking}
-                                    alt="Contact Me"
+                                    alt="Een hand die aantekeningen maakt in een notitieblok."
                                 />
                                 <Link to="/contact">
                                 <div className="absolute inset-0 flex items-center justify-center">
@@ -103,7 +103,7 @@ const ServicesPageDutch = () => {
                             </p>
                         </div>
                         <div className="flex-shrink-1 h-full ml-2 md:ml-4">
-                            <img src={images.pathway} className="h-full w-auto max-h-full object-contain animate-[fade-in_1s_ease-out]" alt="Ayurveda pathway" />
+                            <img src={images.path} className="h-full w-auto max-h-full object-contain animate-[fade-in_1s_ease-out]" alt="Een kronkelig pad door een groene heuvel met de zon die fel schijnt achter wolken aan de horizon." />
                         </div>
                     </div>
 
@@ -120,7 +120,10 @@ const ServicesPageDutch = () => {
                         <p className="text-xl px-4">
                             Ik help je graag op je pad; het is een genot om alle vooruitgang te vieren terwijl je verdergaat.
                         </p>
-                        <img src={images.pathway} className="w-full animate-[fade-in_1s_ease-out]" alt="Ayurveda pathway" />
+                        <img 
+                            src={images.path} 
+                            className="w-full animate-[fade-in_1s_ease-out]" 
+                            alt="Een kronkelig pad door een groene heuvel met de zon die fel schijnt achter wolken aan de horizon." />
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full h-auto min-h-[15vh] md:h-[20vh] py-4 bg-green-custom">

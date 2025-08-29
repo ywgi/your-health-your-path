@@ -34,7 +34,7 @@ const FAQPageDutch = () => {
                     </div>
 
                     {/* Text and button section: Always the second item */}
-                    <div className="flex w-full lg:w-1/2 justify-center flex-col text-left px-4 lg:px-0 text-lg sm:text-xl">
+                    <div className="flex w-full lg:w-1/2 justify-center flex-col text-left px-4 lg:px-0 text-lg sm:text-xl animate-[fade-in_1s_ease-out] [animation-fill-mode:forwards]">
                         <h1 className="text-3xl sm:text-4xl font-bold font-heading tracking-wide text-light-teal-custom">Nog vragen?</h1>
                         <br/>
                         <h2 className="text-2xl sm:text-3xl font-heading uppercase tracking-wide text-dark-coral-custom">Neem contact op.</h2>

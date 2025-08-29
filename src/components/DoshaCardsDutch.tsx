@@ -1,8 +1,24 @@
 import images from "../content/images";
+import { useInView } from "react-intersection-observer"; // Import useInView hook
 
 const DoshaCardsDutch = () => {
+    // Setup refs for each of the three cards
+    const [vataRef, vataInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const [pittaRef, pittaInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
+    const [kaphaRef, kaphaInView] = useInView({
+        triggerOnce: true,
+        threshold: 0.1,
+    });
+
     return(
-                     
         <div className="flex flex-col items-center">
             <div className="flex flex-col pt-4 md:py-8 max-w-[90vw] lg:max-w-[75vw]">
                 <h1 className="text-3xl md:text-4xl font-heading text-light-teal-custom font-bold">Over de dosha's (Ayurvedische types):</h1>
@@ -17,24 +33,34 @@ const DoshaCardsDutch = () => {
             </div>
             {/* 3 dosha cards */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 max-w-7xl mx-auto py-10 px-4">
-                <div className="flex flex-col w-full bg-white shadow-md rounded-lg overflow-hidden">
+                {/* Vata Card */}
+                <div 
+                    ref={vataRef} // Attach the ref here
+                    className={`flex flex-col w-full bg-white shadow-md rounded-lg overflow-hidden transition-opacity duration-1000 ease-in-out ${
+                        vataInView ? 'opacity-100' : 'opacity-0'
+                    }`} // Add conditional classes
+                >
                     {/* Image container - set to 30% of parent height */}
                     <div className="flex w-full h-48 md:h-52 overflow-hidden relative">
                         <div className="w-1/2">
                             <img 
+                                loading="lazy"
                                 src={images.air}
                                 className="w-full h-full object-cover object-center"
+                                alt="Grote witte wolken in een helderblauwe lucht."
                             />
                         </div>
                         <div className="w-1/2">
                             <img 
+                                loading="lazy"
                                 src={images.space}
                                 className="w-full h-full object-cover object-center"
+                                alt="Een vallende ster boven een bergketen, bewegend door een paarse sterrenhemel."
                             />
                         </div>
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="bg-light-pink-custom text-black p-4 rounded">
-                            <p className="text-l font-bold tracking-wide">V A T A</p>
+                                <p className="text-l font-bold tracking-wide">V A T A</p>
                             </div>
                         </div>
                     </div>
@@ -65,16 +91,25 @@ const DoshaCardsDutch = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col w-full bg-white shadow-md rounded-lg overflow-hidden">
+                
+                {/* Pitta Card */}
+                <div 
+                    ref={pittaRef} // Attach the ref here
+                    className={`flex flex-col w-full bg-white shadow-md rounded-lg overflow-hidden transition-opacity duration-1000 ease-in-out ${
+                        pittaInView ? 'opacity-100' : 'opacity-0'
+                    }`} // Add conditional classes
+                >
                     {/* Image placeholder since we can't use external images */}
                     <div className="flex w-full h-48 md:h-52 overflow-hidden relative">
                         <img 
+                            loading="lazy"
                             src={images.fire}
                             className="w-full h-full object-cover object-center"
+                            alt="Een close-up van de vlammen van een roodgloeiend vuur met een zwarte achtergrond."
                         />
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="bg-light-pink-custom text-black p-3 rounded">
-                            <p className="text-xl font-bold tracking-wide">P I T T A</p>
+                                <p className="text-xl font-bold tracking-wide">P I T T A</p>
                             </div>
                         </div>
                     </div>
@@ -109,27 +144,38 @@ const DoshaCardsDutch = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex flex-col w-full bg-white shadow-md rounded-lg overflow-hidden">
+                
+                {/* Kapha Card */}
+                <div 
+                    ref={kaphaRef} // Attach the ref here
+                    className={`flex flex-col w-full bg-white shadow-md rounded-lg overflow-hidden transition-opacity duration-1000 ease-in-out ${
+                        kaphaInView ? 'opacity-100' : 'opacity-0'
+                    }`} // Add conditional classes
+                >
                     {/* Image placeholder since we can't use external images */}
                     <div className="flex w-full h-48 md:h-52 overflow-hidden relative">
                         {/* First image - 50% width */}
                         <div className="w-1/2">
                             <img 
+                            loading="lazy"
                             src={images.earth}
                             className="w-full h-full object-cover object-center"
+                            alt="Kleine planten die uit een losse grond komen."
                             />
                         </div>
                         
                         {/* Second image - 50% width */}
                         <div className="w-1/2">
                             <img 
+                            loading="lazy"
                             src={images.water}
                             className="w-full h-full object-cover object-center"
+                            alt="Licht dat door water schijnt."
                             />
                         </div>
                         <div className="absolute inset-0 flex items-center justify-center">
                             <div className="bg-light-pink-custom text-black p-3 rounded">
-                            <p className="text-xl font-bold tracking-wide">K A P H A</p>
+                                <p className="text-xl font-bold tracking-wide">K A P H A</p>
                             </div>
                         </div>
                     </div>
