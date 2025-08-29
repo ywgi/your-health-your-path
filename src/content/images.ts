@@ -37,7 +37,7 @@ const images = {
     whatsApp: "/images/whatsapp.webp",
     signalLogo: "/images/signalLogo.webp",
     plants: "/images/plants.webp",
-    path: "public/images/pathway.webp",
+    path: "/images/pathway.webp",
     pinkFlowers: "images/pink-flowers.jpg",
     pinkFlowers2: "images/pink-flowers2.jpg",
     forest: "/images/forest.jpg",
