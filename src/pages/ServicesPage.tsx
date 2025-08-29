@@ -108,7 +108,7 @@ const ServicesPage = () => {
                             </p>
                         </div>
                         <div className="flex-shrink-1 h-full ml-2 md:ml-4">
-                            <img src={images.pathway} className="h-full w-auto max-h-full object-contain" alt="Ayurveda pathway" />
+                            <img src={images.path} className="h-full w-auto max-h-full object-contain" alt="Ayurveda pathway" />
                         </div>
                     </div>
 
@@ -128,7 +128,7 @@ const ServicesPage = () => {
                         <p className="text-xl px-4">
                             I gladly Serve to assist you along your way; it is a delight to celebrate all of the progress as you travel forward.
                         </p>
-                        <img src={images.pathway} className="w-full" alt="Ayurveda pathway" />
+                        <img src={images.path} className="w-full" alt="Ayurveda pathway" />
                     </div>
                 </div>
                 <div className="flex items-center justify-center w-full h-auto min-h-[15vh] md:h-[20vh] py-4 bg-green-custom">
