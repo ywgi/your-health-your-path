@@ -3,7 +3,6 @@ import images from '../../content/images'
 import HeaderDutch from "../../components/HeaderDutch";
 import TestimonialsSliderDutch from "../../components/TestimonialsDutch";
 import FooterDutch from "../../components/FooterDutch";
-import openHousePDF from '../../assets/Open house.pdf';
 import { useInView } from "react-intersection-observer"; // New: Import useInView hook
 
 
