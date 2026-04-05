@@ -32,7 +32,7 @@ const ContactPageDutch = () => {
                                     <p className="text-sm md:text-base">
                                         Vul het contactformulier in met je vragen of interesses. Als er een dag of tijd is waarop ik je het beste kan bereiken, laat het me dan weten.
                                         Ik neem binnen 3 werkdagen contact met je op. Afhankelijk van je vraag of vragen kunnen we verdere opties bespreken, zoals het plannen 
-                                        van een gratis consult van 20 minuten of het inplannen van een massage.
+                                        van een gratis, vrijblijvend 20 minuut kennismaking gesprek of het inplannen van een massage”.
                                     </p>
                                 </div>
                             </div>
@@ -51,30 +51,38 @@ const ContactPageDutch = () => {
                                 </div>
                             </div>
                         </div>
-                        
                         <ContactForm />
-                        
-                        <div className="px-4 md:px-8 flex gap-2 mt-6">
-                            <a href="https://wa.me/31681983487" className="inline-block">
-                                <img 
-                                    loading="lazy"
-                                    src={images.whatsApp} 
-                                    className="max-h-[40px] md:max-h-[50px] animate-[fade-in_1s_ease-out] [animation-fill-mode:forwards]"
-                                    alt="WhatsApp Link to contact Jacklyn BestenBreur"
-                                />
-                            </a>
-                            <a href="signal://+1234567890" className="inline-block">
-                                <img
-                                    loading="lazy"
-                                    src={images.signalLogo}
-                                    className="max-h-[40px] md:max-h-[50px] animate-[fade-in_1s_ease-out] [animation-fill-mode:forwards]"
-                                    alt="Signal Link to contact Jacklyn Bestenbreur"
-                                />
-                            </a>
+                        <div className="flex flex-col items-center justify-center">
+                            <p className="w-[80%] max-w-[1000px]">
+                                Kunt u niet komen? Je kan altijd je afspraak verplaatsen.
+                                <br/>
+                                <br/>
+                                Graag verplaats of annuleer uw afspraak dan minimaal <b>24 uur van tevoren</b>  per email or whatsapp bericht. Bij niet
+                                tijdig afmelden of no-show, brengen wij <b>30 euro in rekening</b>. Dit bedraag geld voor de massages of een consult
+                                (onderdeel van pakket of los).
+                            </p>
                         </div>
                     </div>
                 </div>
                 <BusinessMap/>
+                <div className="px-4 md:px-8 flex gap-2 pb-4">
+                    <a href="https://wa.me/31681983487" className="inline-block">
+                        <img 
+                            loading="lazy"
+                            src={images.whatsApp} 
+                            className="max-h-[40px] md:max-h-[50px] animate-[fade-in_1s_ease-out] [animation-fill-mode:forwards]"
+                            alt="WhatsApp Link to contact Jacklyn BestenBreur"
+                        />
+                    </a>
+                    <a href="signal://+1234567890" className="inline-block">
+                        <img
+                            loading="lazy"
+                            src={images.signalLogo}
+                            className="max-h-[40px] md:max-h-[50px] animate-[fade-in_1s_ease-out] [animation-fill-mode:forwards]"
+                            alt="Signal Link to contact Jacklyn Bestenbreur"
+                        />
+                    </a>
+                </div>
             </div>
             <FooterDutch/>
         </>

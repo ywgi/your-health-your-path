@@ -17,7 +17,7 @@ const ServicesPageDutch = () => {
                         <div className="relative w-full">
                             <div className="aspect-[4/3] md:aspect-[3/4] w-full overflow-hidden max-w-xs mx-auto">
                                 <img 
-                                    className="w-full h-full object-cover animate-[fade-in_1s_ease-out]"
+                                    className="w-full h-full rounded-xl object-cover animate-[fade-in_1s_ease-out]"
                                     src={images.womanOnLaptop}
                                     alt="De arm en romp van een vrouw terwijl ze op een laptop typt."
                                 />
@@ -43,7 +43,7 @@ const ServicesPageDutch = () => {
                         <div className="relative w-full">
                             <div className="aspect-[4/3] md:aspect-[3/4] w-full overflow-hidden max-w-xs mx-auto">
                                 <img 
-                                    className="w-full h-full object-cover animate-[fade-in_1s_ease-out]"
+                                    className="w-full h-full object-cover rounded-xl animate-[fade-in_1s_ease-out]"
                                     src={images.massage}
                                     alt="Een hand die de schouderband masseert van een man die op de tafel ligt."
                                 />
@@ -69,7 +69,7 @@ const ServicesPageDutch = () => {
                         <div className="relative w-full">
                             <div className="aspect-[4/3] md:aspect-[3/4] w-full overflow-hidden max-w-xs mx-auto">
                                 <img 
-                                    className="w-full h-full object-cover animate-[fade-in_1s_ease-out]"
+                                    className="w-full h-full object-cover rounded-xl animate-[fade-in_1s_ease-out]"
                                     src={images.noteTaking}
                                     alt="Een hand die aantekeningen maakt in een notitieblok."
                                 />

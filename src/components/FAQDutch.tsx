@@ -38,6 +38,11 @@ const faqs: FAQItem[] = [
     question: 'In mijn familie zijn er mensen met verschillende dominante dosha\'s. Hoe moet ik voor iedereen koken zonder aparte maaltijden te hoeven maken?',
     answer: 'Dit is een veel gestelde vraag en het antwoord hoeft niet zo moeilijk te zijn als je denkt. Er zijn manieren om maaltijden aan te passen, bijvoorbeeld door kruiden op individuele porties te doen of door te roteren wat je kookt, zodat aan ieders behoeften wordt voldaan zonder voor iedereen andere gerechten te bereiden! (Wie zou daar tijd voor hebben? En al die extra stress is het tegenovergestelde van ayurvedisch eten!)'
   },
+  {
+    id: 7,
+    question: 'Wat als ik niet naar mijn afspraak kan komen?',
+    answer: 'Jammer dat het afgesproken tijd niet meer lukt.\n\nAfspraken kunnen tot **24 uur** van tevoren kosteloos worden verplaatst of geannuleerd. Bij annulering binnen 24 uur voor de afspraak of bij niet opdagen (no-show), wordt er **30 euro in rekening** gebracht.\n\nDit bedrag geld voor de massages en de consulten (onderdeel van een pakket of los).\n\nWil je de afspraak annuleren of verplaatsen, stuur een bericht via email of Whatsapp.\nEmail: yourhealthyourpath@gmail.com\ntelefoonnummer: 06 8198 3487'
+  },
 ];
 
 const FAQDutch = () => {
@@ -56,7 +61,7 @@ const FAQDutch = () => {
                             className="flex justify-between items-center cursor-pointer"
                             onClick={() => handleItemClick(faq.id)}
                         >
-                            <h3 className="text-lg sm:text-xl font-semibold uppercase tracking-wide">
+                            <h3 className="text-lg sm:text-xl font-semibold tracking-wider">
                                 {faq.question}
                             </h3>
                             <span className="text-2xl text-gray-500 transition-transform duration-300 transform"

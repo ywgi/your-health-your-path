@@ -12,6 +12,7 @@ import AboutJackyPageDutch from './pages/dutch/AboutJackyPageDutch';
 import ServicesPageDutch from './pages/dutch/ServicesPageDutch';
 import ContactPageDutch from './pages/dutch/ContactPageDutch';
 import FAQPageDutch from './pages/dutch/FAQPageDutch';
+import FAQPage from './pages/FAQPage';
 
 function App() {
     return (
@@ -22,7 +23,8 @@ function App() {
           <Route path="/en/ayurveda" element={<AboutAyurvedaPage />} />
           <Route path="/en/services" element={<ServicesPage />} />
           <Route path="/en/contact" element={<ContactPage/>} />
-          <Route path="/" element={<HomePageDutch/>} />
+          <Route path="/en/faq" element={<FAQPage />} />
+          <Route path="/" element={<HomePageDutch />} />
           <Route path="over-Jacklyn" element={<AboutJackyPageDutch/>} />
           <Route path="/ayurveda" element={<AboutAyurvedaPageDutch />} />
           <Route path="/diensten" element={<ServicesPageDutch />} />

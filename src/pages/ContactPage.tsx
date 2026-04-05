@@ -31,7 +31,7 @@ const ContactPage = () => {
                                     <br/>
                                     <p className="text-sm md:text-base">Please fill in the contact form with your questions or interests. 
                                         If there is a best day or time to reach you please let me know. I will get back to you within 3 business days. 
-                                        Depending on your question(s) we can discuss further options such as planning a free 20 min. consult or scheduling a massage.</p>
+                                        Depending on your question(s) we can discuss further options such as planning a free 20 minute introductory conversation or scheduling a massage.</p>
                                 </div>
                             </div>
                             
@@ -49,28 +49,36 @@ const ContactPage = () => {
                                 </div>
                             </div>
                         </div>
-                        
                         <ContactForm />
-                        
-                        <div className="px-4 md:px-8 flex gap-2 mt-6">
-                            <a href="https://wa.me/31681983487" className="inline-block">
-                                <img 
-                                    src={images.whatsApp} 
-                                    className="max-h-[40px] md:max-h-[50px]"
-                                    alt="WhatsApp Link to contact Jacklyn BestenBreur"
-                                />
-                            </a>
-                            <a href="signal://+1234567890" className="inline-block">
-                                <img
-                                    src={images.signalLogo}
-                                    className="max-h-[40px] md:max-h-[50px]"
-                                    alt="Signal Link to contact Jacklyn Bestenbreur"
-                                />
-                            </a>
+                        <div className="flex flex-col items-center justify-center">
+                            <p className="w-[80%] max-w-[1000px]">
+                                Can't make it? You can always reschedule your appointment.
+                                <br/>
+                                <br/>
+                                Please reschedule or cancel your appointment at least <b>24 hours in advance</b> by email or WhatsApp message. In the
+                                event of late cancellation or no-show, <b>we will charge €30</b>. This amount covers the massages or a consultation (part
+                                of a package or scheduled separately).
+                            </p>
                         </div>
                     </div>
                 </div>
                 <BusinessMap/>
+                <div className="px-4 md:px-8 flex gap-2 pb-4">
+                    <a href="https://wa.me/31681983487" className="inline-block">
+                        <img 
+                            src={images.whatsApp} 
+                            className="max-h-[40px] md:max-h-[50px]"
+                            alt="WhatsApp Link to contact Jacklyn BestenBreur"
+                        />
+                    </a>
+                    <a href="signal://+1234567890" className="inline-block">
+                        <img
+                            src={images.signalLogo}
+                            className="max-h-[40px] md:max-h-[50px]"
+                            alt="Signal Link to contact Jacklyn Bestenbreur"
+                        />
+                    </a>
+                </div>
             </div>
             <Footer/>
         </>
