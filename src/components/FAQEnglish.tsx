@@ -61,7 +61,7 @@ const FAQDutch = () => {
                             className="flex justify-between items-center cursor-pointer"
                             onClick={() => handleItemClick(faq.id)}
                         >
-                            <h3 className="text-lg sm:text-xl font-semibold uppercase tracking-wide">
+                            <h3 className="text-lg sm:text-xl font-semibold tracking-wider">
                                 {faq.question}
                             </h3>
                             <span className="text-2xl text-gray-500 transition-transform duration-300 transform"
